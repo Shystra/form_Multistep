@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import './App.css'
+// import { useState } from 'react'
+import './Global.css'
+import { Home } from './Pages/Home';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <h1>oi</h1>
-      </div>
-    </>
+      <>
+        <Home />
+      </>
   )
 }
 
