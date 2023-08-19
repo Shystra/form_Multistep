@@ -1,4 +1,5 @@
 // import React from 'react';
+import { Button } from '../../components/Button/Button';
 import styles from './Home.module.css'; // Importando os estilos
 
 export function Home() {
@@ -13,6 +14,8 @@ export function Home() {
             <div className={styles.title_Container}>
                 <h1 className={styles.title_Residencia}>Como é a sua Residência?</h1>
             </div>
+
+            <Button/>
             
 
         </div>
