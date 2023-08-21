@@ -4,21 +4,37 @@ import { FirstForm } from '../../components/FirstForm/FirstForm';
 import { OptionUrbanHome } from '../../components/OptionUrbanHome/OptionUrbanHome';
 import { OptionRuralHome } from '../../components/OptionRuralHome/OptionRuralHome';
 
-import { useMultistepForm } from '../../Hooks/useForme';
+// import { useMultistepForm } from '../../Hooks/useForme';
 import styles from './Home.module.css';
-import { useState } from 'react';
+import { FormEvent, useState } from 'react';
+import { useMultistepForm } from '../../Hooks/useForme';
 
+
+
+// type FormData = {
+//   casa_urbana: string;
+//   casa_rural: string;
+//   other_itens: string;
+//   teste: string;
+// }
+
+// const INITIAL_DATA: FormData = {
+//   casa_urbana: "",
+//   casa_rural: "",
+//   other_itens: "",
+//   teste: "",
+// }
 
 export function Home() {
-  
-
-  // const [currentStep, setCurrentStep] = useState(0);
-
-  // const handleNext = () => {
-  //   setCurrentStep(currentStep + 1);
-  // };
   const [currentStep, setCurrentStep] = useState(0);
   const [userChoice, setUserChoice] = useState<string | null>(null);
+  // const [data, setData] = useState<FormData>(INITIAL_DATA);
+
+  // const {back, next} = useMultistepForm([
+  // <FirstForm {...data}/>,
+  // <OptionUrbanHome {...data}/>,
+  // <OptionRuralHome {...data}/>,
+  // ])
 
   const handleChoice = (choice: string) => {
     setUserChoice(choice);
@@ -26,12 +42,17 @@ export function Home() {
   };
 
 
+  // function onSubmit(e: FormEvent){
+  //   e.preventDefault();
+  //   next()
+  // }
+
   
 
 
 
   return (
-    <form>
+    <form >
       <div className={styles.container}>
         {currentStep === 0 && (
             <>
@@ -50,8 +71,8 @@ export function Home() {
         {/* {currentStep === 0 && (
         )} */}
   
-        {currentStep === 1 && userChoice === "urbana" && <OptionUrbanHome />}
-        {currentStep === 1 && userChoice === "rural" && <OptionRuralHome />}
+        {currentStep === 1 && userChoice === "casa_urbana" && <OptionUrbanHome />}
+        {currentStep === 1 && userChoice === "casa_rural" && <OptionRuralHome />}
       </div>
     </form>
   );

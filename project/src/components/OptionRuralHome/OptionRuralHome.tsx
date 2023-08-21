@@ -3,6 +3,7 @@
 
 
 
+
 export const OptionRuralHome = () => {
     
 
@@ -11,6 +12,7 @@ export const OptionRuralHome = () => {
         <div className=''>
         
           <h1>Entrou no Rural</h1>
+          <button></button>
           
         
 
