@@ -1,39 +1,45 @@
-.buttonHomeResidencia{
-    position: absolute;
+.containerForm{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* .buttonHomeResidencia{
     display: flex;
     gap: 16px;
     justify-content: center;
-    
+    align-items: center;
+    height: 100vh;
+} */
+.buttonsWrapper{
+    display: flex;
+    gap: 16px; 
 }
-
 
 .casaUrbanaButton
 {   
-    
-    padding: 10px 20px;
+    margin-top: 200px;
+    padding: 10px 50px;
     border: none;
     border-radius: 30px;
-    width: 145%;
+    width: auto; /* Modificado */
     height: 50px;
-    margin-left: 20px;
     background-color: #200082;
     color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s ease;    
+    transition: background-color 0.3s ease;     
 }
 .casaUrbanaButton:hover{
     background-color: #3B00E9;
 }
-
-
 .casaRuralButton{
-    padding: 10px 20px;
-    /* border-color: #200082; */
+    margin-top: 200px;
+    padding: 10px 50px;
     border: 2px solid #200082;
     border-radius: 30px;
-    width: 90%;
+    width: auto; /* Modificado */
     height: 50px;
-    margin-left: 145px;
+    margin-left: 0; /* Modificado */
     background-color: #fff;
     color: #200082;
     cursor: pointer;
@@ -47,7 +53,7 @@
 
 
 
-.prosseguir{
+/* .prosseguir{
     position: absolute;
     display: flex;
     justify-content: center;
@@ -61,8 +67,7 @@
 .prosseguirButton{
     padding: 10px 20px;
     border: none;
-    /* border-left: none;
-    border-right: none; */
+   
     border-radius: 30px;
     background-color: #200082;
     width: 80%;
@@ -79,23 +84,33 @@
     width: 12%;
     height: 100%;
     margin-left: 350px;
-    /* border-radius: 30px; */
     border-width: 30px;
     border-radius: 0 30px 30px 0;
     border: 2px solid #200082;
-    border-left: none;
-    
-    
+    border-left: none;   
 }
-
-
-
 
 .prosseguirSobre svg{
     fill: #fff;
     width: 30px;
     height: 45px;
     margin-left: 15px;
+} */
+
+
+
+@media (max-width: 768px){
+  .containerForm{
+    width: 96vw;
+    height: 60vh;
+    /* overflow-y: auto; */
+  }
+  .casaUrbanaButton, .casaRuralButton{
+    margin-top: 155px;
+    width: 95%;
+    font-size: 10px;
+    
+  }
+  
+
 }
-
-

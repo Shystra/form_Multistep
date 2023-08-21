@@ -1,12 +1,12 @@
 
-export const SecondaryForm = () => {
+export const OptionUrbanHome = () => {
     
 
     return (
         <form>
         <div className=''>
         
-          <h1>Entrou Aqui</h1>
+          <h1>Entrou no Urbano</h1>
           
         
 
