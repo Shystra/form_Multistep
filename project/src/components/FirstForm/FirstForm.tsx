@@ -31,7 +31,7 @@ export const FirstForm = ({
 
   const [values, setValues] = useState<string[]>([]);
 
-  // Monitorar mudanças nos valores
+     // Monitorar mudanças nos valores
   useEffect(() => {
     // Se houver valores, atualizamos os campos e chamamos onNext
     if (values.length > 0) {

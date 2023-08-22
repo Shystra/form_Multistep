@@ -67,7 +67,7 @@ export function Home() {
           </>
         )}
         {currentStep === 0 && <FirstForm onNext={handleChoice} />}
-  
+
         {/* {currentStep === 0 && (
         )} */}
   
