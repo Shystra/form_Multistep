@@ -4,37 +4,19 @@ import { FirstForm } from '../../components/FirstForm/FirstForm';
 import { OptionUrbanHome } from '../../components/OptionUrbanHome/OptionUrbanHome';
 import { OptionRuralHome } from '../../components/OptionRuralHome/OptionRuralHome';
 
-// import { useMultistepForm } from '../../Hooks/useForme';
+import banner_comercial from  '../../assets/banner_comercial.png';
+import logo_intersept from '../../assets/logo.png';
+
 import styles from './Home.module.css';
 import { FormEvent, useState } from 'react';
 import { useMultistepForm } from '../../Hooks/useForme';
 
 
 
-// type FormData = {
-//   casa_urbana: string;
-//   casa_rural: string;
-//   other_itens: string;
-//   teste: string;
-// }
-
-// const INITIAL_DATA: FormData = {
-//   casa_urbana: "",
-//   casa_rural: "",
-//   other_itens: "",
-//   teste: "",
-// }
-
 export function Home() {
   const [currentStep, setCurrentStep] = useState(0);
   const [userChoice, setUserChoice] = useState<string | null>(null);
-  // const [data, setData] = useState<FormData>(INITIAL_DATA);
 
-  // const {back, next} = useMultistepForm([
-  // <FirstForm {...data}/>,
-  // <OptionUrbanHome {...data}/>,
-  // <OptionRuralHome {...data}/>,
-  // ])
 
   const handleChoice = (choice: string) => {
     setUserChoice(choice);
@@ -42,17 +24,14 @@ export function Home() {
   };
 
 
-  // function onSubmit(e: FormEvent){
-  //   e.preventDefault();
-  //   next()
-  // }
 
   
 
-
-
   return (
     <form >
+        {/* <div className={styles.logo_intersept}>
+          <img src={logo_intersept}/>
+        </div> */}
       <div className={styles.container}>
         {currentStep === 0 && (
             <>
@@ -73,7 +52,11 @@ export function Home() {
   
         {currentStep === 1 && userChoice === "casa_urbana" && <OptionUrbanHome />}
         {currentStep === 1 && userChoice === "casa_rural" && <OptionRuralHome />}
+        
       </div>
+      <div className={styles.img_banner}>
+          <img src={banner_comercial}/>
+        </div>
     </form>
   );
 
