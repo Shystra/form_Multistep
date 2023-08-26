@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import './Global.css'
+import { FormDataProvider } from './Hooks/FormContext';
 import { Home } from './Pages/Home';
 
 
@@ -8,7 +9,9 @@ function App() {
 
   return (
       <>
+      <FormDataProvider>
         <Home />
+      </FormDataProvider>
       </>
   )
 }

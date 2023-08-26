@@ -1,4 +1,4 @@
-import { useState, useEffect, FormEvent } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './Urban_or_Rural.module.css';
 
 type FormData = {
@@ -39,7 +39,7 @@ export const Urban_or_Rural = ({
       onNext(selectedValue);
     }
   }, [selectedValue, updateFields, onNext]);
-  console.log("🚀 ~ file: FirstForm.tsx:43 ~ selectedValue:", selectedValue)
+  // console.log("🚀 ~ file: FirstForm.tsx:43 ~ selectedValue:", selectedValue)
   
   
 

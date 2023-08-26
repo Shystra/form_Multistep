@@ -1,6 +1,5 @@
 
 
-import { Urban_or_Rural } from '../../components/Urban_or_Rural/Urban_or_Rural';
 import { OptionUrbanHome } from '../../components/Urban_or_Rural/OptionUrbanHome/OptionUrbanHome';
 import { OptionRuralHome } from '../../components/Urban_or_Rural/OptionRuralHome/OptionRuralHome';
 
@@ -8,9 +7,9 @@ import banner_comercial from  '../../assets/banner_comercial.png';
 import logo_intersept from '../../assets/logo.png';
 
 import styles from './Home.module.css';
-import { FormEvent, useState } from 'react';
-import { useMultistepForm } from '../../Hooks/useForme';
+import { useState } from 'react';
 import { First_Page } from '../../components/First_Page/First_Page';
+import { Residencia } from '../../components/Residencia/Residencia';
 
 
 
@@ -57,7 +56,8 @@ export function Home() {
 
 
         {currentStep === 0 && <First_Page onNext={handleChoice}/>}
-        {currentStep === 1 && <Urban_or_Rural onNext={handleChoice} />}
+        {currentStep === 1 && userChoice === "residencia" && <Residencia />}
+        {/* {currentStep === 1 && userChoice === "casa_urbana" && <Urban_or_Rural />} */}
         {currentStep === 1 && userChoice === "casa_urbana" && <OptionUrbanHome />}
         {currentStep === 1 && userChoice === "casa_rural" && <OptionRuralHome />}
         
