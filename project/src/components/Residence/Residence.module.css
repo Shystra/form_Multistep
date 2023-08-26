@@ -2,15 +2,31 @@
     justify-content: center;
     align-items: center;
     height: 50vh;
+    /* position: relative; */
 }
 
-/* .buttonHomeResidencia{
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-} */
+
+.progressOne_residence {
+    background-color: #e4e01c;
+    border-radius: 30px;
+    width: 15%;
+    height: 6%;
+    position: absolute;  
+    top: 0.5%;             
+    left: 50%;           
+    transform: translateX(-210%); 
+}
+
+.progressLabel_residence {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;           
+    transform: translateX(-345%);  
+    margin: 0;
+    top: 1%;            
+}
+
+
 .buttonsWrapper{
     display: flex;
     gap: 16px; 

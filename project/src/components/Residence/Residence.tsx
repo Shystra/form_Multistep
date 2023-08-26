@@ -50,27 +50,31 @@ export const Residence = ({ onNext }: Props) => {
         <div className={styles.containerForm_tipos_residencia}>
             {currentStep === 0 && (
                 <>
+                <div className={styles.progressOne_residence}>
+           
+                     </div>
+                    <label className={styles.progressLabel_residence}>14,28%</label>
+            <h1 className={styles.title_tipo_residencia}>Como é a sua residência?</h1>
             
-                <h1 className={styles.title_tipo_residencia}>Como é a sua residência?</h1>
-            
-        <div className={styles.buttonsWrapper}>
-        <div className={styles.casaUrbana}>
-          <button className={styles.casaUrbanaButton}  onClick={handleOptionClick('casa_urbana')}>
-            Casa em área Urbana
-          </button>
+            <div className={styles.buttonsWrapper}>
+                <div className={styles.casaUrbana}>
+                    <button className={styles.casaUrbanaButton}  onClick={handleOptionClick('casa_urbana')}>
+                        Casa em área Urbana
+                    </button>
           
-        </div>
+                </div>
       
 
-        <div className={styles.casaRural}>
-            <button className={styles.casaRuralButton} onClick={handleOptionClick('casa_rural')}>
-            Casa em área Rural
-          </button>
-        </div>
-      </div>
-        <div className={styles.buttonBack}>
-            <button onClick={handleBackClick}>Voltar</button>
-        </div>
+             <div className={styles.casaRural}>
+                <button className={styles.casaRuralButton} onClick={handleOptionClick('casa_rural')}>
+                    Casa em área Rural
+                </button>
+            </div>
+            </div>
+            <div className={styles.buttonBack}>
+                <button onClick={handleBackClick}>Voltar</button>
+            </div>
+            
       </>
       )}
         {currentStep === 1 && userChoice === "casa_urbana" && <OptionUrbanHome />}

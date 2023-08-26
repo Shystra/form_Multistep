@@ -33,16 +33,18 @@ export function Home() {
           <img src={logo_intersept}/>
         </div>
       <div className={styles.container}>
+        <div className={styles.progressBar}>
+
+          </div>
         {currentStep === 0 && (
           <>
-          <div className={styles.progressBar}>
             <div className={styles.progressOne}>
               <label className={styles.progressLabel}>10%</label>
             </div>
           <div className={styles.title_Container}>
             <h1 className={styles.title_Residencia}>Selecione o tipo de Proteção que você precisa:</h1>
           </div>
-          </div>
+         
 
           
 
