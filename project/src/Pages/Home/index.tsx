@@ -9,7 +9,7 @@ import logo_intersept from '../../assets/logo.png';
 import styles from './Home.module.css';
 import { useState } from 'react';
 import { First_Page } from '../../components/First_Page/First_Page';
-import { Residencia } from '../../components/Residencia/Residencia';
+import { Residence } from '../../components/Residence/Residence';
 
 
 
@@ -56,7 +56,7 @@ export function Home() {
 
 
         {currentStep === 0 && <First_Page onNext={handleChoice}/>}
-        {currentStep === 1 && userChoice === "residencia" && <Residencia onNext={value => (value)}/>}
+        {currentStep === 1 && userChoice === "residencia" && <Residence onNext={value => (value)}/>}
         {/* {currentStep === 1 && userChoice === "casa_urbana" && <Urban_or_Rural />} */}
         {currentStep === 1 && userChoice === "casa_urbana" && <OptionUrbanHome />}
         {currentStep === 1 && userChoice === "casa_rural" && <OptionRuralHome />}
