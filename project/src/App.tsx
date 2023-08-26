@@ -1,7 +1,7 @@
 // import { useState } from 'react'
 import './Global.css'
 import { FormDataProvider } from './Hooks/FormContext';
-import { Home } from './Pages/Home';
+import { Home } from './Pages/Home/Home';
 
 
 function App() {
