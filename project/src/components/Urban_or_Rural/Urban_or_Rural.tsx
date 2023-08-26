@@ -1,5 +1,5 @@
 import { useState, useEffect, FormEvent } from 'react';
-import styles from './FirstForm.module.css';
+import styles from './Urban_or_Rural.module.css';
 
 type FormData = {
   casa_urbana: string;
@@ -18,7 +18,7 @@ type FormProps = FormData & {
 };
 
 
-export const FirstForm = ({ 
+export const Urban_or_Rural = ({ 
   casa_urbana, 
   casa_rural, 
   updateFields = () => {}, 

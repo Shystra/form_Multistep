@@ -53,49 +53,6 @@
 
 
 
-/* .prosseguir{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 80%;
-    margin-top: 200px;
-    margin-left: 110px;
-}
-
-.prosseguirButton{
-    padding: 10px 20px;
-    border: none;
-   
-    border-radius: 30px;
-    background-color: #200082;
-    width: 80%;
-    height: 50px;
-    color: #fff;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-}
-.prosseguirButton:hover{
-    background-color: #3B00E9;
-}
-.prosseguirSobre{
-    position: absolute;
-    width: 12%;
-    height: 100%;
-    margin-left: 350px;
-    border-width: 30px;
-    border-radius: 0 30px 30px 0;
-    border: 2px solid #200082;
-    border-left: none;   
-}
-
-.prosseguirSobre svg{
-    fill: #fff;
-    width: 30px;
-    height: 45px;
-    margin-left: 15px;
-} */
 
 
 

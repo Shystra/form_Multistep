@@ -43,7 +43,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  margin-top: 35px;
   height: calc(600% - 0px);
 
 }
@@ -54,19 +54,30 @@
 
 .img_banner img{
   position: relative;
-  width: 800px;  /* Edita o tamanho do espaço*/
-  height: 150px; /* Edita o tamanho do espaço*/
+  width: 800px;  
+  height: 150px; 
   background-color: white;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   display: flex;
-  /* flex-direction: column; */
+
   justify-content: center;
   align-items: center;
   margin-top: 1%;
-  object-fit: contain;
-  
+  object-fit: contain;  
 }
+
+.logo_intersept{
+  margin-top: -1px;
+}
+.logo_intersept img{
+  position: relative;
+  
+  width: 180px;
+  height: 180px;
+
+}
+
 
 
 
@@ -96,11 +107,23 @@
     height: 100px;
     
   }
+  
 }
 @media (max-width: 390px){
+  
   .img_banner img{
     width: 375px;
     height: 95px;
+  }
+  .logo_intersept{
+    margin-top: -60px;
+  }
+  .logo_intersept img{
+    position: relative;
+    
+    width: 180px;
+    height: 180px;
+  
   }
 }
 
@@ -120,7 +143,7 @@
 @media (max-width: 768px){
   .container{
     width: 96vw;
-    height: 40vh;
+    height: 60vh;
     /* overflow-y: auto; */
   }
 

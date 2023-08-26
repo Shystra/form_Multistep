@@ -1,0 +1,64 @@
+.container_first_page{
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper_first_page{
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+}
+
+.residencia button,  .condominio button{
+    margin-top: 235px;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 30px;
+    width: auto;
+    height: 50px;
+    background-color: #200082;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.residencia button:hover, .empresa_comercio button:hover, .condominio button:hover{
+    background-color: #3B00E9;
+}
+
+
+.empresa_comercio button{
+    margin-top: 235px;
+    padding: 10px 50px;
+    border: 2px solid #200082;
+    border-radius: 30px;
+    width: auto;
+    height: 50px;
+    margin-left: 0;
+    background-color: #fff;
+    color: #200082;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.empresa_comercio button:hover{
+    background-color: #3B00E9;
+    color: #fff;
+    border: none;
+}
+
+
+@media (max-width: 768px){
+  .wrapper_first_page{
+    flex-direction: column;
+
+  }
+  .residencia button, .empresa_comercio button, .condominio button{
+    
+    margin-top: 10px;
+    margin-left: 16px;
+    
+  }
+    .residencia button{
+        margin-top: 200px;
+    }
+}
