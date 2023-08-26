@@ -2,6 +2,9 @@ import express from 'express';
 import {Request, Response} from 'express';
 import nodemailer from 'nodemailer';
 import cors from 'cors';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 const app = express();
 const PORT = 3001;
@@ -33,9 +36,9 @@ app.post('/send-email', async (req:Request, res:Response) => {
         subject: 'New message from contact form',
         text: JSON.stringify(formData)
     };
-    // console.log('User:', process.env.GMAIL_USER);
-    // console.log('Password:', process.env.GMAIL_PASS ? 'Password is set' : 'Password is NOT set');
-    // console.log('Recipient:', process.env.MAIL_RECIPIENT);
+    console.log('User:', process.env.GMAIL_USER);
+    console.log('Password:', process.env.GMAIL_PASS ? 'Password is set' : 'Password is NOT set');
+    console.log('Recipient:', process.env.MAIL_RECIPIENT);
 
 
     try {

@@ -1,13 +1,6 @@
 import { useState, useEffect, FormEvent } from 'react';
 import styles from './FirstForm.module.css';
 
-
-// import { useMultistepForm } from '../../Hooks/useForme';
-// import { OptionUrbanHome } from '../OptionUrbanHome/OptionUrbanHome';
-// import { OptionRuralHome } from '../OptionRuralHome/OptionRuralHome';
-
-
-
 type FormData = {
   casa_urbana: string;
   casa_rural: string;
@@ -32,23 +25,25 @@ export const FirstForm = ({
   onNext, 
 }: FormProps) => {
 
-  const [values, setValues] = useState<string[]>([]);
 
-     // Monitorar mudanças nos valores
-  useEffect(() => {
-    // Se houver valores, atualizamos os campos e chamamos onNext
-    if (values.length > 0) {
-      const option = values[values.length - 1]; // Pegar o último valor
-      updateFields({ [option]: option } as Partial<FormData>);
-      onNext(option);
-    }
-  }, [values, updateFields, onNext]);
-  console.log("🚀 ~ file: FirstForm.tsx:30 ~ useEffect ~ values:", values)
 
+  const [selectedValue, setSelectedValue] = useState<string>("");
   const handleOptionClick = (option: string) => (event: React.MouseEvent) => {
     event.preventDefault();
-    setValues(prevValues => [...prevValues, option]);
+    setSelectedValue(option);
   };
+  
+  useEffect(() => {
+    if (selectedValue) {
+      updateFields({ [selectedValue]: selectedValue } as Partial<FormData>);
+      onNext(selectedValue);
+    }
+  }, [selectedValue, updateFields, onNext]);
+  console.log("🚀 ~ file: FirstForm.tsx:43 ~ selectedValue:", selectedValue)
+  
+  
+
+
 
   return (
     <form className={styles.containerForm}>
@@ -57,9 +52,7 @@ export const FirstForm = ({
           <button className={styles.casaUrbanaButton} value={casa_urbana} onClick={handleOptionClick('casa_urbana')}>
             Casa em área Urbana
           </button>
-          {/* <button onClick={() => alert(JSON.stringify(values))}>
-            Mostrar Valores
-          </button> */}
+          
         </div>
 
         <div className={styles.casaRural}>
