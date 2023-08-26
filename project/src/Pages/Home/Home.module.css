@@ -76,7 +76,18 @@
   width: 180px;
   height: 180px;
 
+  animation: moveDownUp 3s infinite
+
 }
+
+@keyframes moveDownUp {
+  0% { transform: translateY(0);}
+  50% { transform: translateY(10px);}
+  100% { transform: translateY(0);}
+}
+
+
+
 
 
 
