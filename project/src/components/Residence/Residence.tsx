@@ -1,4 +1,4 @@
-import styles from './Residencia.module.css';
+import styles from './Residence.module.css';
 
 import { useState } from "react"
 import { OptionUrbanHome } from "../Urban_or_Rural/OptionUrbanHome/OptionUrbanHome";
@@ -12,7 +12,7 @@ import { useFormDataContext } from '../../Hooks/FormContext';
 type Props = {
     onNext: (value: string) => void;
 }
-export const Residencia = ({ onNext }: Props) => {
+export const Residence = ({ onNext }: Props) => {
     
     const {updateFields, removeFields} = useFormDataContext();
     const [currentStep, setCurrentStep] = useState(0);
