@@ -30,7 +30,7 @@ export const First_Page = ({ onNext }: Props) => {
     
 
     return (
-        <form className={styles.container_first_page}>
+        <div className={styles.container_first_page}>
             <div className={styles.wrapper_first_page}>
                 <div className={styles.residencia}>
                     <button className={styles.residencia_button} onClick={handleOptionClick('residencia')}>Residência</button>
@@ -43,6 +43,6 @@ export const First_Page = ({ onNext }: Props) => {
                     <button className={styles.condominio_button}>Condomínio</button>
                 </div>
             </div>
-        </form>
+        </div>
     )
 }

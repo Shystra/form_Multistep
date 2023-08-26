@@ -23,7 +23,11 @@ export const useFormDataContext = () => {
   return useContext(FormDataContext);
 }
 
-export const FormDataProvider: React.FC = ({ children }: any) => {
+
+interface FormDataProviderProps {
+    children: React.ReactNode;
+  }
+  export const FormDataProvider: React.FC<FormDataProviderProps> = ({ children }) => {
   const [formData, setFormData] = useState<FormData>({});
 
   const updateFields = (fields: Partial<FormData>) => {
@@ -44,10 +48,10 @@ export const FormDataProvider: React.FC = ({ children }: any) => {
 
   return (
     <FormDataContext.Provider value={{ formData, updateFields, removeFields }}>  // Atualize aqui
-      {children}
-      <button onClick={() => alert(JSON.stringify(formData, null, 2))}>
+                {children}
+      {/* <button onClick={() => alert(JSON.stringify(formData, null, 2))}>
         Mostrar FormData
-      </button>
+      </button> */}
     </FormDataContext.Provider>
   );
 };

@@ -8,7 +8,7 @@ export const OptionRuralHome = () => {
     
 
     return (
-        <form>
+        <div>
         <div className=''>
         
           <h1>Entrou no Rural</h1>
@@ -17,7 +17,7 @@ export const OptionRuralHome = () => {
         
 
       </div>
-    </form>
+    </div>
 
     )
 }

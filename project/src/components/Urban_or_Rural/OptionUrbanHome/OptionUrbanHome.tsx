@@ -12,7 +12,7 @@ export const OptionUrbanHome = () => {
     
 
     return (
-        <form>
+        <div>
         <div className=''>
         
           <h1>Entrou no Urbano</h1>
@@ -21,7 +21,7 @@ export const OptionUrbanHome = () => {
         
 
       </div>
-    </form>
+    </div>
 
     )
 }

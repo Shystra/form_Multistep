@@ -56,7 +56,7 @@ export function Home() {
 
 
         {currentStep === 0 && <First_Page onNext={handleChoice}/>}
-        {currentStep === 1 && userChoice === "residencia" && <Residencia />}
+        {currentStep === 1 && userChoice === "residencia" && <Residencia onNext={value => (value)}/>}
         {/* {currentStep === 1 && userChoice === "casa_urbana" && <Urban_or_Rural />} */}
         {currentStep === 1 && userChoice === "casa_urbana" && <OptionUrbanHome />}
         {currentStep === 1 && userChoice === "casa_rural" && <OptionRuralHome />}

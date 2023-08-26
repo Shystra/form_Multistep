@@ -47,7 +47,7 @@ export const Residencia = ({ onNext }: Props) => {
     };
 
     return (
-        <form className={styles.containerForm_tipos_residencia}>
+        <div className={styles.containerForm_tipos_residencia}>
             {currentStep === 0 && (
                 <>
             
@@ -75,7 +75,7 @@ export const Residencia = ({ onNext }: Props) => {
       )}
         {currentStep === 1 && userChoice === "casa_urbana" && <OptionUrbanHome />}
         {currentStep === 1 && userChoice === "casa_rural" && <OptionRuralHome />}
-    </form>
+    </div>
 
     )
 }
