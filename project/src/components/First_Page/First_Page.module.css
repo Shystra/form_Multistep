@@ -1,4 +1,5 @@
 .container_first_page{
+
     justify-content: center;
     align-items: center;
     height: 180vh;
@@ -10,8 +11,8 @@
     flex-direction: row;
 }
 
-.residencia button,  .condominio button{
-    margin-top: -200px;
+.residencia button,  .condominio button, .empresa_comercio button{
+    /* margin-top: -200px;
     padding: 10px 50px;
     border: none;
     border-radius: 30px;
@@ -20,14 +21,48 @@
     background-color: #200082;
     color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; */
+
+
+
+    background-color: #200082;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s; 
+    position: relative;
+    overflow: hidden;
 }
 .residencia button:hover, .empresa_comercio button:hover, .condominio button:hover{
     background-color: #3B00E9;
 }
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.residencia button, .condominio button, .empresa_comercio button {
+  opacity: 0;  
+  animation: appear 2s forwards;
+}
 
 
-.empresa_comercio button{
+
+
+/* .empresa_comercio button{
     margin-top: -200px;
     padding: 10px 50px;
     border: 2px solid #200082;
@@ -44,7 +79,7 @@
     background-color: #3B00E9;
     color: #fff;
     border: none;
-}
+} */
 
 
 @media (max-width: 768px){
@@ -70,4 +105,18 @@
        
         margin-top: 0px;
     } */
+}
+@media (max-width: 414px){
+  .residencia button, .empresa_comercio button, .condominio button{
+    margin-block-end: 30px;
+    margin-top: -50px;
+    font-size: 14px;
+  }
+  .container_first_page{
+    height: 400vh;
+  }
+  .residencia{
+    margin-top: 0px;
+  }
+  
 }
