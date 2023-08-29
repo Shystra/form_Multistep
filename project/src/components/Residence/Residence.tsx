@@ -50,9 +50,7 @@ export const Residence = ({ onNext }: Props) => {
         <div className={styles.containerForm_tipos_residencia}>
             {currentStep === 0 && (
                 <>
-                <div className={styles.progressOne_residence}>
-           
-                     </div>
+                <div className={styles.progressOne_residence}></div>
                     <label className={styles.progressLabel_residence}>14,28%</label>
             <h1 className={styles.title_tipo_residencia}>Como é a sua residência?</h1>
             
@@ -77,7 +75,7 @@ export const Residence = ({ onNext }: Props) => {
             
       </>
       )}
-        {currentStep === 1 && userChoice === "casa_urbana" && <OptionUrbanHome />}
+        {currentStep === 1 && userChoice === "casa_urbana" && <OptionUrbanHome onNext={value => (value)}/>}
         {currentStep === 1 && userChoice === "casa_rural" && <OptionRuralHome />}
     </div>
 

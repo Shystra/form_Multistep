@@ -6,6 +6,9 @@ type FormData = {
   residencia?: string;
   casa_urbana?: string;
   casa_rural?: string;
+  menos_5_horas_por_dia?: string;
+  mais_5_horas_por_dia?: string;
+  sempre_tem_alguem_la?: string;
   // ... Adicione outros campos conforme necessário
 };
 
