@@ -39,7 +39,7 @@ export function Home() {
         {currentStep === 0 && (
           <>
             <div className={styles.progressOne}>
-              <label className={styles.progressLabel}>10%</label>
+              <label className={styles.progressLabel}>0%</label>
             </div>
           <div className={styles.title_Container}>
             <h1 className={styles.title_Residencia}>Selecione o tipo de Proteção que você precisa:</h1>

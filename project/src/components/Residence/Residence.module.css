@@ -4,8 +4,8 @@
     flex-direction: column;
     align-items: center;
     width: 700px;
-    height: 500px;
-    height: 230vh;
+    /* height: 500px; */
+    height: 400vh;
     /* position: relative; */
 }
 
@@ -27,14 +27,14 @@
     left: 0%;           
     transform: translateX(-345%);  
     margin: 0;
-    top: -5%;            
+    top: -5.5%;            
 }
 
 
 .buttonsWrapper{
     display: flex;
     gap: 16px; 
-    flex-direction: row;  /* Linha padrão para telas grandes */
+    flex-direction: row;
     align-items: center;
 }
 .title_tipo_container{
@@ -46,7 +46,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -50px;
+    /* margin-top: -50px; */
     height: calc(600% - 0px);
 
 }
@@ -109,16 +109,38 @@
 
 
 @media (max-width: 768px){
+    .progressLabel_residence{
+        margin-top: 19px;
+        margin-left: 91px;
+    }
   .containerForm_tipos_residencia{
-    font-size: 14px;
-    margin-top: 50px;
+    font-size: 12px;
+    margin-top: -20px;
+    /* margin-block-end: -20px; */
+    
 
   }
-  .casaUrbanaButton, .casaRuralButton, .buttonBack button{
-    margin-top: 80px;
-    width: 95%;
+  .buttonsWrapper {
+    flex-direction: column;
+    margin-top: -0px;
+  }
+  .title_tipo_residencia{
+    margin-top: -30px;
+  }
+  .casaUrbanaButton, .casaRuralButton{
+    margin-top: -50px;
+    margin-block-end: 15px;
+    /* height: 50px; */
     font-size: 12px;
+
+  }
+  .buttonBack button{
+    /* margin: -100px; */
+    /* margin-top: -100px; */
   }
   
+  .containerForm_tipos_residencia{
+    height: 600vh;
+  }
 
 }

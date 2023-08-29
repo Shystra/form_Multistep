@@ -1,7 +1,7 @@
 .container_first_page{
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 180vh;
 }
 
 .wrapper_first_page{
@@ -11,7 +11,7 @@
 }
 
 .residencia button,  .condominio button{
-    margin-top: 0px;
+    margin-top: -200px;
     padding: 10px 50px;
     border: none;
     border-radius: 30px;
@@ -28,7 +28,7 @@
 
 
 .empresa_comercio button{
-    margin-top: 0px;
+    margin-top: -200px;
     padding: 10px 50px;
     border: 2px solid #200082;
     border-radius: 30px;
@@ -48,21 +48,26 @@
 
 
 @media (max-width: 768px){
-  .wrapper_first_page{
+  .wrapper_first_page, .container_first_page{
     flex-direction: column;
 
   }
+  
   .residencia button, .empresa_comercio button, .condominio button{
     
-    margin-top: 10px;
-    margin-left: 16px;
-    
+    /* margin-top: 10px; */
+    margin-left: 0px;
+    margin-block-end: 35px;
+
+  }
+  .container_first_page{
+    height: 40vh;
   }
   .residencia{
     margin-top: 0px;
   }
-    .residencia button{
+    /* .residencia button{
        
         margin-top: 0px;
-    }
+    } */
 }
