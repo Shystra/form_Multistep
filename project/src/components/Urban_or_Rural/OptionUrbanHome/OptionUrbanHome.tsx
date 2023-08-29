@@ -7,23 +7,22 @@ import { OptionWay } from '../Option_Way/OptionWay';
 
 type Props = {
   onNext: (value: string) => void;
+  onBack: () => void;
 }
 
 
-export const OptionUrbanHome = ({ onNext }: Props) => {
+export const OptionUrbanHome = ({ onNext, onBack }: Props) => {
     const {updateFields, removeFields} = useFormDataContext();
     const [currentStep, setCurrentStep] = useState(0);
+    console.log("🚀 ~ file: OptionUrbanHome.tsx:17 ~ OptionUrbanHome ~ currentStep:", currentStep)
     const [userChoice, setUserChoice] = useState<string | null>(null);
-
-    useEffect(() => {
-      console.log('Component mounted');
-      return () => {
-        console.log('Component will unmount');
-      }
-    }, []);
+    console.log("🚀 ~ file: OptionUrbanHome.tsx:18 ~ OptionUrbanHome ~ userChoice:", userChoice)
+    
+    
 
     const handleChoice = (choice: string) => {
       setUserChoice(choice);
+      console.log("🚀 ~ file: OptionUrbanHome.tsx:27 ~ handleChoice ~ choice:", choice)
       setCurrentStep(1);
 
       if (choice === 'menos_5_horas_por_dia'){
@@ -33,7 +32,7 @@ export const OptionUrbanHome = ({ onNext }: Props) => {
       } else if (choice === 'sempre_tem_alguem_la'){
         updateFields({ sempre_tem_alguem_la: choice });
       }
-
+    
       onNext(choice);
     }
 
@@ -42,19 +41,43 @@ export const OptionUrbanHome = ({ onNext }: Props) => {
       handleChoice(option);
     }
 
+    // useEffect(() => {
+    //   const savedStep = localStorage.getItem('currentStep');
+    //   if (savedStep) {
+    //     setCurrentStep(Number(savedStep));
+    //   }
+    // }, []);
+    
+    // useEffect(() => {
+    //   localStorage.setItem('currentStep', String(currentStep));
+    // }, [currentStep]);
 
-
-    const handleBackClick = () => {
-      if (userChoice === 'menos_5_horas_por_dia'){
-        removeFields(['menos_5_horas_por_dia']);
-      } else if (userChoice === 'mais_5_horas_por_dia'){
-        removeFields(['mais_5_horas_por_dia']);
-      } else if (userChoice === 'sempre_tem_alguem_la'){
-        removeFields(['sempre_tem_alguem_la']);
+    const handleBackClick = (event: React.MouseEvent) => {
+      if (userChoice === "casa_urbana") {
+          removeFields(['casa_urbana']);
+      } else if (userChoice === "casa_rural") {
+          removeFields(['casa_rural']);
       }
+      event.preventDefault();
       setCurrentStep(0);
+  
+      // chame a função passada por props para lidar com o "voltar"
+      onBack();  
+  };
+
+
+    // const handleBackClick = () => {
+    //   console.log("🚀 ~ file: OptionUrbanHome.tsx:58 ~ handleBackClick ~ handleBackClick:", handleBackClick)
+    //   if (userChoice === 'menos_5_horas_por_dia'){
+    //     removeFields(['menos_5_horas_por_dia']);
+    //   } else if (userChoice === 'mais_5_horas_por_dia'){
+    //     removeFields(['mais_5_horas_por_dia']);
+    //   } else if (userChoice === 'sempre_tem_alguem_la'){
+    //     removeFields(['sempre_tem_alguem_la']);
+    //   }
+    //   setCurrentStep(0);
       
-    }
+    // }
 
 
     return (

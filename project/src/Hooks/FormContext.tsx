@@ -1,6 +1,6 @@
 // FormContext.tsx
 
-import { createContext, useContext, useEffect, useState } from 'react';
+import { createContext, useContext, useEffect, useState, useMemo } from 'react';
 
 type FormData = {
   residencia?: string;
@@ -33,11 +33,26 @@ interface FormDataProviderProps {
   export const FormDataProvider: React.FC<FormDataProviderProps> = ({ children }) => {
   const [formData, setFormData] = useState<FormData>({});
 
+  useEffect(() => {
+    // Quando o componente monta, verifique se há um estado armazenado
+    const storedData = localStorage.getItem('formData');
+    if (storedData) {
+      setFormData(JSON.parse(storedData));
+    }
+  }, []);
+
+  useEffect(() => {
+    // Quando formData muda, atualize o localStorage
+    localStorage.setItem('formData', JSON.stringify(formData));
+    console.log("🚀 ~ file: FormContext.tsx:47 ~ useEffect ~ formData:", formData)
+  
+  }, [formData]);
+  
   const updateFields = (fields: Partial<FormData>) => {
     setFormData(prevData => ({ ...prevData, ...fields }));
   };
 
-  const removeFields = (fields: Array<keyof FormData>) => {  // Adicione esta função
+  const removeFields = (fields: Array<keyof FormData>) => {
     const updatedData = { ...formData };
     fields.forEach(field => {
         delete updatedData[field];
@@ -45,12 +60,15 @@ interface FormDataProviderProps {
     setFormData(updatedData);
   };
 
-  useEffect(() => {
-    console.log('FormData atual:', formData);
-  }, [formData]);
+
+  const contextValue = useMemo(() => ({
+    formData,
+    updateFields,
+    removeFields
+  }), [formData]);
 
   return (
-    <FormDataContext.Provider value={{ formData, updateFields, removeFields }}>
+    <FormDataContext.Provider value={contextValue}>
                 {children}
       {/* <button onClick={() => alert(JSON.stringify(formData, null, 2))}>
         Mostrar FormData

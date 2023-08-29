@@ -1,6 +1,6 @@
 import styles from './Residence.module.css';
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { OptionUrbanHome } from "../Urban_or_Rural/OptionUrbanHome/OptionUrbanHome";
 import { OptionRuralHome } from "../Urban_or_Rural/OptionRuralHome/OptionRuralHome";
 import { useFormDataContext } from '../../Hooks/FormContext';
@@ -11,12 +11,21 @@ import { useFormDataContext } from '../../Hooks/FormContext';
 
 type Props = {
     onNext: (value: string) => void;
+    onBack: () => void;
 }
-export const Residence = ({ onNext }: Props) => {
+export const Residence = ({ onNext, onBack }: Props) => {
     
     const {updateFields, removeFields} = useFormDataContext();
     const [currentStep, setCurrentStep] = useState(0);
     const [userChoice, setUserChoice] = useState<string | null>(null);
+
+    useEffect(() => {
+        console.log("Residence montado");
+      
+        return () => {
+          console.log("Residence desmontado");
+        };
+      }, []);
     
     const handleChoice = (choice: string) => {
         setUserChoice(choice);
@@ -37,14 +46,29 @@ export const Residence = ({ onNext }: Props) => {
         handleChoice(option);
     }
 
-    const handleBackClick = () => {
+    // const handleBackClick = () => {
+    //     if (userChoice === "casa_urbana") {
+    //         removeFields(['casa_urbana']);
+    //     } else if (userChoice === "casa_rural") {
+    //         removeFields(['casa_rural']);
+    //     }
+    //     setCurrentStep(0);
+    // };
+    const handleBackClick = (event: React.MouseEvent) => {
         if (userChoice === "casa_urbana") {
             removeFields(['casa_urbana']);
         } else if (userChoice === "casa_rural") {
             removeFields(['casa_rural']);
         }
+        event.preventDefault();
         setCurrentStep(0);
+    
+        // chame a função passada por props para lidar com o "voltar"
+        onBack();  
     };
+    
+    
+    
 
     return (
         <div className={styles.containerForm_tipos_residencia}>
@@ -75,7 +99,12 @@ export const Residence = ({ onNext }: Props) => {
             
       </>
       )}
-        {currentStep === 1 && userChoice === "casa_urbana" && <OptionUrbanHome onNext={value => (value)}/>}
+        {currentStep === 1 && userChoice === "casa_urbana" 
+        && <OptionUrbanHome 
+        onNext={value => (value)}
+        onBack={() => setCurrentStep(0)}
+        />}
+
         {currentStep === 1 && userChoice === "casa_rural" && <OptionRuralHome />}
     </div>
 
