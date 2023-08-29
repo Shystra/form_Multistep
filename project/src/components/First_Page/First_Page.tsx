@@ -10,7 +10,9 @@ type Props = {
 export const First_Page = ({ onNext }: Props) => {
     const { updateFields } = useFormDataContext();
     const [currentStep, setCurrentStep] = useState(0);
+    console.log("🚀 ~ file: First_Page.tsx:13 ~ currentStep:", currentStep)
     const [selectedValue, setSelectedValue] = useState<string | null>(null);
+    console.log("🚀 ~ file: First_Page.tsx:15 ~ selectedValue:", selectedValue)
 
     
 
