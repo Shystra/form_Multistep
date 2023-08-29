@@ -47,7 +47,7 @@ interface FormDataProviderProps {
   }, [formData]);
 
   return (
-    <FormDataContext.Provider value={{ formData, updateFields, removeFields }}>  // Atualize aqui
+    <FormDataContext.Provider value={{ formData, updateFields, removeFields }}>
                 {children}
       {/* <button onClick={() => alert(JSON.stringify(formData, null, 2))}>
         Mostrar FormData

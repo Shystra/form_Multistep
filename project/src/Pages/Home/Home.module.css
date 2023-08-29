@@ -1,7 +1,7 @@
 .container {
   position: relative;
-  width: 700px;  /* Edita o tamanho do espaço*/
-  height: 500px; /* Edita o tamanho do espaço*/
+  width: 700px; 
+  height: 500px; 
   background-color: white;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
@@ -11,39 +11,41 @@
 }
 
 .progressBar {
-  top: -0.6%;
-  left: 3%;
+  position: relative;
+  top: 0%;
+  left: 0%;
   width: 95%;
-  height: 30px;
+  height: 250px;
   background-color: transparent;
   border-radius: 25px;
   border: 2px solid rgb(42, 1, 167);
 }
 
 .progressOne {
-  top: -2%;
-  left: -1%;
-  margin-top: -2px;
-  margin-left: -2px;
-  height: 119%;
-  width: 20%;
+  position: absolute;
+  top: 0.1%;
+  left: 2%;
+  margin-top: -0px;
+  margin-left: 0px;
+  height: 6%;
+  width: 19%;
   background-color: #e4e01c;
   border-radius: 25px;
 }
 .progressLabel{
-  position: absolute;
+  position: relative;
   bottom: -25px;
-  left: 12%;
+  left: 0%;
   transform: translateX(-50%);
   margin: 0;
-  top: 1%;
+  top: 15%;
 }
 
 .title_Container{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 35px;
+  margin-top: -50px;
   height: calc(600% - 0px);
 
 }
@@ -119,6 +121,7 @@
     
   }
   
+  
 }
 @media (max-width: 390px){
   
@@ -127,21 +130,38 @@
     height: 95px;
   }
   .logo_intersept{
-    margin-top: -60px;
+    margin-top: -95px;
   }
   .logo_intersept img{
     position: relative;
     
-    width: 180px;
-    height: 180px;
-  
+    width: 130px;
+    height: 130px;
   }
+  .progressBar{
+    height: 175px;
+  }
+  .progressOne{
+    top: 1px;
+    left: 3%;
+    height: 29px;
+    width: 100px; 
+  }
+  
+  .title_Container{
+    margin-top: -150px;
+  }
+ 
 }
 
 @media (max-width: 376px){
   .img_banner img{
     width: 360px;
     height: 95px;
+  }
+  .logo_intersept img{
+    width: 120px;
+    height: 120px;
   }
 }
 @media (max-width: 360px){
@@ -155,7 +175,6 @@
   .container{
     width: 96vw;
     height: 60vh;
-    /* overflow-y: auto; */
   }
 
   .img_banner{
@@ -165,11 +184,11 @@
   }
 
   .progressLabel{
-    position: absolute;
+    position: relative;
     bottom: -25px;
-    left: 12%;
+    left: 0%;
     transform: translateX(-50%);
     margin: 0;
-    top: 2%;
+    top: 20%;
   }
 }

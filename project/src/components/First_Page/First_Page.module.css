@@ -11,7 +11,7 @@
 }
 
 .residencia button,  .condominio button{
-    margin-top: 235px;
+    margin-top: 0px;
     padding: 10px 50px;
     border: none;
     border-radius: 30px;
@@ -28,7 +28,7 @@
 
 
 .empresa_comercio button{
-    margin-top: 235px;
+    margin-top: 0px;
     padding: 10px 50px;
     border: 2px solid #200082;
     border-radius: 30px;
@@ -58,7 +58,11 @@
     margin-left: 16px;
     
   }
+  .residencia{
+    margin-top: 0px;
+  }
     .residencia button{
-        margin-top: 200px;
+       
+        margin-top: 0px;
     }
 }

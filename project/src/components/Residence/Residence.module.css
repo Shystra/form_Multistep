@@ -1,56 +1,62 @@
 .containerForm_tipos_residencia{
-    justify-content: center;
+
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 50vh;
+    width: 700px;
+    height: 500px;
+    height: 230vh;
     /* position: relative; */
 }
 
 
 .progressOne_residence {
+    position: absolute;
     background-color: #e4e01c;
-    border-radius: 30px;
-    width: 15%;
-    height: 6%;
-    position: absolute;  
+    border-radius: 25px;
+    width: 18%;
+    height: 6%;  
     top: 0.5%;             
-    left: 50%;           
+    left: 51.5%;           
     transform: translateX(-210%); 
 }
 
 .progressLabel_residence {
-    position: absolute;
+    position: relative;
     bottom: -25px;
-    left: 50%;           
+    left: 0%;           
     transform: translateX(-345%);  
     margin: 0;
-    top: 1%;            
+    top: -5%;            
 }
 
 
 .buttonsWrapper{
     display: flex;
     gap: 16px; 
+    flex-direction: row;  /* Linha padrão para telas grandes */
+    align-items: center;
 }
 .title_tipo_container{
     margin: 0%;
+    width: 200px;
 }
 .title_tipo_residencia{
+    text-align: left;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
-    margin-top: 80px;
-    margin-left: 20px;
-    /* height: calc(600% - 0px); */
+    margin-top: -50px;
+    height: calc(600% - 0px);
+
 }
 
-.casaUrbanaButton
-{   
-    margin-top: 100px;
+.casaUrbanaButton{   
+    margin-top: -50px;
     padding: 10px 50px;
     border: none;
     border-radius: 30px;
-    width: auto; /* Modificado */
+    width: auto; 
     height: 50px;
     background-color: #200082;
     color: #fff;
@@ -61,13 +67,13 @@
     background-color: #3B00E9;
 }
 .casaRuralButton{
-    margin-top: 100px;
+    margin-top: -50px;
     padding: 10px 50px;
     border: 2px solid #200082;
     border-radius: 30px;
-    width: auto; /* Modificado */
+    width: auto; 
     height: 50px;
-    margin-left: 0; /* Modificado */
+    margin-left: 0; 
     background-color: #fff;
     color: #200082;
     cursor: pointer;
@@ -79,12 +85,16 @@
     border: none;
 }
 
+.buttonBack{
+    margin-top: 80px;
+    height: calc(400% - 0px);
+}
 .buttonBack button{
-    margin-top: 70px;
+    /* margin-top: 50px; */
     padding: 10px 50px;
     border: none;
     border-radius: 30px;
-    width: auto; /* Modificado */
+    width: auto; 
     height: 50px;
     background-color: #ff4444;
     color: #fff;
@@ -102,7 +112,7 @@
   .containerForm_tipos_residencia{
     font-size: 14px;
     margin-top: 50px;
-    /* overflow-y: auto; */
+
   }
   .casaUrbanaButton, .casaRuralButton, .buttonBack button{
     margin-top: 80px;
