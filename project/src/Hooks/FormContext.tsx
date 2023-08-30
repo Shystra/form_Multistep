@@ -12,6 +12,9 @@ type FormData = {
   A_PÉ?: string;
   CARRO?: string;
   MOTO?: string;
+  Patio_Fundos?: string;
+  Patio_Frente_e_Fundos?: string;
+  Nao_possui_patio?: string;
   // ... Adicione outros campos conforme necessário
 };
 

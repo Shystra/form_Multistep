@@ -2,7 +2,6 @@ import styles from './Residence.module.css';
 
 import { useState } from "react"
 import { OptionUrbanHome } from "../Urban_or_Rural/OptionUrbanHome/OptionUrbanHome";
-import { OptionRuralHome } from "../Urban_or_Rural/OptionRuralHome/OptionRuralHome";
 import { useFormDataContext } from '../../Hooks/FormContext';
 
 
@@ -98,7 +97,12 @@ export const Residence = ({ onNext, onBack }: Props) => {
         onBack={() => setCurrentStep(0)}
         />}
 
-        {currentStep === 1 && userChoice === "casa_rural" && <OptionRuralHome />}
+        {currentStep === 1 && userChoice === "casa_rural" 
+        && <OptionUrbanHome 
+        onNext={value => (value)}
+        onBack={() => setCurrentStep(0)}
+        />}
+        
     </div>
 
     )
