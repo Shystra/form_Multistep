@@ -102,8 +102,8 @@
 
 @media (max-width: 2000px ){
   .img_banner img{
-    width: 700px;
-    height: 175px;
+    width: 800%;
+    height: auto;
   }
 }
 
@@ -116,7 +116,7 @@
 
 @media (min-width: 540px){
   .img_banner img{
-    width: 515px;
+    width: 700px;
     height: 100px;
   }
 }
