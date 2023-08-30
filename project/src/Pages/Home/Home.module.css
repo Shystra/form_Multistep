@@ -109,10 +109,10 @@
   }
 }
 
-@media (min-width: 414px){
+@media (min-width: 540px){
   .img_banner img{
-    width: 800;
-    height: 125px;
+    width: 515px;
+    height: 100px;
   }
 }
 @media (max-width: 414px){
