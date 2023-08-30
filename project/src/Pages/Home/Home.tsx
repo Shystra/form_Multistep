@@ -9,7 +9,7 @@ import logo_intersept from '../../assets/logo.png';
 import styles from './Home.module.css';
 import { useEffect, useState } from 'react';
 import { First_Page } from '../../components/First_Page/First_Page';
-import { Residence } from '../../components/Residence/Residence';
+import { UrbanOrRural } from '../../components/Urban_or_Rural/UrbanOrRural';
 
 
 
@@ -38,7 +38,7 @@ export function Home() {
     if (currentStep === 1) {
       switch (userChoice) {
         case 'residencia':
-          return <Residence 
+          return <UrbanOrRural 
                     onNext={value => {value}}
                     onBack={() => setCurrentStep(0)}
                  />;

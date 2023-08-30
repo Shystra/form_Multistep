@@ -1,7 +1,7 @@
-import styles from './Residence.module.css';
+import styles from './UrbanOrRural.module.css';
 
 import { useState } from "react"
-import { OptionUrbanHome } from "../Urban_or_Rural/OptionUrbanHome/OptionUrbanHome";
+import { OptionUrbanHome } from "./OptionUrbanHome/OptionUrbanHome";
 import { useFormDataContext } from '../../Hooks/FormContext';
 
 
@@ -12,7 +12,7 @@ type Props = {
     onNext: (value: string) => void;
     onBack: () => void;
 }
-export const Residence = ({ onNext, onBack }: Props) => {
+export const UrbanOrRural = ({ onNext, onBack }: Props) => {
     
     const {updateFields, removeFields} = useFormDataContext();
     const [currentStep, setCurrentStep] = useState(0);
