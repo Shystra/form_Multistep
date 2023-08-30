@@ -1,6 +1,6 @@
 import styles from './Residence.module.css';
 
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { OptionUrbanHome } from "../Urban_or_Rural/OptionUrbanHome/OptionUrbanHome";
 import { OptionRuralHome } from "../Urban_or_Rural/OptionRuralHome/OptionRuralHome";
 import { useFormDataContext } from '../../Hooks/FormContext';
@@ -19,13 +19,13 @@ export const Residence = ({ onNext, onBack }: Props) => {
     const [currentStep, setCurrentStep] = useState(0);
     const [userChoice, setUserChoice] = useState<string | null>(null);
 
-    useEffect(() => {
-        console.log("Residence montado");
+    // useEffect(() => {
+    //     console.log("Residence montado");
       
-        return () => {
-          console.log("Residence desmontado");
-        };
-      }, []);
+    //     return () => {
+    //       console.log("Residence desmontado");
+    //     };
+    //   }, []);
     
     const handleChoice = (choice: string) => {
         setUserChoice(choice);
@@ -46,14 +46,7 @@ export const Residence = ({ onNext, onBack }: Props) => {
         handleChoice(option);
     }
 
-    // const handleBackClick = () => {
-    //     if (userChoice === "casa_urbana") {
-    //         removeFields(['casa_urbana']);
-    //     } else if (userChoice === "casa_rural") {
-    //         removeFields(['casa_rural']);
-    //     }
-    //     setCurrentStep(0);
-    // };
+
     const handleBackClick = (event: React.MouseEvent) => {
         if (userChoice === "casa_urbana") {
             removeFields(['casa_urbana']);
