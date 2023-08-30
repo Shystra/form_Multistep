@@ -9,7 +9,7 @@ type Props = {
 }
 
 
-export const OptionResidence = ({ onNext, onBack }: Props) => {
+export const OptionYard = ({ onNext, onBack }: Props) => {
     const {updateFields, removeFields} = useFormDataContext();
     const [currentStep, setCurrentStep] = useState(0);
     console.log("🚀 ~ file: OptionResidence.tsx:14 ~ OptionResidence ~ currentStep:", currentStep)

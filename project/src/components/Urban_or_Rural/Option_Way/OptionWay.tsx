@@ -1,6 +1,6 @@
 // import styles from './OptionWay.module.scss';
 import { useFormDataContext } from '../../../Hooks/FormContext';
-import { OptionResidence } from '../Option_Residence/OptionResidence';
+import { OptionYard } from '../Option_Yard/OptionYard';
 import styles from './OptionWay.module.css';
 import { useState } from 'react';
 
@@ -94,15 +94,15 @@ export const OptionWay = ({ onNext, onBack }: Props) => {
 
                 </>
             )}
-            {currentStep === 1 && userChoice === 'a_pé' && <OptionResidence 
+            {currentStep === 1 && userChoice === 'a_pé' && <OptionYard 
             onNext={value => (value)}
             onBack={() => setCurrentStep(0)}
             />}
-                {currentStep === 1 && userChoice === 'carro' && <OptionResidence 
+                {currentStep === 1 && userChoice === 'carro' && <OptionYard 
                 onNext={value => (value)}
                 onBack={() => setCurrentStep(0)}
                 />}
-            {currentStep === 1 && userChoice === 'moto' && <OptionResidence 
+            {currentStep === 1 && userChoice === 'moto' && <OptionYard 
             onNext={value => (value)}
             onBack={() => setCurrentStep(0)}
             />}
