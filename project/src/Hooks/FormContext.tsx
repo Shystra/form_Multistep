@@ -15,6 +15,8 @@ type FormData = {
   Patio_Fundos?: string;
   Patio_Frente_e_Fundos?: string;
   Nao_possui_patio?: string;
+  Sim_Roubo?: string;
+  Nao_Roubo?: string;
   // ... Adicione outros campos conforme necessário
 };
 

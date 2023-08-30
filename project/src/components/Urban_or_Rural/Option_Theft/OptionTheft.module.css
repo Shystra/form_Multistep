@@ -1,24 +1,23 @@
-.container_option_way {
+  .container_option_theft {
     position: relative; 
     justify-content: center;
     align-items: center;
-    
-   
   }
-  .title_option_way{
+  
+  .title_option_theft{
     margin-top: 50px;
   }
   
-  .buttonsWrapper_option_way_ape{
+  .buttonsWrapper_option_theft{
     display: flex;
     justify-content: center;
     gap: 5px;
   }
   
-  .progressOne_option_way {
+  .progressOne_option_theft {
     position: absolute;
     top: -0.5%;
-    left: 18%;
+    left: 60%;
     margin-top: -28px;
     margin-left: 0px;
     height: 30px;
@@ -27,21 +26,21 @@
     border-radius: 25px;
     flex-grow: 1;
   }
-  .progressLabel_option_way{
+  .progressLabel_option_theft{
     position: relative;
-    left: -135px;
+    left: 135px;
     transform: translateX(-50%);
     margin: 0;
     top: -25px;
-    
   }
   
-  .option_way_ape button, .option_way_car button, .option_way_motorbike button{
+  .options_theft_yes button, 
+  .options_theft_no button{
     background-color: #200082;
     border: none;
     border-radius: 30px;
     color: white;
-    padding: 12px 80px;
+    padding: 12px 40px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -54,7 +53,7 @@
   }
   
 
-  .buttonBack_option_way button{
+  .buttonBack_option_theft button{
     background-color: #da1717;
     border: none;
     border-radius: 30px;
@@ -70,11 +69,11 @@
     position: relative;
     overflow: hidden;
   }
-  .option_way_ape button:hover, .option_way_car button:hover,
-  .option_way_motorbike button:hover{
+  .options_theft_yes button:hover,
+  .options_theft_no button:hover{
     background-color: #3B00E9;
   }
-   .buttonBack_option_way button:hover{
+   .buttonBack_option_theft button:hover{
     background-color: #ff000dcc;
   }
   @keyframes appear {
@@ -88,8 +87,9 @@
     }
   }
   
-  .option_way_ape button, .option_way_car button, .option_way_motorbike button,
-  .buttonBack_option_way button {
+  .options_theft_yes button, 
+  .options_theft_no button, 
+  .buttonBack_option_theft button {
     opacity: 0;  
     animation: appear 2s forwards;
   }
@@ -109,72 +109,65 @@
   }
   @media (min-width: 414px) and (max-width: 896px){ 
    
-    
-    
   }
   @media (max-width: 390px){
     
   }
   @media (max-width: 393px){
-  
+    
   }
   @media (min-width: 375px) {
     
   }
 
-
-
-
   @media (max-width: 360px){
    
   }
-  
   @media (max-width: 768px){
-    .progressOne_option_way{
+    .progressOne_option_residence{
         position: relative;
         height: 26px;
         left: 90px;
         width: 70px;
         top: 2px;
     }
-    .progressLabel_option_way{
+    .progressLabel_option_residence{
         position: absolute;
         left: 120px;
         top: 3.5%;
         transform: translateY(-50%);
     }
-    .title_option_way{
+    .title_option_residence{
         height: 10vh;
     }
 
-    .title_option_way{
-        
+    .title_option_residence{   
         margin-top: 30px;
     }
-    .buttonsWrapper_option_way_ape{
+    .buttonsWrapper_option_residence{
         flex-direction: column;
         gap: 10px;
         margin-top: 80px;
         
     }
-    .option_way_ape, 
-    .option_way_car, 
-    .option_way_motorbike, 
-    .buttonBack_option_way{
+    .option_residence_patio_fundos,
+    .option_residence_patio_frente_fundos, 
+    .option_residence_nao_possui_patio,
+    .buttonBack_option_residence{
         margin-top: -80px;
         margin-bottom: 5px;
 
     }
 
-    .option_way_ape button, 
-    .option_way_car button,
-    .option_way_motorbike button {
+    .option_residence_patio_fundos button,
+    .option_residence_patio_frente_fundos button,
+    .option_residence_nao_possui_patio button {
         font-size: 14px;
         margin-top: 30px;
         padding: 12px 80px;
         
     }
-    .buttonBack_option_way button{
+    .buttonBack_option_residence button{
         font-size: 14px;
         margin-top: 30px;
         padding: 12px 50px;

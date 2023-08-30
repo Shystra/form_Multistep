@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useFormDataContext } from "../../../Hooks/FormContext";
-import styles from './OptionResidence.module.css';
+import styles from './OptionYard.module.css';
+import { OptionTheft } from "../Option_Theft/OptionTheft";
 
 
 type Props = {
@@ -97,7 +98,18 @@ export const OptionYard = ({ onNext, onBack }: Props) => {
 
             </>
         )}
-        {/* {currentStep === 1 && userChoice === 'patio_fundos' && } */}
+        {currentStep === 1 && userChoice === 'patio_fundos' && <OptionTheft
+        onNext={value => (value)}
+        onBack={() => setCurrentStep(0)}
+        />}
+        {currentStep === 1 && userChoice === 'patio_frente_e_fundos' && <OptionTheft
+        onNext={value => (value)}
+        onBack={() => setCurrentStep(0)}
+        />}
+        {currentStep === 1 && userChoice === 'nao_possui_patio' && <OptionTheft
+        onNext={value => (value)}
+        onBack={() => setCurrentStep(0)}
+        />}
         </div>
     )
 }
