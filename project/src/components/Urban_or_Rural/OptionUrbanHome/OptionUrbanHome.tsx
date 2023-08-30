@@ -43,11 +43,14 @@ export const OptionUrbanHome = ({ onNext, onBack }: Props) => {
 
 
     const handleBackClick = (event: React.MouseEvent) => {
-      if (userChoice === "casa_urbana") {
-          removeFields(['casa_urbana']);
-      } else if (userChoice === "casa_rural") {
-          removeFields(['casa_rural']);
+      if (userChoice === "menos_5_horas_por_dia") {
+          removeFields(['menos_5_horas_por_dia']);
+      } else if (userChoice === "mais_5_horas_por_dia") {
+          removeFields(['mais_5_horas_por_dia']);
+      } else if (userChoice === 'sempre_tem_alguem_la'){
+        removeFields(['sempre_tem_alguem_la']);
       }
+
       event.preventDefault();
       setCurrentStep(0);
   
@@ -88,9 +91,19 @@ export const OptionUrbanHome = ({ onNext, onBack }: Props) => {
                 </div>     
           </>
           )}
-          {currentStep === 1 && userChoice === 'menos_5_horas_por_dia' && <OptionWay />}
-          {currentStep === 1 && userChoice === 'mais_5_horas_por_dia' && <OptionWay  />}
-          {currentStep === 1 && userChoice === 'sempre_tem_alguem_la' && <OptionWay  />}
+          {currentStep === 1 && userChoice === 'menos_5_horas_por_dia' && 
+          <OptionWay 
+          onNext={value => (value)}
+          onBack={() => setCurrentStep(0)}
+          />}
+          {currentStep === 1 && userChoice === 'mais_5_horas_por_dia' && <OptionWay
+          onNext={value => (value)}
+          onBack={() => setCurrentStep(0)}
+          />}
+          {currentStep === 1 && userChoice === 'sempre_tem_alguem_la' && <OptionWay
+          onNext={value => (value)}
+          onBack={() => setCurrentStep(0)}
+          />}
         </div>
 
     )

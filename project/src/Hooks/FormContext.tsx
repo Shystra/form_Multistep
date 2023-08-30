@@ -9,6 +9,9 @@ type FormData = {
   menos_5_horas_por_dia?: string;
   mais_5_horas_por_dia?: string;
   sempre_tem_alguem_la?: string;
+  A_PÉ?: string;
+  CARRO?: string;
+  MOTO?: string;
   // ... Adicione outros campos conforme necessário
 };
 
@@ -70,9 +73,9 @@ interface FormDataProviderProps {
   return (
     <FormDataContext.Provider value={contextValue}>
                 {children}
-      {/* <button onClick={() => alert(JSON.stringify(formData, null, 2))}>
+      <button onClick={() => alert(JSON.stringify(formData, null, 2))}>
         Mostrar FormData
-      </button> */}
+      </button>
     </FormDataContext.Provider>
   );
 };
