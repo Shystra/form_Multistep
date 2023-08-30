@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import styles from './OptionUrbanHome.module.css';
 import { useFormDataContext } from '../../../Hooks/FormContext';
 import { OptionWay } from '../Option_Way/OptionWay';
@@ -88,9 +88,9 @@ export const OptionUrbanHome = ({ onNext, onBack }: Props) => {
                 </div>     
           </>
           )}
-          {currentStep === 1 && userChoice === 'menos_5_horas_por_dia' && <OptionWay onNext={value => (value)}/>}
-          {currentStep === 1 && userChoice === 'mais_5_horas_por_dia' && <OptionWay onNext={value => (value)} />}
-          {currentStep === 1 && userChoice === 'sempre_tem_alguem_la' && <OptionWay onNext={value => (value)} />}
+          {currentStep === 1 && userChoice === 'menos_5_horas_por_dia' && <OptionWay />}
+          {currentStep === 1 && userChoice === 'mais_5_horas_por_dia' && <OptionWay  />}
+          {currentStep === 1 && userChoice === 'sempre_tem_alguem_la' && <OptionWay  />}
         </div>
 
     )

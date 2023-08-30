@@ -1,10 +1,10 @@
-import styles from './OptionWay.module.css';
+// import styles from './OptionWay.module.css';
 
 
-type Props = {
-    onNext: (value: string) => void;
-}
-export const OptionWay = ({ onNext }: Props) => {
+// type Props = {
+//     onNext: (value: string) => void;
+// }
+export const OptionWay = () => {
     return (
         <div>ENTROU NA LOCOMAÇÃO</div>
     )

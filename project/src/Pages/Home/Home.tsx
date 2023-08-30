@@ -39,12 +39,12 @@ export function Home() {
       switch (userChoice) {
         case 'residencia':
           return <Residence 
-                    onNext={value => {/* Do something with value */}}
+                    onNext={value => {value}}
                     onBack={() => setCurrentStep(0)}
                  />;
         case 'casa_urbana':
           return <OptionUrbanHome 
-              onNext={value => {/* Do something with value */}} 
+              onNext={value => {value}} 
               onBack={() => setCurrentStep(0)}
           />;
         case 'casa_rural':
