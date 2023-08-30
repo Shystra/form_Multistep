@@ -41,16 +41,6 @@ export const OptionUrbanHome = ({ onNext, onBack }: Props) => {
       handleChoice(option);
     }
 
-    // useEffect(() => {
-    //   const savedStep = localStorage.getItem('currentStep');
-    //   if (savedStep) {
-    //     setCurrentStep(Number(savedStep));
-    //   }
-    // }, []);
-    
-    // useEffect(() => {
-    //   localStorage.setItem('currentStep', String(currentStep));
-    // }, [currentStep]);
 
     const handleBackClick = (event: React.MouseEvent) => {
       if (userChoice === "casa_urbana") {
@@ -65,19 +55,6 @@ export const OptionUrbanHome = ({ onNext, onBack }: Props) => {
       onBack();  
   };
 
-
-    // const handleBackClick = () => {
-    //   console.log("🚀 ~ file: OptionUrbanHome.tsx:58 ~ handleBackClick ~ handleBackClick:", handleBackClick)
-    //   if (userChoice === 'menos_5_horas_por_dia'){
-    //     removeFields(['menos_5_horas_por_dia']);
-    //   } else if (userChoice === 'mais_5_horas_por_dia'){
-    //     removeFields(['mais_5_horas_por_dia']);
-    //   } else if (userChoice === 'sempre_tem_alguem_la'){
-    //     removeFields(['sempre_tem_alguem_la']);
-    //   }
-    //   setCurrentStep(0);
-      
-    // }
 
 
     return (
