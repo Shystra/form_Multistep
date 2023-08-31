@@ -1,4 +1,5 @@
 import { useFormDataContext } from '../../../Hooks/FormContext';
+import { OptionSistem } from '../OptionSistem/OptionSistem';
 import styles from './OptionTheft.module.css';
 import { useState } from 'react';
 
@@ -75,6 +76,16 @@ export const OptionTheft = ({ onBack, onNext }: Props) => {
             
                 </>
                 )}
+                {currentStep === 1 && userChoice === 'sim' && <OptionSistem
+                onNext={value => (value)}
+                onBack={() => setCurrentStep(0)}
+                />}
+                
+                
+                {currentStep === 1 && userChoice === 'nao' && <OptionSistem 
+                onNext={value => (value)}
+                onBack={() => setCurrentStep(0)}
+                />}
         </div>
     )
 }
