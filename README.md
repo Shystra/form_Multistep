@@ -5,8 +5,8 @@
 
  Nesse projeto foi criado uma pasta Api para envio de e-mail utilizando a biblioteca "Nodemailer"
 
-![image](https://github.com/Shystra/form_Multistep/assets/124002796/e8c498b4-0634-4889-b38a-94b6cf47d4e1) 
- ![image](https://github.com/Shystra/form_Multistep/assets/124002796/0eb13203-2a93-4930-b6d4-d7eb5c650337)
+![image](https://github.com/Shystra/form_Multistep/assets/124002796/a215602e-dab7-48e9-9e6d-038d4127c6a9)![image](https://github.com/Shystra/form_Multistep/assets/124002796/c75fdcc2-2468-426b-a061-d08678bcddaf)
+
 
 
 
