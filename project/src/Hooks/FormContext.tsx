@@ -80,9 +80,9 @@ interface FormDataProviderProps {
   return (
     <FormDataContext.Provider value={contextValue}>
                 {children}
-      <button onClick={() => alert(JSON.stringify(formData, null, 2))}>
+      {/* <button onClick={() => alert(JSON.stringify(formData, null, 2))}>
         Mostrar FormData
-      </button>
+      </button> */}
     </FormDataContext.Provider>
   );
 };

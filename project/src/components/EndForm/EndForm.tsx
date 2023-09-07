@@ -5,10 +5,10 @@ type Props = {
     onNext: (value: string) => void;
     onBack: () => void;
 }
-export const EndForm = ({ onNext, onBack }: Props) => {
+export const EndForm = ({ }: Props) => {
     return (
         <div className={styles.container_end}>
-            {currentStep === 0 && (
+            
             <>
                 <label>Nome</label>
                 <input type="text" />
@@ -24,8 +24,8 @@ export const EndForm = ({ onNext, onBack }: Props) => {
                 <input type="text" />
             
           </>
-          )}
-          
+        
+
         </div>
         
     )
