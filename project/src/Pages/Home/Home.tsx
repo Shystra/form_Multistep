@@ -1,15 +1,13 @@
 
-
-import { OptionUrbanHome } from '../../components/Urban_or_Rural/OptionUrbanHome/OptionUrbanHome';
-import { OptionRuralHome } from '../../components/Urban_or_Rural/OptionRuralHome/OptionRuralHome';
-
 import banner_comercial from  '../../assets/banner_comercial.png';
 import logo_intersept from '../../assets/logo.png';
 
 import styles from './Home.module.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { First_Page } from '../../components/First_Page/First_Page';
 import { UrbanOrRural } from '../../components/Urban_or_Rural/UrbanOrRural';
+import { Company } from '../../components/Company/Company';
+import { Townhouse } from '../../components/Townhouse/Townhouse';
 
 
 
@@ -21,14 +19,6 @@ export function Home() {
     setUserChoice(choice);
     setCurrentStep(1);
   };
-
-  useEffect(() => {
-    console.log("First_Page montado");
-  
-    return () => {
-      console.log("First_Page desmontado");
-    };
-  }, []);
   
 
   const renderCurrentStep = () => {
@@ -42,13 +32,16 @@ export function Home() {
                     onNext={value => {value}}
                     onBack={() => setCurrentStep(0)}
                  />;
-        case 'casa_urbana':
-          return <OptionUrbanHome 
+        case 'empresa_comercio':
+          return <Company 
               onNext={value => {value}} 
               onBack={() => setCurrentStep(0)}
           />;
-        case 'casa_rural':
-          return <OptionRuralHome />;
+        case 'condominio':
+          return <Townhouse 
+            onNext={value => {value}}
+            onBack={() => setCurrentStep(0)}
+          />;
         default:
           return null;
       }

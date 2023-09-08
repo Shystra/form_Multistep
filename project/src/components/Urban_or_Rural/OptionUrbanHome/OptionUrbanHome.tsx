@@ -96,11 +96,13 @@ export const OptionUrbanHome = ({ onNext, onBack }: Props) => {
           onNext={value => (value)}
           onBack={() => setCurrentStep(0)}
           />}
-          {currentStep === 1 && userChoice === 'mais_5_horas_por_dia' && <OptionWay
+          {currentStep === 1 && userChoice === 'mais_5_horas_por_dia' && 
+          <OptionWay
           onNext={value => (value)}
           onBack={() => setCurrentStep(0)}
           />}
-          {currentStep === 1 && userChoice === 'sempre_tem_alguem_la' && <OptionWay
+          {currentStep === 1 && userChoice === 'sempre_tem_alguem_la' && 
+          <OptionWay
           onNext={value => (value)}
           onBack={() => setCurrentStep(0)}
           />}

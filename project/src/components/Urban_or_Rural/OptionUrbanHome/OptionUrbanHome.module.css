@@ -36,8 +36,11 @@
     
   }
   
-  .option_menos_urban button, .option_mais_urban button, .option_ever_urban button{
+  .option_menos_urban button, 
+  .option_mais_urban button, 
+  .option_ever_urban button{
     background-color: #200082;
+    
     border: none;
     border-radius: 30px;
     color: white;
@@ -46,20 +49,19 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 70px 1px;
+    margin: 50px 1px;
     cursor: pointer;
     transition-duration: 0.4s; 
     position: relative;
     overflow: hidden;
   }
-  
 
   .buttonBack_option_urban button{
     background-color: #da1717;
     border: none;
     border-radius: 30px;
     color: white;
-    padding: 12px 70px;
+    padding: 12px 60px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -147,7 +149,7 @@
         transform: translateY(-50%);
     }
     .title_option_urban{
-        height: 0vh;
+        height: 4vh;
     }
 
     .title_option_urban{
@@ -160,22 +162,43 @@
         margin-top: 80px;
         
     }
-    .button_menos_urban, .option_mais_urban, .option_ever_urban, .buttonBack_option_urban{
+    .button_menos_urban, 
+    .option_mais_urban, 
+    .option_ever_urban{
         margin-top: -70px;
         margin-bottom: 20px;
-
+    }
+    .buttonBack_option_urban{
+        margin-top: -30px;
+        margin-bottom: 5px;
     }
 
-    .option_menos_urban button, .option_mais_urban button,
+    
     .option_ever_urban button {
         font-size: 14px;
         margin-top: 10px;
-        padding: 12px 50px;
-        
+        padding: 12px 60px;
     }
+
+    .option_menos_urban button{
+      font-size: 14px;
+      margin-top: 10px;
+      padding: 12px 50px;
+    }
+
+    .option_mais_urban button{
+      font-size: 14px;
+      margin-top: 25px;
+      padding: 12px 60px;
+    }
+
+
+
+
     .buttonBack_option_urban button{
         font-size: 14px;
-        padding: 12px 30px;
+        margin-top: -10px;
+        padding: 12px 80px;
         
     }
 

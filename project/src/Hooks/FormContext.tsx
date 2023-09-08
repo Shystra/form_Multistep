@@ -4,6 +4,8 @@ import { createContext, useContext, useEffect, useState, useMemo } from 'react';
 
 type FormData = {
   residencia?: string;
+  empresa_comercio?: string;
+  condominio?: string;
   casa_urbana?: string;
   casa_rural?: string;
   menos_5_horas_por_dia?: string;
@@ -19,6 +21,7 @@ type FormData = {
   Nao_Roubo?: string;
   Sim_Sistema?: string;
   Nao_Sistema?: string;
+  
   // ... Adicione outros campos conforme necessário
 };
 

@@ -36,7 +36,9 @@
     
   }
   
-  .option_way_ape button, .option_way_car button, .option_way_motorbike button{
+  .option_way_ape button, 
+  .option_way_car button, 
+  .option_way_motorbike button{
     background-color: #200082;
     border: none;
     border-radius: 30px;
@@ -93,41 +95,7 @@
     opacity: 0;  
     animation: appear 2s forwards;
   }
-  
-
-  
-  @media (max-width: 2000px ){
-  
-  }
-  
-  @media (min-width: 1200px ){
-  
-  }
-  
-  @media (min-width: 414px){
-    
-  }
-  @media (min-width: 414px) and (max-width: 896px){ 
-   
-    
-    
-  }
-  @media (max-width: 390px){
-    
-  }
-  @media (max-width: 393px){
-  
-  }
-  @media (min-width: 375px) {
-    
-  }
-
-
-
-
-  @media (max-width: 360px){
-   
-  }
+ 
   
   @media (max-width: 768px){
     .progressOne_option_way{
@@ -145,12 +113,10 @@
     }
     .title_option_way{
         height: 10vh;
+        margin-top: 50px;
     }
 
-    .title_option_way{
-        
-        margin-top: 30px;
-    }
+    
     .buttonsWrapper_option_way_ape{
         flex-direction: column;
         gap: 10px;
@@ -159,25 +125,27 @@
     }
     .option_way_ape, 
     .option_way_car, 
-    .option_way_motorbike, 
-    .buttonBack_option_way{
+    .option_way_motorbike{
         margin-top: -80px;
         margin-bottom: 5px;
-
+    }
+    .buttonBack_option_way{
+        margin-top: -100px;
+        /* margin-bottom: 10px; */
     }
 
     .option_way_ape button, 
     .option_way_car button,
     .option_way_motorbike button {
         font-size: 14px;
-        margin-top: 30px;
-        padding: 12px 80px;
+        margin-top: 10px;
+        padding: 12px 70px;
         
     }
     .buttonBack_option_way button{
         font-size: 14px;
-        margin-top: 30px;
-        padding: 12px 50px;
+        margin-top: 50px;
+        padding: 12px 80px;
         
     }
 

@@ -1,5 +1,4 @@
 .container_first_page{
-
     justify-content: center;
     align-items: center;
     height: 180vh;
@@ -11,20 +10,9 @@
     flex-direction: row;
 }
 
-.residencia button,  .condominio button, .empresa_comercio button{
-    /* margin-top: -200px;
-    padding: 10px 50px;
-    border: none;
-    border-radius: 30px;
-    width: auto;
-    height: 50px;
-    background-color: #200082;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease; */
-
-
-
+.residencia button,  
+.condominio button, 
+.empresa_comercio button{
     background-color: #200082;
     border: none;
     border-radius: 30px;
@@ -40,7 +28,9 @@
     position: relative;
     overflow: hidden;
 }
-.residencia button:hover, .empresa_comercio button:hover, .condominio button:hover{
+.residencia button:hover, 
+.empresa_comercio button:hover, 
+.condominio button:hover{
     background-color: #3B00E9;
 }
 @keyframes appear {
@@ -54,7 +44,9 @@
   }
 }
 
-.residencia button, .condominio button, .empresa_comercio button {
+.residencia button, 
+.condominio button, 
+.empresa_comercio button {
   opacity: 0;  
   animation: appear 2s forwards;
 }
@@ -83,14 +75,15 @@
 
 
 @media (max-width: 768px){
-  .wrapper_first_page, .container_first_page{
+  .wrapper_first_page, 
+  .container_first_page{
     flex-direction: column;
 
   }
   
-  .residencia button, .empresa_comercio button, .condominio button{
-    
-    /* margin-top: 10px; */
+  .residencia button, 
+  .empresa_comercio button, 
+  .condominio button{
     margin-left: 0px;
     margin-block-end: 35px;
 
@@ -101,13 +94,24 @@
   .residencia{
     margin-top: 0px;
   }
-    /* .residencia button{
-       
-        margin-top: 0px;
-    } */
 }
+
+@media (max-width: 428px){
+  .residencia button,
+  .empresa_comercio button,
+  .condominio{
+    margin-left: 0px;
+    margin-block-end: 40px;
+    top: -10px;
+
+  }
+}
+
+
 @media (max-width: 414px){
-  .residencia button, .empresa_comercio button, .condominio button{
+  .residencia button, 
+  .empresa_comercio button, 
+  .condominio button{
     margin-block-end: 30px;
     margin-top: -50px;
     font-size: 14px;
@@ -118,5 +122,5 @@
   .residencia{
     margin-top: 0px;
   }
-  
 }
+

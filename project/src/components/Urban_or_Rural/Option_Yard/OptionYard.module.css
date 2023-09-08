@@ -17,19 +17,19 @@
   
   .progressOne_option_residence {
     position: absolute;
-    top: -0.5%;
-    left: 45%;
-    margin-top: -28px;
+    top: -0.7%;
+    left: -1%;
+    margin-top: -30px;
     margin-left: 0px;
-    height: 30px;
-    width: 120px;
+    height: 33px;
+    width: 450px;
     background-color: #e4e01c;
     border-radius: 25px;
     flex-grow: 1;
   }
   .progressLabel_option_residence{
     position: relative;
-    left: 30px;
+    left: 50px;
     transform: translateX(-50%);
     margin: 0;
     top: -25px;
@@ -48,7 +48,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 70px 1px;
+    margin: 50px 0px;
     cursor: pointer;
     transition-duration: 0.4s; 
     position: relative;
@@ -98,90 +98,67 @@
     opacity: 0;  
     animation: appear 2s forwards;
   }
-  
-
-  
-  @media (max-width: 2000px ){
-  
-  }
-  
-  @media (min-width: 1200px ){
-  
-  }
-  
-  @media (min-width: 414px){
-    
-  }
-  @media (min-width: 414px) and (max-width: 896px){ 
-   
-    
-    
-  }
-  @media (max-width: 390px){
-    
-  }
-  @media (max-width: 393px){
-  
-  }
-  @media (min-width: 375px) {
-    
-  }
-
-
-
-
-  @media (max-width: 360px){
-   
-  }
+ 
   
   @media (max-width: 768px){
     .progressOne_option_residence{
         position: relative;
-        height: 26px;
-        left: 96px;
-        width: 70px;
-        top: 2px;
+        height: 25px;
+        left: 9px;
+        width: 230px;
+        top: 5px;
     }
     .progressLabel_option_residence{
         position: absolute;
-        left: 120px;
-        top: 3.5%;
-        transform: translateY(-50%);
+        left: 116px;
+        top: 3.0%;
+        /* transform: translateY(-50%); */
     }
     .title_option_residence{
-        height: 10vh;
+        height: 0vh;
+        /* margin-top: 70px; */
     }
 
-    .title_option_residence{   
-        margin-top: 30px;
-    }
     .buttonsWrapper_option_residence{
         flex-direction: column;
         gap: 10px;
-        margin-top: 80px;
+        
+        /* margin-top: 100px; */
         
     }
     .option_residence_patio_fundos,
     .option_residence_patio_frente_fundos, 
-    .option_residence_nao_possui_patio,
-    .buttonBack_option_residence{
-        margin-top: -80px;
+    .option_residence_nao_possui_patio
+    {
+        margin-top: -50px;
         margin-bottom: 5px;
 
     }
 
-    .option_residence_patio_fundos button,
-    .option_residence_patio_frente_fundos button,
-    .option_residence_nao_possui_patio button {
+
+  
+    .option_residence_patio_frente_fundos button{
         font-size: 14px;
         margin-top: 30px;
-        padding: 12px 80px;
+        padding: 12px 50px;   
+    }
+
+    .option_residence_patio_fundos button{
+      font-size: 14px;
+      margin-top: 30px;
+      padding: 12px 78px;
+    }
+    .option_residence_nao_possui_patio button{
+        font-size: 14px;
+        margin-top: 30px;
+        padding: 12px 65px;
         
     }
+
     .buttonBack_option_residence button{
         font-size: 14px;
-        margin-top: 30px;
-        padding: 12px 50px;
+        margin-top: 10px;
+        padding: 12px 90px;
         
     }
 

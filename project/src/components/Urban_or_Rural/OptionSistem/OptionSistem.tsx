@@ -67,7 +67,7 @@ export const OptionSistem = ({ onNext, onBack}: Props) => {
 
                     <div className={styles.buttonBack_option_sistem} 
                     onClick={handleBackClick}>
-                        <button className={styles.buttonBack_option_sistem}>Voltar</button>
+                        <button>Voltar</button>
                     </div>
                 </>
             )}

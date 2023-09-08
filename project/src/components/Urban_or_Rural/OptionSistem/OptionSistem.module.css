@@ -1,0 +1,163 @@
+.container_option_sistem {
+  position: relative; 
+  justify-content: center;
+  align-items: center;
+}
+
+.title_option_sistem{
+  margin-top: 50px;
+}
+
+.buttonWrapper_option_sistem{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.progressOne_option_sistem {
+  position: absolute;
+  top: -0.7%;
+  left: -1%;
+  margin-top: -30px;
+  margin-left: 0px;
+  height: 33px;
+  width: 600px;
+  background-color: #e4e01c;
+  border-radius: 25px;
+  flex-grow: 1;
+}
+
+.progressLabel_option_sistem{
+  position: relative;
+  left: 200px;
+  transform: translateX(-50%);
+  margin: 0;
+  top: -25px;
+}
+
+.option_sistem_yes button,
+.option_sistem_no button{
+    background-color: #200082;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 12px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 70px 1px;
+    cursor: pointer;
+    transition-duration: 0.4s; 
+    position: relative;
+    overflow: hidden;
+}
+
+.buttonBack_option_sistem button{
+    background-color: #da1717;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 12px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s; 
+    position: relative;
+    overflow: hidden;
+}
+
+.option_sistem_yes button:hover,
+.option_sistem_no button:hover{
+    background-color: #3B00E9;
+}
+
+.buttonBack_option_sistem button:hover{
+    background-color: #ff000dcc;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.option_sistem_yes button,
+.option_sistem_no button,
+.buttonBack_option_sistem button {
+    opacity: 0;
+    animation: appear 2s forwards;
+}
+
+@media (max-width: 768px){
+    .progressOne_option_sistem{
+        position: relative;
+        height: 25px;
+        left: 9px;
+        width: 320px;
+        top: 5px;
+
+    }
+    .progressLabel_option_sistem{
+        position: absolute;
+        left: 300px;
+        top: 3.0%;
+
+    }
+
+    .title_option_sistem{
+        height: 15vh;
+        margin-top: 70px;
+    }
+
+    .buttonWrapper_option_sistem{
+        flex-direction: row;
+        gap: 20px;
+        /* margin-top: 80px; */
+    }
+    .option_sistem_yes,
+    .option_sistem_no,
+    .buttonBack_option_sistem{
+        /* margin: 0 auto; */
+
+        margin-bottom: 10px;
+    }
+
+    .option_sistem_yes button,
+    .option_sistem_no button{
+        font-size: 14px;
+        margin-top: 30px;
+        padding: 12px 50px;
+    }
+
+    .buttonBack_option_sistem button{
+        font-size: 14px;
+        margin-top: -60px;
+        padding: 12px 80px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

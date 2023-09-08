@@ -64,7 +64,7 @@ export const UrbanOrRural = ({ onNext, onBack }: Props) => {
 
     return (
         <div className={styles.containerForm_tipos_residencia}>
-            {currentStep === 0 && (
+        {currentStep === 0 && (
                 <>
                 <div className={styles.progressOne_residence}></div>
                     <label className={styles.progressLabel_residence}>14,28%</label>

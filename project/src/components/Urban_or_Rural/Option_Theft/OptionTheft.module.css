@@ -16,12 +16,12 @@
   
   .progressOne_option_theft {
     position: absolute;
-    top: -0.5%;
-    left: 60%;
-    margin-top: -28px;
+    top: -0.7%;
+    left: 2%;
+    margin-top: -30px;
     margin-left: 0px;
-    height: 30px;
-    width: 120px;
+    height: 33px;
+    width: 530px;
     background-color: #e4e01c;
     border-radius: 25px;
     flex-grow: 1;
@@ -40,12 +40,12 @@
     border: none;
     border-radius: 30px;
     color: white;
-    padding: 12px 40px;
+    padding: 12px 70px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 70px 1px;
+    margin: 50px 1px;
     cursor: pointer;
     transition-duration: 0.4s; 
     position: relative;
@@ -58,7 +58,7 @@
     border: none;
     border-radius: 30px;
     color: white;
-    padding: 12px 70px;
+    padding: 12px 60px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -124,53 +124,49 @@
    
   }
   @media (max-width: 768px){
-    .progressOne_option_residence{
+    .progressOne_option_theft{
         position: relative;
-        height: 26px;
-        left: 90px;
-        width: 70px;
-        top: 2px;
+        height: 25px;
+        left: 9px;
+        width: 290px;
+        top: 5px;
     }
-    .progressLabel_option_residence{
+    .progressLabel_option_theft{
         position: absolute;
-        left: 120px;
-        top: 3.5%;
-        transform: translateY(-50%);
+        left: 270px;
+        top: 3.1%;
+        /* transform: translateY(-50%); */
     }
-    .title_option_residence{
-        height: 10vh;
+    .title_option_theft{
+        height: 15vh;
+        margin-top: 70px;
     }
 
-    .title_option_residence{   
-        margin-top: 30px;
-    }
-    .buttonsWrapper_option_residence{
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 80px;
+    .buttonsWrapper_option_theft{
+        flex-direction: row;
+        gap: 20px;
+        /* margin-top: 80px; */
         
     }
-    .option_residence_patio_fundos,
-    .option_residence_patio_frente_fundos, 
-    .option_residence_nao_possui_patio,
-    .buttonBack_option_residence{
-        margin-top: -80px;
-        margin-bottom: 5px;
+    .options_theft_yes,
+    .options_theft_no, 
+    .buttonBack_option_theft{
+        /* margin-top: -80px; */
+        margin-bottom: 10px;
 
     }
 
-    .option_residence_patio_fundos button,
-    .option_residence_patio_frente_fundos button,
-    .option_residence_nao_possui_patio button {
-        font-size: 14px;
-        margin-top: 30px;
-        padding: 12px 80px;
-        
-    }
-    .buttonBack_option_residence button{
+    .options_theft_yes button,
+    .options_theft_no button {
         font-size: 14px;
         margin-top: 30px;
         padding: 12px 50px;
+        
+    }
+    .buttonBack_option_theft button{
+        font-size: 14px;
+        margin-top: 0px;
+        padding: 12px 80px;
         
     }
 
