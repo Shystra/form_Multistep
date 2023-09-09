@@ -184,6 +184,12 @@
     width: 100px;
     height: 100px;
   }
+  .progressOne{
+    top: 5.3%;
+    left: 2.1%;
+    height: 27px;
+    width: 18%;
+  }
 
 }
 @media (max-width: 376px){
