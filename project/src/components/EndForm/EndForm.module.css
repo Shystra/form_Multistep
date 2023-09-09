@@ -1,0 +1,143 @@
+.container_end {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+    border-radius: 12px;
+}
+/* .name,
+.cep,
+.email,
+.phone {
+    margin-bottom: -1px;
+    font-weight: 500;
+    animation: appear 2s forwards;
+} */
+
+.name {
+    animation: appear 2s forwards;
+    animation-delay: 0.2s;
+}
+
+.cep {
+    animation: appear 2s forwards;
+    animation-delay: 0.4s;
+}
+
+.email {
+    animation: appear 2s forwards;
+    animation-delay: 0.6s;
+}
+
+.phone {
+    animation: appear 2s forwards;
+    animation-delay: 0.8s;
+}
+
+/* Ajuste nos estilos iniciais dos labels e inputs */
+.name, .cep, .email, .phone, input[type="text"], .send button, .back button {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 10px 10px 0; /* Retirado o padding-left para que o texto comece exatamente acima da linha */
+    margin-bottom: 20px;
+    border: none; /* Remove as bordas padrão */
+    border-bottom: 2px solid #ccc; /* Adiciona a borda inferior */
+    outline: none;
+    background-color: transparent; /* Para garantir que o fundo é transparente */
+    transition: border-bottom 0.3s; /* Transição suavizada para a borda inferior */
+    animation: appear 2s forwards;
+    animation-delay: 1s;
+}
+input[type="text"]:focus {
+    border-bottom: 2px solid #007BFF; /* Destaca a borda inferior ao focar */
+}
+
+
+.wrapperbuttons{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.send button{
+    background-color: #200082;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 12px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    cursor: pointer;
+    transition-duration: 0.4s; 
+    position: relative;
+    overflow: hidden;
+}
+.back button{
+    background-color: #da1717;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 12px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition-duration: 0.4s; 
+    position: relative;
+    overflow: hidden;
+}
+
+.send button:hover{
+    background-color: #3B00E9;
+}
+.back button:hover{
+    background-color: #FF0000;
+}
+
+@keyframes appear {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+.send button, .back button{
+    animation: appear 2s forwards;
+    animation-delay: 1s;
+}
+
+
+
+/* Estilos gerais para dispositivos móveis */
+@media only screen and (max-width: 768px) {
+  
+    /* Ajuste no contêiner do formulário */
+    .container_end {
+        padding: 10px;
+    }
+
+    /* Ajuste para os botões em dispositivos móveis */
+    .send button, .back button {
+        padding: 10px 30px; /* Reduz o padding para se adequar a dispositivos móveis */
+        font-size: 14px;    /* Reduz a fonte para se adequar a dispositivos móveis */
+    }
+    
+    .wrapperbuttons {
+         /* Muda a direção para vertical */
+        gap: 30px;              /* Reduz o espaço entre os botões */
+    }
+}
+
+

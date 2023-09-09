@@ -10,19 +10,31 @@ export const EndForm = ({ }: Props) => {
         <div className={styles.container_end}>
             
             <>
-                <label>Nome</label>
+                <label className={styles.name}>Nome</label>
                 <input type="text" />
 
-                <label>CEP do Imóvel</label>
+                <label className={styles.cep}>CEP do Imóvel</label>
                 <input type="text" />
 
 
-                <label>E-mail</label>
+                <label className= {styles.email}>E-mail</label>
                 <input type="text" />
 
-                <label>Telefone</label>
+                <label className={styles.phone}>Telefone</label>
                 <input type="text" />
             
+
+            <div className={styles.wrapperbuttons}>
+           
+             <div className={styles.back}>
+                    <button>Voltar</button>
+                </div>
+                
+                <div className={styles.send}>
+                    <button>Enviar</button>
+                </div>
+           
+            </div>
           </>
         
 
