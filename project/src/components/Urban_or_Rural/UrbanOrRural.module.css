@@ -267,13 +267,14 @@ background-color: #ff000dcc;
 @media (max-width: 393px){
   .progressOne_residence
   {
-    top: -4%;
-    left: -18%;
+    top: -3.8%;
+    left: -18.9%;
     width: 35%;
+    height: 26px;
   }
   .progressLabel_residence{
     left: -3%;
-    top: -3.4%;
+    top: -3.3%;
   }
 }
 
@@ -285,9 +286,9 @@ background-color: #ff000dcc;
     margin-top: 16px;
   }
   .progressOne_residence{
-    margin-top: -3%;
-    left: -45px;
-    height: 26px;
+    margin-top: -3.2%;
+    left: -46px;
+    height: 25px;
   }
   .progressLabel_residence{
     left: 1%;
