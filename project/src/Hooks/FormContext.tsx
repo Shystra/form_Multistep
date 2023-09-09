@@ -21,6 +21,13 @@ type FormData = {
   Nao_Roubo?: string;
   Sim_Sistema?: string;
   Nao_Sistema?: string;
+
+
+
+  name?: string;
+  cep?: string;
+  email?: string;
+  phone?: number | string;
   
   // ... Adicione outros campos conforme necessário
 };
