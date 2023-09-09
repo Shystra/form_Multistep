@@ -8,9 +8,11 @@ type Props = {
     onBack: () => void;
 }
 export const EndForm = ({onBack}: Props) => {
-    const {updateFields, removeFields} = useFormDataContext();
+    const {updateFields} = useFormDataContext();
     const [userChoice, setUserChoice] = useState<string | null>(null);
+    console.log("🚀 ~ file: EndForm.tsx:13 ~ EndForm ~ userChoice:", userChoice)
     const [currentStep, setCurrentStep] = useState(0);
+    console.log("🚀 ~ file: EndForm.tsx:14 ~ EndForm ~ currentStep:", currentStep)
 
     const [name, setName] = useState('');
     const [cep, setCep] = useState('')
@@ -22,13 +24,14 @@ export const EndForm = ({onBack}: Props) => {
         setUserChoice(choice);
         setCurrentStep(1);   
     }
+    console.log("🚀 ~ file: EndForm.tsx:27 ~ handleChoice ~ handleChoice:", handleChoice)
 
 
 
-    const handleOptionCLick = (option: string) => (event: React.MouseEvent) => {
-        event.preventDefault();
-        handleChoice(option);
-    };
+    // const handleOptionCLick = (option: string) => (event: React.MouseEvent) => {
+    //     event.preventDefault();
+    //     handleChoice(option);
+    // };
 
     const handleBackClick = (event: React.MouseEvent) => {
         event.preventDefault();
@@ -37,8 +40,9 @@ export const EndForm = ({onBack}: Props) => {
     }
 
     const handleSendClick = async (event: React.MouseEvent) => {
-
+    console.log("🚀 ~ file: EndForm.tsx:42 ~ handleSendClick ~ event:", event)
         try {
+            
             const response = await fetch('http://localhost:3001/send-email', {
                 method: 'POST',
                 headers: {
@@ -49,7 +53,6 @@ export const EndForm = ({onBack}: Props) => {
                     cep,
                     email,
                     phone,
-                    // ... outros campos conforme necessário
                 }),
             });
     
