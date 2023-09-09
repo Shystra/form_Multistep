@@ -51,7 +51,7 @@ export const OptionSistem = ({ onNext, onBack}: Props) => {
             {currentStep === 0 && (
                 <>
                 <div className={styles.progressOne_option_sistem}></div>
-                    <label className={styles.progressLabel_option_sistem}>20%</label>
+                    <label className={styles.progressLabel_option_sistem}>90%</label>
                     <h1 className={styles.title_option_sistem}>Já possui algum sistema de segurança?</h1>
 
 

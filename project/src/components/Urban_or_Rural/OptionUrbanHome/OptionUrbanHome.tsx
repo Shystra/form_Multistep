@@ -1,4 +1,4 @@
-import { useState } from 'react';
+  import { useState } from 'react';
 import styles from './OptionUrbanHome.module.css';
 import { useFormDataContext } from '../../../Hooks/FormContext';
 import { OptionWay } from '../Option_Way/OptionWay';
@@ -65,7 +65,7 @@ export const OptionUrbanHome = ({ onNext, onBack }: Props) => {
           {currentStep === 0 && (
           <>
           <div className={styles.progressOne_option_urban}></div>        
-            <label className={styles.progressLabel_option_urban}>14,28%</label>
+            <label className={styles.progressLabel_option_urban}>28,56%</label>
             
             <h1 className={styles.title_option_urban}>Por quanto tempo a sua propriedade fica sem ninguém?</h1>
             

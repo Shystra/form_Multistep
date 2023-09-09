@@ -52,7 +52,7 @@ export const OptionTheft = ({ onBack, onNext }: Props) => {
             {currentStep === 0 && (
                 <>
                     <div className={styles.progressOne_option_theft}></div>
-                        <label className={styles.progressLabel_option_theft}>20%</label>
+                        <label className={styles.progressLabel_option_theft}>75%</label>
                             <h1 className={styles.title_option_theft}>
                                 Alguém já tentou roubar sua casa ou a casa dos vizinhos?</h1>
                 

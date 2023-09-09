@@ -64,7 +64,7 @@ export const OptionYard = ({ onNext, onBack }: Props) => {
             {currentStep === 0 && (
             <>
             <div className={styles.progressOne_option_residence}></div>
-                <label className={styles.progressLabel_option_residence}>7,14%</label>
+                <label className={styles.progressLabel_option_residence}>57,12%</label>
                 <h1 className={styles.title_option_residence}>A Residência Possui:</h1>
 
 
