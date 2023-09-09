@@ -17,19 +17,19 @@
   
   .progressOne_option_urban {
     position: absolute;
-    top: -0.5%;
-    left: 18%;
+    top: -1%;
+    left: 2.5%;
     margin-top: -28px;
     margin-left: 0px;
-    height: 30px;
-    width: 120px;
+    height: 33px;
+    width: 300px;
     background-color: #e4e01c;
     border-radius: 25px;
     flex-grow: 1;
   }
   .progressLabel_option_urban{
     position: relative;
-    left: -160px;
+    left: -95px;
     transform: translateX(-50%);
     margin: 0;
     top: -25px;
@@ -40,7 +40,6 @@
   .option_mais_urban button, 
   .option_ever_urban button{
     background-color: #200082;
-    
     border: none;
     border-radius: 30px;
     color: white;
@@ -96,41 +95,6 @@
     animation: appear 2s forwards;
   }
   
-
-  
-  @media (max-width: 2000px ){
-  
-  }
-  
-  @media (min-width: 1200px ){
-  
-  }
-  
-  @media (min-width: 414px){
-    
-  }
-  @media (min-width: 414px) and (max-width: 896px){ 
-   
-    
-    
-  }
-  @media (max-width: 390px){
-    
-  }
-  @media (max-width: 393px){
-  
-  }
-  @media (min-width: 375px) {
-    
-  }
-
-
-
-
-  @media (max-width: 360px){
-   
-  }
-  
   @media (max-width: 768px){
     .progressOne_option_urban{
         position: relative;
@@ -140,9 +104,6 @@
         top: 2px;
     }
     .progressLabel_option_urban{
-        /* height: 0px;
-        left: -80px;
-        top: -19px; */
         position: absolute;
         left: 92px;
         top: 3.5%;
@@ -150,12 +111,9 @@
     }
     .title_option_urban{
         height: 4vh;
-    }
-
-    .title_option_urban{
-        
         margin-top: 20px;
     }
+
     .buttonsWrapper_option_menos_urban{
         flex-direction: column;
         gap: 10px;
@@ -192,9 +150,6 @@
       padding: 12px 60px;
     }
 
-
-
-
     .buttonBack_option_urban button{
         font-size: 14px;
         margin-top: -10px;
@@ -203,4 +158,41 @@
     }
 
 
+  }
+
+  @media (max-width: 376px){
+    .progressOne_option_urban{
+        position: relative;
+        height: 26px;
+        left: 2%;
+        width: 40%;
+        top: 3px;
+    }
+    .progressLabel_option_urban{
+      left: 26%;
+      top: 15px;
+    }
+  }
+
+  @media (max-width: 428px){
+    .progressOne_option_urban{
+      width: 40%;
+      left: 2%;
+    }
+    .progressLabel_option_urban{
+      left: 26%;
+    }
+  }
+ 
+
+  @media (max-width: 393px){
+    .progressLabel_option_urban{
+      top: 15px;
+    }
+  }
+
+  @media (max-width: 360px){
+    .progressLabel_option_urban{
+      top: 4%;
+    }
   }

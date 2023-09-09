@@ -96,33 +96,6 @@
   
 
   
-  @media (max-width: 2000px ){
-  
-  }
-  
-  @media (min-width: 1200px ){
-  
-  }
-  
-  @media (min-width: 414px){
-    
-  }
-  @media (min-width: 414px) and (max-width: 896px){ 
-   
-  }
-  @media (max-width: 390px){
-    
-  }
-  @media (max-width: 393px){
-    
-  }
-  @media (min-width: 375px) {
-    
-  }
-
-  @media (max-width: 360px){
-   
-  }
   @media (max-width: 768px){
     .progressOne_option_theft{
         position: relative;
@@ -134,8 +107,7 @@
     .progressLabel_option_theft{
         position: absolute;
         left: 270px;
-        top: 3.1%;
-        /* transform: translateY(-50%); */
+        top: 3.0%;
     }
     .title_option_theft{
         height: 15vh;
@@ -145,8 +117,6 @@
     .buttonsWrapper_option_theft{
         flex-direction: row;
         gap: 20px;
-        /* margin-top: 80px; */
-        
     }
     .options_theft_yes,
     .options_theft_no, 
@@ -172,3 +142,29 @@
 
 
   }
+
+  @media (max-width: 428px){
+    .progressLabel_option_theft{
+      left: 67%;
+      top: 2.7%;
+    }
+  }
+  @media (max-width: 376px){
+    .progressLabel_option_theft{
+      left: 73%;
+      /* top: 2.7%; */
+    }
+  }
+
+  @media (max-width: 393px){
+    .progressLabel_option_theft
+    {
+      left: 73%;
+    }
+  }
+  @media (max-width: 360px){
+    .progressLabel_option_theft{
+      left: 77%;
+    }
+  }
+

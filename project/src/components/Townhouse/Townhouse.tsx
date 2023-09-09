@@ -4,7 +4,7 @@ type Props = {
     onBack: () => void;
 }
 
-export const Townhouse = ({ onNext, onBack }: Props) => {
+export const Townhouse = ({}: Props) => {
     return (
         <div>
             <h1>Townhouse</h1>

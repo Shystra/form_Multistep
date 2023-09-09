@@ -8,6 +8,7 @@
     display: flex;
     gap: 16px;
     flex-direction: row;
+    margin-top: -10%;
 }
 
 .residencia button,  
@@ -51,27 +52,6 @@
   animation: appear 2s forwards;
 }
 
-
-
-
-/* .empresa_comercio button{
-    margin-top: -200px;
-    padding: 10px 50px;
-    border: 2px solid #200082;
-    border-radius: 30px;
-    width: auto;
-    height: 50px;
-    margin-left: 0;
-    background-color: #fff;
-    color: #200082;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.empresa_comercio button:hover{
-    background-color: #3B00E9;
-    color: #fff;
-    border: none;
-} */
 
 
 @media (max-width: 768px){

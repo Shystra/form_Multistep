@@ -17,19 +17,19 @@
   
   .progressOne_option_way {
     position: absolute;
-    top: -0.5%;
-    left: 18%;
+    top: -0.8%;
+    left: -4%;
     margin-top: -28px;
     margin-left: 0px;
-    height: 30px;
-    width: 120px;
+    height: 33px;
+    width: 370px;
     background-color: #e4e01c;
     border-radius: 25px;
     flex-grow: 1;
   }
   .progressLabel_option_way{
     position: relative;
-    left: -135px;
+    left: -5px;
     transform: translateX(-50%);
     margin: 0;
     top: -25px;
@@ -90,7 +90,9 @@
     }
   }
   
-  .option_way_ape button, .option_way_car button, .option_way_motorbike button,
+  .option_way_ape button, 
+  .option_way_car button, 
+  .option_way_motorbike button,
   .buttonBack_option_way button {
     opacity: 0;  
     animation: appear 2s forwards;
@@ -131,7 +133,6 @@
     }
     .buttonBack_option_way{
         margin-top: -100px;
-        /* margin-bottom: 10px; */
     }
 
     .option_way_ape button, 
@@ -150,4 +151,27 @@
     }
 
 
+  }
+
+  @media (max-width: 376px){
+    .progressOne_option_way{
+        width: 50%;
+        left: 2%;
+        height: 25px;
+        top: 3px
+    }
+    .progressLabel_option_way{
+        left: 42%;
+        top: 3.9%;
+    }
+  }
+
+  @media (max-width: 428px){
+    .progressOne_option_way{
+      width: 50%;
+      left: 2%;
+    }
+    .progressLabel_option_way{
+      left: 41%;
+    }
   }

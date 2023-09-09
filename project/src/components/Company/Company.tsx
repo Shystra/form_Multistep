@@ -1,11 +1,10 @@
-import styles from './Company.module.css';
 
 
 type Props = {
     onNext: (value: string) => void;
     onBack: () => void;
 }
-export const Company = ({onNext, onBack}: Props) => {
+export const Company = ({}: Props) => {
     return (
         <div>
             <h1>Company</h1>

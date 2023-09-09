@@ -111,6 +111,7 @@
     width: 700px;
     height: 100px;
   }
+ 
 }
 
 @media (max-width: 428px) {
@@ -124,13 +125,13 @@
   }
 
   .progressOne{
-    top: 5%;
-    left: 2.5%;
-    height: 28px;
+    top: 4.9%;
+    left: 2.3%;
+    height: 26px;
     width: 18%;
   }
   .progressLabel{
-    top: 7px;
+    top: 5px;
   }
 }
 
@@ -152,6 +153,9 @@
     top: 5%;
     left: 2.5%;
     height: 27px;
+  }
+  .progressLabel{
+    top: 7px;
   }
 }
 
@@ -194,9 +198,9 @@
   }
 
   .progressOne{
-    top: 7%;
+    top: 6.8%;
     left: 2.5%;
-    height: 25px;
+    height: 26px;
     width: 18%;
   }	
 
