@@ -242,8 +242,7 @@
     height: 50px;
     margin-top: 3%;
   }
-  /* .progressOne{
-    height: 33px;
-    width: 20vw;
-  } */
+  .progressOne{
+    margin-top: -8%;
+  }
 }
