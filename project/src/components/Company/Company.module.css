@@ -1,0 +1,72 @@
+.container_option_company{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 500vh;
+}
+.title_option_company{
+    margin-top: 50px;
+}
+.progressOne_option_company{
+    position: absolute;
+    top: -1%;
+    left: -18%;
+    margin-top: -28px;
+    margin-left: 0px;
+    height: 33px;
+    width: 450px;
+    background-color: #e4e01c;
+    border-radius: 25px;
+    flex-grow: 1;
+}
+
+.progressLabel_option_company{
+    position: relative;
+    left: 60px;
+    transform: translateX(-50%);
+    margin: 0;
+    top: -25px;
+}
+.buttonsWrapper_option_company{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.option_street_commerce button,
+.option_company_shopping_center button,
+.option_company_industrial_area button,
+.optio_business_building button{
+    background-color: #200082;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 12px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px 1px;
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button_back button{
+    position: relative;
+    background-color: #da1717;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 12px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    overflow: hidden;
+}
+
