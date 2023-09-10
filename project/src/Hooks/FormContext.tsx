@@ -24,6 +24,15 @@ type FormData = {
 
 
 
+  Empresa_Centro_Comercial?: string;
+  Empresa_Area_Industrial?: string;
+  Predio_Comercial?: string;
+  Comercio_Rua?: string;
+
+
+
+
+
   name?: string;
   cep?: string;
   email?: string;
@@ -39,7 +48,7 @@ const FormDataContext = createContext<{
 }>({
   formData: {},
   updateFields: () => {},
-  removeFields: () => {},  // Adicione esta linha
+  removeFields: () => {}, 
 });
 
 export const useFormDataContext = () => {
