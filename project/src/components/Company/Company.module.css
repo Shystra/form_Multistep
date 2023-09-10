@@ -142,7 +142,7 @@
     .progressOne_option_company{
         position: relative;
         height: 27px;
-        left: -11.3%;
+        left: -11.5%;
         width: 30%;
         top: 0.6%;
     }
@@ -150,7 +150,7 @@
     .progressLabel_option_company{
         position: absolute;
         left: 10%;
-        top: -3.2%;
+        top: -3.4%;
     }
 
     .buttonsWrapper_option_company{
