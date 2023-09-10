@@ -142,15 +142,15 @@
     .progressOne_option_company{
         position: relative;
         height: 27px;
-        left: -7.7%;
+        left: -11.3%;
         width: 30%;
         top: 0.6%;
     }
 
     .progressLabel_option_company{
         position: absolute;
-        left: 12%;
-        top: -3.4%;
+        left: 10%;
+        top: -3.2%;
     }
 
     .buttonsWrapper_option_company{
@@ -190,21 +190,12 @@
    }
 }
 
-@media (max-width: 428px) {
-    .progressOne_option_company{
-        left: -12%;
-    }
-    .progressLabel_option_company{
-        left: 8%;
-    }
-}
-
-@media (max-width: 414px) {
+@media (max-width: 391px) {
     .progressOne_option_company{
         left: -8%;
     }
     .progressLabel_option_company{
-        left: 12%;
+        top: -3.3%;
     }
 }
 
