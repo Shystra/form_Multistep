@@ -5,14 +5,6 @@
     padding: 20px;
     border-radius: 12px;
 }
-/* .name,
-.cep,
-.email,
-.phone {
-    margin-bottom: -1px;
-    font-weight: 500;
-    animation: appear 2s forwards;
-} */
 
 .name {
     animation: appear 2s forwards;
@@ -21,17 +13,17 @@
 
 .cep {
     animation: appear 2s forwards;
-    animation-delay: 0.4s;
+    animation-delay: 0.3s;
 }
 
 .email {
     animation: appear 2s forwards;
-    animation-delay: 0.6s;
+    animation-delay: 0.4s;
 }
 
 .phone {
     animation: appear 2s forwards;
-    animation-delay: 0.8s;
+    animation-delay: 0.5s;
 }
 
 /* Ajuste nos estilos iniciais dos labels e inputs */

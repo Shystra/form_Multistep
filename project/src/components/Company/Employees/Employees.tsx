@@ -8,8 +8,6 @@ type Props = {
     onNext: (value: string) => void;
     onBack: () => void;
 }
-
-
 export const Employees = ({onBack, onNext}: Props) => {
     const [currentStep, setCurrentStep] = useState(0);
     const [userChoice, setUserChoice] = useState<string | null>(null);
@@ -30,14 +28,12 @@ export const Employees = ({onBack, onNext}: Props) => {
         }
 
         onNext(choice);
-    }
+    };
     
     const handleOptionClick = (option: string) => (event: React.MouseEvent) => {
         event.preventDefault();
         handleChoice(option);
-    }
-
-
+    };
 
 
     const handleBackClick = (event: React.MouseEvent) => {
@@ -52,7 +48,7 @@ export const Employees = ({onBack, onNext}: Props) => {
         event.preventDefault();
         setCurrentStep(0);
         onBack();
-    }
+    };
 
     return (
         <div className={styles.container_employees}>
@@ -94,13 +90,22 @@ export const Employees = ({onBack, onNext}: Props) => {
             )}
             
             {currentStep === 1 && userChoice === 'ate_2' && 
-            <WorkTime/>}
+            <WorkTime
+            onNext={value => (value)}
+            onBack={() => setCurrentStep(0)}
+            />}
 
             {currentStep === 1 && userChoice === 'de_3_a_10' &&
-            <WorkTime/>}
+            <WorkTime
+            onNext={value => (value)}
+            onBack={() => setCurrentStep(0)}
+            />}
 
             {currentStep === 1 && userChoice === 'mais_de_10' &&
-            <WorkTime/>}
+            <WorkTime
+            onNext={value => (value)}
+            onBack={() => setCurrentStep(0)}
+            />}
 
         </div>
     )

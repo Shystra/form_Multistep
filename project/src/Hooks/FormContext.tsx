@@ -17,8 +17,8 @@ type FormData = {
   Patio_Fundos?: string;
   Patio_Frente_e_Fundos?: string;
   Nao_possui_patio?: string;
-  Sim_Roubo?: string;
-  Nao_Roubo?: string;
+  Sim_Roubo_Casa?: string;
+  Nao_Roubo_Casa?: string;
   Sim_Sistema?: string;
   Nao_Sistema?: string;
 
@@ -35,6 +35,18 @@ type FormData = {
   Mais_de_10_Funcionarios?: string;
 
 
+  Horario_Comercial?: string;
+  Horario_Noturno?: string;
+  Horario_24h?: string;
+
+
+  Baixo_Valor_Financeiro?: string;
+  Medio_Valor_Financeiro?: string;
+  Alto_Valor_Financeiro?: string;
+
+
+  Sim_Roubo_Empresa?: string;
+  Nao_Roubo_Empresa?: string;
 
   name?: string;
   cep?: string;

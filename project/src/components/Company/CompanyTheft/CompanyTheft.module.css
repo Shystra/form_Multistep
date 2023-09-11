@@ -1,0 +1,170 @@
+.container_option_theft {
+    position: relative; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title_option_theft{
+    margin-top: 50px;
+  }
+  
+  .buttonsWrapper_option_theft{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  
+  .progressOne_option_theft {
+    position: absolute;
+    top: -0.7%;
+    left: 2%;
+    margin-top: -30px;
+    margin-left: 0px;
+    height: 33px;
+    width: 530px;
+    background-color: #e4e01c;
+    border-radius: 25px;
+    flex-grow: 1;
+  }
+  .progressLabel_option_theft{
+    position: relative;
+    left: 140px;
+    transform: translateX(-50%);
+    margin: 0;
+    top: -25px;
+  }
+  
+  .options_theft_yes button, 
+  .options_theft_no button{
+    background-color: #200082;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 12px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px 1px;
+    cursor: pointer;
+    transition-duration: 0.4s; 
+    position: relative;
+    overflow: hidden;
+  }
+  
+
+  .buttonBack_option_theft button{
+    background-color: #da1717;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 12px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s; 
+    position: relative;
+    overflow: hidden;
+  }
+  .options_theft_yes button:hover,
+  .options_theft_no button:hover{
+    background-color: #3B00E9;
+  }
+   .buttonBack_option_theft button:hover{
+    background-color: #ff000dcc;
+  }
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .options_theft_yes button, 
+  .options_theft_no button, 
+  .buttonBack_option_theft button {
+    opacity: 0;  
+    animation: appear 2s forwards;
+  }
+  
+
+  
+  @media (max-width: 768px){
+    .progressOne_option_theft{
+        position: relative;
+        height: 25px;
+        left: 9px;
+        width: 290px;
+        top: 5px;
+    }
+    .progressLabel_option_theft{
+        position: absolute;
+        left: 270px;
+        top: 3.0%;
+    }
+    .title_option_theft{
+        height: 15vh;
+        margin-top: 70px;
+    }
+
+    .buttonsWrapper_option_theft{
+        flex-direction: row;
+        gap: 20px;
+    }
+    .options_theft_yes,
+    .options_theft_no, 
+    .buttonBack_option_theft{
+        /* margin-top: -80px; */
+        margin-bottom: 10px;
+
+    }
+
+    .options_theft_yes button,
+    .options_theft_no button {
+        font-size: 14px;
+        margin-top: 30px;
+        padding: 12px 50px;
+        
+    }
+    .buttonBack_option_theft button{
+        font-size: 14px;
+        margin-top: 0px;
+        padding: 12px 80px;
+        
+    }
+
+
+  }
+
+  @media (max-width: 428px){
+    .progressLabel_option_theft{
+      left: 67%;
+      top: 2.7%;
+    }
+  }
+  @media (max-width: 376px){
+    .progressLabel_option_theft{
+      left: 73%;
+      /* top: 2.7%; */
+    }
+  }
+
+  @media (max-width: 393px){
+    .progressLabel_option_theft
+    {
+      left: 73%;
+    }
+  }
+  @media (max-width: 360px){
+    .progressLabel_option_theft{
+      left: 77%;
+    }
+  }
+

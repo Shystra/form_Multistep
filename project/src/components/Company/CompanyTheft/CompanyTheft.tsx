@@ -1,15 +1,13 @@
-import { useFormDataContext } from '../../../Hooks/FormContext';
-import { OptionSistem } from '../OptionSistem/OptionSistem';
-import styles from './OptionTheft.module.css';
+import { OptionSistem } from "../../Urban_or_Rural/OptionSistem/OptionSistem";
+import styles from './CompanyTheft.module.css';
 import { useState } from 'react';
-
+import { useFormDataContext } from '../../../Hooks/FormContext';
 
 type Props = {
     onNext: (value: string) => void;
     onBack: () => void;
 }
-
-export const OptionTheft = ({ onBack, onNext }: Props) => {
+export const CompanyTheft = ({ onNext, onBack }:Props) => {
     const [currentStep, setCurrentStep] = useState(0);
     const {updateFields, removeFields} = useFormDataContext();
     const [userChoice, setUserChoice] = useState<string | null>(null);
@@ -19,9 +17,9 @@ export const OptionTheft = ({ onBack, onNext }: Props) => {
         setCurrentStep(1);
 
         if(choice === 'sim'){
-            updateFields({ Sim_Roubo_Casa: choice })
+            updateFields({ Sim_Roubo_Empresa: choice })
         } else if (choice === 'nao'){
-            updateFields({ Nao_Roubo_Casa: choice })
+            updateFields({ Nao_Roubo_Empresa: choice })
         }
 
         onNext(choice);
@@ -34,9 +32,9 @@ export const OptionTheft = ({ onBack, onNext }: Props) => {
 
     const handleBackClick = (event: React.MouseEvent) => {
         if (userChoice === "sim") {
-            removeFields(['Sim_Roubo_Casa']);
+            removeFields(['Sim_Roubo_Empresa']);
         } else if (userChoice === "nao") {
-            removeFields(['Nao_Roubo_Casa'])
+            removeFields(['Nao_Roubo_Empresa'])
         }
 
         event.preventDefault();
@@ -54,7 +52,7 @@ export const OptionTheft = ({ onBack, onNext }: Props) => {
                     <div className={styles.progressOne_option_theft}></div>
                         <label className={styles.progressLabel_option_theft}>75%</label>
                             <h1 className={styles.title_option_theft}>
-                                Alguém já tentou roubar sua casa ou a casa dos vizinhos?</h1>
+                                Alguém já tentou roubar a sua empresa ou a empresa de algum dos vizinhos?</h1>
                 
                 
                     <div className={styles.buttonsWrapper_option_theft}>
@@ -76,13 +74,15 @@ export const OptionTheft = ({ onBack, onNext }: Props) => {
             
                 </>
                 )}
-                {currentStep === 1 && userChoice === 'sim' && <OptionSistem
+                {currentStep === 1 && userChoice === 'sim' && 
+                <OptionSistem
                 onNext={value => (value)}
                 onBack={() => setCurrentStep(0)}
                 />}
                 
                 
-                {currentStep === 1 && userChoice === 'nao' && <OptionSistem 
+                {currentStep === 1 && userChoice === 'nao' && 
+                <OptionSistem 
                 onNext={value => (value)}
                 onBack={() => setCurrentStep(0)}
                 />}
