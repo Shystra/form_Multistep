@@ -30,6 +30,9 @@ type FormData = {
   Comercio_Rua?: string;
 
 
+  Ate_2_Funcionarios?: string;
+  De_3_a_10_Funcionarios?: string;
+  Mais_de_10_Funcionarios?: string;
 
 
 

@@ -105,13 +105,25 @@ export const Company = ({onNext, onBack}: Props) => {
             )}
         
             {currentStep === 1 && userChoice === 'empresa_centro_comercial' && 
-            <Employees/>}
+            <Employees
+            onNext={value => (value)}
+            onBack={() => setCurrentStep(0)}
+            />}
             {currentStep === 1 && userChoice === 'empresa_area_industrial' && 
-            <Employees/>}
+            <Employees
+            onNext={value => (value)}
+            onBack={() => setCurrentStep(0)}
+            />}
             {currentStep === 1 && userChoice === 'predio_comercial' && 
-            <Employees/>}
+            <Employees
+            onNext={value => (value)}
+            onBack={() => setCurrentStep(0)}
+            />}
             {currentStep === 1 && userChoice === 'comercio_rua' &&
-            <Employees/>}
+            <Employees
+            onNext={value => (value)}
+            onBack={() => setCurrentStep(0)}
+            />}
         </div>
     )
 };
