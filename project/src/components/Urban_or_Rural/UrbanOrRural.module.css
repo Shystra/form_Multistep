@@ -196,7 +196,7 @@ background-color: #ff000dcc;
 /* Ajustes para telas maiores */
 @media (max-width: 769px) {
 .containerForm_tipos_residencia {
-  height: 700vh;
+  height: 720vh;
 }
 
 .title_tipo_residencia {
@@ -211,7 +211,7 @@ background-color: #ff000dcc;
 .progressOne_residence {
   position: absolute;
   height: 26px;
-  margin-top: -2%;
+  margin-top: -2.1%;
   margin-left: 6%;
   /*verificar esse ponto para celulares*/
 
