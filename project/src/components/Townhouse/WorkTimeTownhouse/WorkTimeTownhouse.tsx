@@ -1,15 +1,14 @@
-import { useFormDataContext } from '../../../Hooks/FormContext';
-import {useState} from 'react';
-import styles from './WorkTime.module.css';
-import { TypeMerchandise } from '../TypeMerchandise/TypeMerchandise';
-
-
+import { useState } from "react";
+import { useFormDataContext } from "../../../Hooks/FormContext";
+import styles from "./WorkTimeTownhouse.module.css";
+import { CompanyTheft } from "../../Company/CompanyTheft/CompanyTheft";
 
 type Props = {
     onNext: (value: string) => void;
     onBack: () => void;
 }
-export const WorkTime = ({onBack, onNext}: Props) => {
+
+export const WorkTimeTownhouse = ({ onNext, onBack }: Props) => {
     const [currentStep, setCurrentStep] = useState(0);
     const [userChoice, setUserChoice] = useState<string | null>(null);
     const {updateFields, removeFields} = useFormDataContext();
@@ -57,7 +56,7 @@ export const WorkTime = ({onBack, onNext}: Props) => {
           <div className={styles.progressOne_option_worktime}></div>        
             <label className={styles.progressLabel_option_worktime}>28,56%</label>
             
-            <h1 className={styles.title_option_worktime}>Qual é o horário de funcionamento da sua empresa?</h1>
+            <h1 className={styles.title_option_worktime}>Qual é o horário de funcionamento?</h1>
             
 
 
@@ -84,21 +83,20 @@ export const WorkTime = ({onBack, onNext}: Props) => {
                     </div>
             </>
             )}
-
             {currentStep === 1 && userChoice === 'horario_comercial' &&
-            <TypeMerchandise
+            <CompanyTheft
             onNext={value => (value)}
             onBack={() => setCurrentStep(0)}
             />}
 
             {currentStep === 1 && userChoice === 'horario_noturno' &&
-            <TypeMerchandise
+            <CompanyTheft
             onNext={value => (value)}
             onBack={() => setCurrentStep(0)}
             />}
 
             {currentStep === 1 && userChoice === 'horario_24h' && 
-            <TypeMerchandise
+            <CompanyTheft
             onNext={value => (value)}
             onBack={() => setCurrentStep(0)}
             />}

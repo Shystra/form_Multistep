@@ -48,6 +48,16 @@ type FormData = {
   Sim_Roubo_Empresa?: string;
   Nao_Roubo_Empresa?: string;
 
+  Condominio_Residencial?: string;
+  Condominio_Comercial?: string;
+  
+
+  Até_10_Unidades?: string;
+  Até_50_Unidades?: string;
+  Acima_50_Unidades?: string;
+
+
+
   name?: string;
   cep?: string;
   email?: string;

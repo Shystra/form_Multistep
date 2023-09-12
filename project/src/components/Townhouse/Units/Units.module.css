@@ -1,0 +1,198 @@
+.container_option_units {
+  position: relative; 
+  justify-content: center;
+  align-items: center;
+  
+ 
+}
+.title_option_units{
+  margin-top: 50px;
+}
+
+.buttonsWrapper_option_menos_units{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.progressOne_option_units {
+  position: absolute;
+  top: -1%;
+  left: 0.7%;
+  margin-top: -28px;
+  margin-left: 0px;
+  height: 33px;
+  width: 300px;
+  background-color: #e4e01c;
+  border-radius: 25px;
+  flex-grow: 1;
+}
+.progressLabel_option_units{
+  position: relative;
+  left: -95px;
+  transform: translateX(-50%);
+  margin: 0;
+  top: -25px;
+  
+}
+
+.option_menos_units button, 
+.option_mais_units button, 
+.option_ever_units button{
+  background-color: #200082;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 12px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 50px 1px;
+  cursor: pointer;
+  transition-duration: 0.4s; 
+  position: relative;
+  overflow: hidden;
+}
+
+.buttonBack_option_units button{
+  background-color: #da1717;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 12px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s; 
+  position: relative;
+  overflow: hidden;
+}
+.option_menos_units button:hover, .option_mais_units button:hover,
+.option_ever_units button:hover{
+  background-color: #3B00E9;
+}
+ .buttonBack_option_units button:hover{
+  background-color: #ff000dcc;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.option_menos_units button, .option_mais_units button, .option_ever_units button,
+.buttonBack_option_units button {
+  opacity: 0;  
+  animation: appear 2s forwards;
+}
+
+@media (max-width: 768px){
+  .progressOne_option_units{
+      position: relative;
+      height: 26px;
+      left: 73px;
+      width: 70px;
+      top: 2px;
+  }
+  .progressLabel_option_units{
+      position: absolute;
+      left: 92px;
+      top: 3.5%;
+      transform: translateY(-50%);
+  }
+  .title_option_units{
+      height: 4vh;
+      margin-top: 20px;
+  }
+
+  .buttonsWrapper_option_menos_units{
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 80px;
+      
+  }
+  .button_menos_units, 
+  .option_mais_units, 
+  .option_ever_units{
+      margin-top: -70px;
+      margin-bottom: 20px;
+  }
+  .buttonBack_option_units{
+      margin-top: -30px;
+      margin-bottom: 5px;
+  }
+
+  
+  .option_ever_units button {
+      font-size: 14px;
+      margin-top: 10px;
+      padding: 12px 60px;
+  }
+
+  .option_menos_units button{
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 12px 50px;
+  }
+
+  .option_mais_units button{
+    font-size: 14px;
+    margin-top: 25px;
+    padding: 12px 60px;
+  }
+
+  .buttonBack_option_units button{
+      font-size: 14px;
+      margin-top: -10px;
+      padding: 12px 80px;
+      
+  }
+
+
+}
+
+@media (max-width: 376px){
+  .progressOne_option_units{
+      position: relative;
+      height: 26px;
+      left: 2%;
+      width: 40%;
+      top: 3px;
+  }
+  .progressLabel_option_units{
+    left: 26%;
+    top: 15px;
+  }
+}
+
+@media (max-width: 428px){
+  .progressOne_option_units{
+    width: 40%;
+    left: 2%;
+  }
+  .progressLabel_option_units{
+    left: 26%;
+  }
+}
+
+
+@media (max-width: 393px){
+  .progressLabel_option_units{
+    top: 15px;
+  }
+}
+
+@media (max-width: 360px){
+  .progressLabel_option_units{
+    top: 4%;
+  }
+}

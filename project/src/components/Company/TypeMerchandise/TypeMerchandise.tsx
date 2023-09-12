@@ -49,41 +49,34 @@ export const TypeMerchandise = ({onNext, onBack}: Props) => {
     }
 
     return(
-        <div className={styles.container_type_merchandise}>
+        <div className={styles.container_option_merchandise}>
+          {currentStep === 0 && (
+          <>
+          <div className={styles.progressOne_option_merchandise}></div>        
+            <label className={styles.progressLabel_option_merchandise}>28,56%</label>
             
-            {currentStep === 0 && (
-            <>
-                <div className={styles.progressOne_type_merchandise}></div>
-                    <label className={styles.progressLabel_type_merchandise}>20%</label>
-                        <h1 className={styles.title_type_merchandise}>
-                            Qual é o tipo de mercadoria da sua empresa?
-                        </h1>
+            <h1 className={styles.title_option_merchandise}>Qual é o tipo de mercadoria comercializada pela sua empresa?</h1>
+            
 
-                <div className={styles.buttonsWrapper_type_merchandise}>
-                    <div className={styles.option_type_merchandise_one}>
-                        <button
-                        onClick={handleOptionClick('baixo_valor_financeiro')}
-                        >Baixo Valor Financeiro</button>
-                    </div>
 
-                    <div className={styles.option_type_merchandise_two}>
-                        <button
-                        onClick={handleOptionClick('medio_valor_financeiro')}
-                        >Médio Valor Financeiro</button>
-                    </div>
-
-                    <div className={styles.option_type_merchandise_three}>
-                        <button
-                        onClick={handleOptionClick('alto_valor_financeiro')}
-                        >Alto Valor Financeiro</button>
-                    </div>
+              <div className={styles.buttonsWrapper_option_menos_merchandise}>
+                <div className={styles.option_menos_merchandise}>
+                  <button className={styles.button_menos_merchandise} 
+                  onClick={handleOptionClick('baixo_valor_financeiro')}>Baixo Valor Financeiro</button>
                 </div>
+              <div className={styles.option_mais_merchandise}>
+                <button className={styles.button_mais_merchandise} 
+                  onClick={handleOptionClick('medio_valor_financeiro')}>Médio Valor Financeiro</button>
+              </div>
+              <div className={styles.option_ever_merchandise}>
+                <button className={styles.button_ever_merchandise} 
+                  onClick={handleOptionClick('alto_valor_financeiro')}>Alto Valor Financeiro</button>
+              </div>
+              </div>
 
-                <div className={styles.onBack}>
-                    <button
-                    onClick={handleBackClick}
-                    >Voltar</button>
-                </div>
+              <div className={styles.buttonBack_option_merchandise}>
+                <button onClick={handleBackClick}>Voltar</button>
+                </div>  
             
             </>
             )}

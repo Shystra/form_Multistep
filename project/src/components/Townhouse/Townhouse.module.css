@@ -1,0 +1,238 @@
+.container_option_townhouse{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 500vh;
+}
+.title_option_townhouse{
+    margin-top: 50px;
+}
+.progressOne_option_townhouse{
+    position: absolute;
+    top: -1%;
+    left: -15%;
+    margin-top: -28px;
+    margin-left: 0px;
+    height: 33px;
+    width: 30%;
+    background-color: #e4e01c;
+    border-radius: 25px;
+    flex-grow: 1;
+}
+
+.progressLabel_option_townhouse{
+    position: relative;
+    left: -45%;
+    transform: translateX(-50%);
+    margin: 0;
+    top: -25px;
+}
+
+
+
+.buttonsWrapper_option_townhouse{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+
+}
+.buttons_wrapper_two{
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+
+.option_townhouse_shopping_center button,
+.option_townhouse_industrial_area button{
+    background-color: #200082;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 15px 29px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 2px;
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;  
+    top: 70%;
+    left: -1%;
+}
+
+.option_street_commerce button,
+.option_business_building button{
+    background-color: white;
+    border: #200082 solid 1.5px;
+    border-radius: 30px;
+    color: #200082;
+    padding: 13px 75px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 2px;
+    transition: 0.4s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;  
+    top: 70%;
+    left: 1%;   
+}
+
+.button_back button{
+    position: relative;
+    background-color: #da1717;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 12px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    top: 90px;
+}
+
+.option_street_commerce button:hover,
+.option_business_building button:hover{
+    background-color: #200082;
+    color: white;
+}
+.option_townhouse_industrial_area button:hover,
+.option_townhouse_shopping_center button:hover{
+    background-color: #3B00E9;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.option_street_commerce button,
+.option_business_building button,
+.option_townhouse_industrial_area button,
+.option_townhouse_shopping_center button,
+.button_back button
+{
+    animation: appear 2s forwards;
+}
+
+
+@media (max-width: 768px) {
+    .container_option_townhouse{
+        height: 715vh;
+    }
+    
+    .progressOne_option_townhouse{
+        position: relative;
+        height: 27px;
+        left: -11.5%;
+        width: 30%;
+        top: 0.7%;
+    }
+
+    .progressLabel_option_townhouse{
+        position: absolute;
+        left: 10%;
+        top: -3.4%;
+    }
+
+    .buttonsWrapper_option_townhouse{
+        flex-direction: column;
+        gap: 10px;
+
+    }
+   .buttons_wrapper_two{
+        flex-direction: column;
+        gap: 10px;
+        
+   }
+
+   .option_townhouse_shopping_center button{
+         padding: 15px 20px;
+         top: 30px;
+   }
+   .option_townhouse_industrial_area button{
+        padding: 15px 33px;
+        top: 30px;
+   }
+
+   .option_street_commerce button{
+        padding: 12px 70px;
+        left: -0%;
+        top: 30px;
+   }
+   .option_business_building button{
+        padding: 12px 73px;
+        left: -0%;
+        top: 30px;
+   }
+  
+   .button_back button{
+        padding: 12px 80px;
+        top: 50px;
+   }
+}
+
+@media (max-width: 391px) {
+    .progressOne_option_townhouse{
+        left: -8%;
+    }
+    .progressLabel_option_townhouse{
+        top: -3.3%;
+    }
+}
+
+@media (max-width: 376px) {
+    .progressOne_option_townhouse{
+        position: relative;
+        height: 24px;
+        left: -5.5%;
+        width: 30%;
+        top: 0.8%;
+    }
+    .progressLabel_option_townhouse{
+        position: absolute;
+        left: 16%;
+        top: -4.3%;
+    }
+
+    .option_townhouse_shopping_center button {
+        font-size: 14px;
+        top: 15px;
+    }
+    .option_townhouse_industrial_area button {
+        font-size: 14px;
+        top: 5px;
+    }
+    .option_street_commerce button {
+        font-size: 14px;
+        top: 1px;
+    }
+    .option_business_building button {
+        font-size: 14px;
+        top: 5px;
+    }
+    .button_back button {
+        font-size: 14px;
+
+        top: 5px;
+    }
+}
+
