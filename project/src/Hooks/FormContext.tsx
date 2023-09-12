@@ -59,7 +59,7 @@ type FormData = {
 const FormDataContext = createContext<{
   formData: FormData;
   updateFields: (fields: Partial<FormData>) => void;
-  removeFields: (fields: Array<keyof FormData>) => void;  // Adicione esta linha
+  removeFields: (fields: Array<keyof FormData>) => void;
 }>({
   formData: {},
   updateFields: () => {},

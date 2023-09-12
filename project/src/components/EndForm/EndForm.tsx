@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 import { useFormDataContext } from '../../Hooks/FormContext';
 import styles from './EndForm.module.css';
 
+
 []
 type Props = {
     onNext: (value: string) => void;
     onBack: () => void;
 }
 export const EndForm = ({onBack}: Props) => {
+    const { formData } = useFormDataContext();
+
     const {updateFields} = useFormDataContext();
     const [userChoice, setUserChoice] = useState<string | null>(null);
     console.log("🚀 ~ file: EndForm.tsx:13 ~ EndForm ~ userChoice:", userChoice)
@@ -26,13 +29,6 @@ export const EndForm = ({onBack}: Props) => {
     }
     console.log("🚀 ~ file: EndForm.tsx:27 ~ handleChoice ~ handleChoice:", handleChoice)
 
-
-
-    // const handleOptionCLick = (option: string) => (event: React.MouseEvent) => {
-    //     event.preventDefault();
-    //     handleChoice(option);
-    // };
-
     const handleBackClick = (event: React.MouseEvent) => {
         event.preventDefault();
         setCurrentStep(0);
@@ -49,6 +45,7 @@ export const EndForm = ({onBack}: Props) => {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
+                    ...formData,
                     name,
                     cep,
                     email,
