@@ -4,7 +4,7 @@ import logo_intersept from '../../assets/logo.png';
 
 import styles from './Home.module.css';
 import { useState } from 'react';
-import { First_Page } from '../../components/First_Page/First_Page';
+import { First_Page } from './First_Page/First_Page';
 import { UrbanOrRural } from '../../components/Urban_or_Rural/UrbanOrRural';
 import { Company } from '../../components/Company/Company';
 import { Townhouse } from '../../components/Townhouse/Townhouse';

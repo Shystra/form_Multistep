@@ -1,7 +1,7 @@
-import { useFormDataContext } from '../../Hooks/FormContext';
-import { Company } from '../Company/Company';
-import { Townhouse } from '../Townhouse/Townhouse';
-import { OptionUrbanHome } from '../Urban_or_Rural/OptionUrbanHome/OptionUrbanHome';
+import { useFormDataContext } from '../../../Hooks/FormContext';
+import { Company } from '../../../components/Company/Company';
+import { Townhouse } from '../../../components/Townhouse/Townhouse';
+import { OptionUrbanHome } from '../../../components/Urban_or_Rural/OptionUrbanHome/OptionUrbanHome';
 import styles from './First_Page.module.css';
 import { useState } from 'react';
 
