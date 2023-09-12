@@ -27,7 +27,7 @@
   position: absolute;
   top:  6.1%;
   left: 2%;
-  margin-top: -28px;
+  margin-top: -30px;
   margin-left: 0px;
   height: 33px;
   width: 12%;
@@ -244,9 +244,10 @@
     margin-top: 3%;
   }
   .progressOne{
-    /* margin-top: -7.9%; */
-    left: 8px;
-  
-  
+    margin-top: -7.3%;
+    left: 6.0px;
+  }
+  .progressLabel{
+    top: 20%;
   }
 }

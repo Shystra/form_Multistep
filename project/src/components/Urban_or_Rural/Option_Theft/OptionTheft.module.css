@@ -99,10 +99,10 @@
   @media (max-width: 768px){
     .progressOne_option_theft{
         position: relative;
-        height: 25px;
-        left: 9px;
+        height: 26px;
+        left: 7px;
         width: 290px;
-        top: 5px;
+        top: 4px;
     }
     .progressLabel_option_theft{
         position: absolute;

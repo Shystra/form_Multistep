@@ -22,7 +22,7 @@
     margin-top: -28px;
     margin-left: 0px;
     height: 33px;
-    width: 370px;
+    width: 390px;
     background-color: #e4e01c;
     border-radius: 25px;
     flex-grow: 1;
@@ -109,7 +109,7 @@
     }
     .progressLabel_option_way{
         position: absolute;
-        left: 120px;
+        left: 125px;
         top: 3.5%;
         transform: translateY(-50%);
     }
@@ -149,8 +149,6 @@
         padding: 12px 80px;
         
     }
-
-
   }
 
   @media (max-width: 376px){
@@ -172,6 +170,7 @@
       left: 2%;
     }
     .progressLabel_option_way{
-      left: 41%;
+      left: 37%;
+      top: 3.6%;
     }
   }
