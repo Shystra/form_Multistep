@@ -213,7 +213,7 @@ background-color: #ff000dcc;
   position: absolute;
   height: 26px;
   margin-top: -7.2px;
-  margin-left: 18px;
+  margin-left: 16.5px;
 
 }
 
@@ -252,7 +252,7 @@ background-color: #ff000dcc;
 }
 
 @media (max-width: 414px) {
-  .progressOne_residence{
+  /* .progressOne_residence{
     top: -3.5%;
     left: -22%;
     width: 35%;
@@ -261,7 +261,7 @@ background-color: #ff000dcc;
   .progressLabel_residence{
     left: -4%;
     top: -3.1%;
-  }
+  } */
 }
 
 @media (max-width: 393px){
