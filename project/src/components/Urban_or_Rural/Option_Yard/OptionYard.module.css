@@ -164,12 +164,13 @@
 
 @media(max-width: 786px){
   .progressOne_option_residence{
-    top: -10px;
-    margin-left: 0px;
+    /* top: -9px; */
+    margin-top: -10.5%;
+    margin-left: 1px;
   }
   .progressLabel_option_residence{
     position: absolute;
-    margin-top: -11px;
+    margin-top: -0px;
   }
 }
 
