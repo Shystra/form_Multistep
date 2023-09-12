@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import { useFormDataContext } from '../../Hooks/FormContext';
+import { useFormDataContext } from '../../../Hooks/FormContext';
 import styles from './EndForm.module.css';
 
 
-[]
 type Props = {
     onNext: (value: string) => void;
     onBack: () => void;

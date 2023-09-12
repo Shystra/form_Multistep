@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useFormDataContext } from "../../../Hooks/FormContext";
 import styles from './OptionSistem.module.css';
-import { EndForm } from "../../EndForm/EndForm";
+import { EndForm } from "../../../Pages/Home/EndForm/EndForm";
 
 
 type Props = {
