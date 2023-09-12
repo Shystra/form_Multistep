@@ -16,10 +16,9 @@
   
   .progressOne_option_theft {
     position: absolute;
-    top: -0.7%;
+    top: -1%;
     left: 2%;
     margin-top: -30px;
-    margin-left: 0px;
     height: 33px;
     width: 530px;
     background-color: #e4e01c;
@@ -30,8 +29,7 @@
     position: relative;
     left: 140px;
     transform: translateX(-50%);
-    margin: 0;
-    top: -25px;
+    top: -27px;
   }
   
   .options_theft_yes button, 

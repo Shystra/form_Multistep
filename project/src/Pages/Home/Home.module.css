@@ -243,9 +243,13 @@
     height: 50px;
     margin-top: 3%;
   }
+
+  .progressBar{
+    height: 30vh;
+  }
   .progressOne{
-    margin-top: -6.5%;
-    left: 6.9px;
+    margin-top: -7.5%;
+    left: 2%;
   }
   .progressLabel{
     top: 20%;

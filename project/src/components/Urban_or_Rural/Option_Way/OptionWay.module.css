@@ -17,8 +17,8 @@
   
   .progressOne_option_way {
     position: absolute;
-    top: -0.8%;
-    left: -4%;
+    top: -5px;
+    left: -4.2%;
     margin-top: -28px;
     margin-left: 0px;
     height: 33px;
@@ -32,7 +32,7 @@
     left: -5px;
     transform: translateX(-50%);
     margin: 0;
-    top: -25px;
+    top: -27px;
     
   }
   

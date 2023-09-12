@@ -11,9 +11,8 @@
 .progressOne_option_residence{
   position: absolute;
   top: -1%;
-  left: -18%;
-  margin-top: -28px;
-  margin-left: 0px;
+  left: -17.6%;
+  margin-top: -6.2%;
   height: 33px;
   width: 450px;
   background-color: #e4e01c;
@@ -25,7 +24,7 @@
   left: 60px;
   transform: translateX(-50%);
   margin: 0;
-  top: -25px;
+  top: -27px;
 }
 
 .buttonsWrapper_option_residence{
