@@ -162,6 +162,17 @@
   }
 }
 
+@media(max-width: 786px){
+  .progressOne_option_residence{
+    top: -10px;
+    margin-left: 0px;
+  }
+  .progressLabel_option_residence{
+    position: absolute;
+    margin-top: -11px;
+  }
+}
+
 
 @media (max-width: 376px) {
 
