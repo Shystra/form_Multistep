@@ -12,6 +12,25 @@
   
 }
 
+.footer_intersept{
+  color: white;
+  margin: 2%;
+  font-size: 18px;
+}
+.black_intersept a{
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.icons svg{
+  font-size: 35px;
+  margin: 0.9%;
+  color: white;
+  cursor: pointer;
+}
+
 .progressBar {
   position: relative;
   top: 0%;
@@ -113,6 +132,7 @@
     width: 700px;
     height: 100px;
   }
+  
  
 }
 
@@ -135,6 +155,8 @@
   .progressLabel{
     top: 5px;
   }
+
+  
 }
 
 
@@ -160,6 +182,7 @@
   .progressLabel{
     top: 7px;
   }
+  
 }
 
 @media (max-width: 390px){
@@ -177,6 +200,10 @@
     width: 130px;
     height: 130px;
   }
+
+  
+
+  
  
 }
 @media (max-width: 393px){
@@ -194,7 +221,7 @@
     height: 27px;
     width: 18%;
   } */
-
+  
 }
 @media (max-width: 376px){
  
@@ -205,6 +232,7 @@
   .logo_intersept img{
     width: 120px;
     height: 120px;
+    margin-top: 20%;
   }
 
   .progressOne{
@@ -213,7 +241,10 @@
     height: 20px;
     width: 18%;
   }	
+
  
+  
+  
 
 }
 @media (max-width: 360px){
@@ -238,6 +269,32 @@
   .logo_intersept{
     margin-top: -0px;
   }
+
+
+  .footer_intersept{
+    color: white;
+    margin: 2%;
+    margin-top: 15%;
+    font-size: 18px;
+  }
+  .black_intersept{
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+  }
+  .icons{
+    margin-top: 2%;
+  }
+  
+  .icons svg{
+    margin: 0.9%;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    margin-top: 2%;
+  }
+
+
 
   .img_banner{
     width: 50px;

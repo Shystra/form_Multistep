@@ -9,6 +9,13 @@ import { UrbanOrRural } from '../../components/Urban_or_Rural/UrbanOrRural';
 import { Company } from '../../components/Company/Company';
 import { Townhouse } from '../../components/Townhouse/Townhouse';
 
+import { BsYoutube } from 'react-icons/bs';
+import { BsFacebook } from 'react-icons/bs';
+import { BsLinkedin } from 'react-icons/bs';
+import { BiLogoInstagramAlt } from 'react-icons/bi';
+
+
+
 
 
 export function Home() {
@@ -48,6 +55,14 @@ export function Home() {
     }
     return null;
   };
+
+
+
+  const linkIntersept = "https://www.intersept.com.br/";
+  const linkInstagram = "https://www.instagram.com/grupointersept/";
+  const linkFacebook  = "https://www.facebook.com/InterseptSeguranca";
+  const linkYoutube   = "https://www.youtube.com/@interseptbr";
+  const linkLinkedin  = "https://www.linkedin.com/company/grupo-intersept/";
   
   
   return (
@@ -72,6 +87,34 @@ export function Home() {
       <div className={styles.img_banner}>
         <img src={banner_comercial} alt="Banner Comercial"/>
       </div>
+
+
+      <div className={styles.footer_intersept}>
+        <p>Siga a 
+          <span className={styles.black_intersept}> 
+            <a href={linkIntersept}> Intersept</a> 
+          </span> nas redes sociais
+        </p>
+      </div>
+
+
+
+      <div className={styles.icons}>
+        <a href={linkFacebook} target="_blank" rel="noopener noreferrer">
+          <BsFacebook />
+        </a>
+        <a href={linkLinkedin} target="_blank" rel="noopener noreferrer">
+          <BsLinkedin />
+        </a>
+        <a href={linkYoutube} target="_blank" rel="noopener noreferrer">
+          <BsYoutube />
+        </a>
+        <a href={linkInstagram} target="_blank" rel="noopener noreferrer">
+          <BiLogoInstagramAlt />
+        </a>
+</div>
+
+
     </form>
   );
 }
