@@ -134,9 +134,9 @@ gap: 10px;
 
 .progressOne_residence {
 position: relative;
-top: -3px;
+top: -3.6px;
 left: -88px;
-height: 33px;
+height: 34px;
 width: 200px;
 background-color: #e4e01c;
 border-radius: 25px;
@@ -144,7 +144,7 @@ border-radius: 25px;
 
 .progressLabel_residence {
 position: absolute;
-left: 45px;
+left: 70px;
 top: -6%;
 }
 

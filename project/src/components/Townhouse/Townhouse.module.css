@@ -9,11 +9,11 @@
 }
 .progressOne_option_townhouse{
     position: absolute;
-    top: -1.2%;
-    left: -14.5%;
+    top: -1.6%;
+    left: -14.6%;
     margin-top: -27px;
     margin-left: 0px;
-    height: 33px;
+    height: 34px;
     width: 30%;
     background-color: #e4e01c;
     border-radius: 25px;
@@ -22,7 +22,7 @@
 
 .progressLabel_option_townhouse{
     position: relative;
-    left: -45%;
+    left: -42%;
     transform: translateX(-50%);
     margin: 0;
     top: -27px;

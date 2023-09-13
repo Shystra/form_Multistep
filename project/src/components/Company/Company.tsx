@@ -58,7 +58,7 @@ export const Company = ({onNext, onBack}: Props) => {
         {currentStep === 0 && (
                 <>
                 <div className={styles.progressOne_company}></div>
-                    <label className={styles.progressLabel_company}>14,28%</label>
+                    <label className={styles.progressLabel_company}>15%</label>
             <h1 className={styles.title_tipo_residencia}>Selecione uma das opções:</h1>
             
             <div className={styles.buttonsWrapper}>

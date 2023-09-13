@@ -53,7 +53,7 @@ export const TypeMerchandise = ({onNext, onBack}: Props) => {
           {currentStep === 0 && (
           <>
           <div className={styles.progressOne_option_merchandise}></div>        
-            <label className={styles.progressLabel_option_merchandise}>28,56%</label>
+            <label className={styles.progressLabel_option_merchandise}>55%</label>
             
             <h1 className={styles.title_option_merchandise}>Qual é o tipo de mercadoria comercializada pela sua empresa?</h1>
             

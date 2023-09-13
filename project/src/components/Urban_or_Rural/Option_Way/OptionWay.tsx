@@ -69,7 +69,7 @@ export const OptionWay = ({ onNext, onBack }: Props) => {
             {currentStep === 0 && (
                 <>
                     <div className={styles.progressOne_option_way}></div>
-                        <label className={styles.progressLabel_option_way}>42,84%</label>
+                        <label className={styles.progressLabel_option_way}>55%</label>
                             <h1 className={styles.title_option_way}>Como você costuma chegar no local?</h1>
                                 
 

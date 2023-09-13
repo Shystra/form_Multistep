@@ -161,9 +161,9 @@
   
   .progressOne_company {
   position: relative;
-  top: -3.5px;
-  left: -10.7%;
-  height: 33px;
+  top: -3.6px;
+  left: -10.8%;
+  height: 34px;
   width: 150px;
   background-color: #e4e01c;
   border-radius: 25px;
@@ -171,7 +171,7 @@
   
   .progressLabel_company {
   position: absolute;
-  left: -10px;
+  left: -0px;
   top: -6%;
   }
   

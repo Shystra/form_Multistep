@@ -54,7 +54,7 @@ export const WorkTimeTownhouse = ({ onNext, onBack }: Props) => {
           {currentStep === 0 && (
           <>
           <div className={styles.progressOne_option_worktime}></div>        
-            <label className={styles.progressLabel_option_worktime}>28,56%</label>
+            <label className={styles.progressLabel_option_worktime}>65%</label>
             
             <h1 className={styles.title_option_worktime}>Qual é o horário de funcionamento?</h1>
             

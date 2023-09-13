@@ -53,7 +53,7 @@ export const Units = ({onNext, onBack}: Props) => {
           {currentStep === 0 && (
           <>
           <div className={styles.progressOne_option_units}></div>        
-            <label className={styles.progressLabel_option_units}>28,56%</label>
+            <label className={styles.progressLabel_option_units}>35%</label>
             
             <h1 className={styles.title_option_units}>Qual é a quantidade de unidades?</h1>
             

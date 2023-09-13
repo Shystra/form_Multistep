@@ -17,11 +17,11 @@
   
   .progressOne_option_worktime {
     position: absolute;
-    top: -1.2%;
-    left: -0.1%;
+    top: -1.7%;
+    left: -0.3%;
     margin-top: -29px;
     margin-left: 0px;
-    height: 33px;
+    height: 34px;
     width: 450px;
     background-color: #e4e01c;
     border-radius: 25px;
@@ -29,7 +29,7 @@
   }
   .progressLabel_option_worktime{
     position: relative;
-    left: 60px;
+    left: 75px;
     transform: translateX(-50%);
     margin: 0;
     top: -26px;

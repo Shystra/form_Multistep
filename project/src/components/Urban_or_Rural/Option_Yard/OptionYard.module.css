@@ -10,10 +10,10 @@
 
 .progressOne_option_residence{
   position: absolute;
-  top: 1%;
+  top: 0.8%;
   left: -7%;
   margin-top: -6.2%;
-  height: 33px;
+  height: 34px;
   width: 450px;
   background-color: #e4e01c;
   border-radius: 25px;
@@ -21,7 +21,7 @@
 }
 .progressLabel_option_residence{
   position: relative;
-  left: 60px;
+  left: 80px;
   transform: translateX(-50%);
   margin: 0;
   top: -27px;

@@ -19,9 +19,9 @@
     position: absolute;
     top: -1.5%;
     left: 2%;
-    margin-top: -28px;
+    margin-top: -29px;
     margin-left: 0px;
-    height: 33px;
+    height: 34px;
     width: 300px;
     background-color: #e4e01c;
     border-radius: 25px;
@@ -29,7 +29,7 @@
   }
   .progressLabel_option_urban{
     position: relative;
-    left: -95px;
+    left: -75px;
     transform: translateX(-50%);
     margin: 0;
     top: -27px;

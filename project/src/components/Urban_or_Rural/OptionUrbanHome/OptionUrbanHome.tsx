@@ -65,7 +65,7 @@ export const OptionUrbanHome = ({ onNext, onBack }: Props) => {
           {currentStep === 0 && (
           <>
           <div className={styles.progressOne_option_urban}></div>        
-            <label className={styles.progressLabel_option_urban}>28,56%</label>
+            <label className={styles.progressLabel_option_urban}>35%</label>
             
             <h1 className={styles.title_option_urban}>Por quanto tempo a sua propriedade fica sem ninguém?</h1>
             
