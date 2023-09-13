@@ -32,19 +32,18 @@
 .buttonsWrapper_employees{
   display: flex;
   justify-content: center;
-  gap: 5px;
+
   
 }
 
 
 
-.option_employees_one button,
-.option_employees_three button{
+.option_employees_one button{
     background-color: #200082;
     border: none;
     border-radius: 30px;
     color: white;
-    padding: 14px 75px;
+    padding: 12px 90px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -54,7 +53,23 @@
     position: relative;
     cursor: pointer;
     top: 40px;
-    
+}
+
+.option_employees_three button{
+    background-color: #200082;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 12px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 2px;
+    transition: 0.4s;
+    position: relative;
+    cursor: pointer;
+    top: 40px;
 }
 
 .option_employees_two button{
@@ -62,12 +77,13 @@
     border: #200082 solid 1.5px;
     border-radius: 30px;
     color: #200082;
-    padding: 14px 75px;
+    padding: 12px 75px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 6px 2px;
+    margin: 6px 5px;
+
     transition: 0.4s;
     position: relative;
     overflow: hidden;
@@ -81,17 +97,17 @@
     border: none;
     border-radius: 30px;
     color: white;
-    padding: 14px 55px;
+    padding: 12px 70px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    /* margin: 4px 2px; */
     cursor: pointer;
     transition-duration: 0.4s;
     overflow: hidden;
     top: 90px;
-    left: -23px;
+    /* left: -23px; */
 }
 
 .option_employees_one button:hover,

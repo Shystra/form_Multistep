@@ -2,8 +2,6 @@
   position: relative; 
   justify-content: center;
   align-items: center;
-  
- 
 }
 .title_option_units{
   margin-top: 50px;
@@ -18,8 +16,8 @@
 .progressOne_option_units {
   position: absolute;
   top: -1%;
-  left: 0.7%;
-  margin-top: -28px;
+  left: 0.6%;
+  margin-top: -30px;
   margin-left: 0px;
   height: 33px;
   width: 300px;
@@ -32,7 +30,7 @@
   left: -95px;
   transform: translateX(-50%);
   margin: 0;
-  top: -25px;
+  top: -26px;
   
 }
 
@@ -99,19 +97,20 @@
   .progressOne_option_units{
       position: relative;
       height: 26px;
-      left: 73px;
+      margin-left: -1.5%;
       width: 70px;
-      top: 2px;
+      top: 4px;
   }
   .progressLabel_option_units{
       position: absolute;
       left: 92px;
-      top: 3.5%;
+      top: 3.8%;
       transform: translateY(-50%);
   }
   .title_option_units{
       height: 4vh;
-      margin-top: 20px;
+      margin-top: 60px;
+      
   }
 
   .buttonsWrapper_option_menos_units{
@@ -135,7 +134,7 @@
   .option_ever_units button {
       font-size: 14px;
       margin-top: 10px;
-      padding: 12px 60px;
+      padding: 12px 29px;
   }
 
   .option_menos_units button{
@@ -147,7 +146,7 @@
   .option_mais_units button{
     font-size: 14px;
     margin-top: 25px;
-    padding: 12px 60px;
+    padding: 12px 50px;
   }
 
   .buttonBack_option_units button{
@@ -163,15 +162,44 @@
 @media (max-width: 376px){
   .progressOne_option_units{
       position: relative;
-      height: 26px;
-      left: 2%;
+      height: 20px;
+      margin-left: 0%;
       width: 40%;
-      top: 3px;
+      top: 10px;
   }
   .progressLabel_option_units{
     left: 26%;
-    top: 15px;
+    margin-top: 1.7%;
   }
+
+
+
+  .option_ever_units button {
+      font-size: 14px;
+      top: -30px;
+      padding: 10px 29px;
+  }
+
+  .option_menos_units button{
+    font-size: 14px;
+    top: -30px;
+    padding: 10px 50px;
+  }
+
+  .option_mais_units button{
+    font-size: 14px;
+    top: -30px;
+    padding: 10px 50px;
+  }
+
+  .buttonBack_option_units button{
+      font-size: 14px;
+      top: -30px;
+      padding: 10px 80px;
+      
+  }
+
+
 }
 
 @media (max-width: 428px){

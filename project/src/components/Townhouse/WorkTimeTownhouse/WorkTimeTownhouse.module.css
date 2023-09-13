@@ -17,22 +17,22 @@
   
   .progressOne_option_worktime {
     position: absolute;
-    top: -1%;
-    left: 0%;
-    margin-top: -28px;
+    top: -1.2%;
+    left: -0.1%;
+    margin-top: -30px;
     margin-left: 0px;
     height: 33px;
-    width: 300px;
+    width: 450px;
     background-color: #e4e01c;
     border-radius: 25px;
     flex-grow: 1;
   }
   .progressLabel_option_worktime{
     position: relative;
-    left: -95px;
+    left: 60px;
     transform: translateX(-50%);
     margin: 0;
-    top: -25px;
+    top: -26px;
     
   }
   
@@ -99,14 +99,13 @@
     .progressOne_option_worktime{
         position: relative;
         height: 26px;
-        left: 73px;
         width: 70px;
-        top: 2px;
+        top: 4px;
     }
     .progressLabel_option_worktime{
         position: absolute;
         left: 92px;
-        top: 3.5%;
+        top: 4.1%;
         transform: translateY(-50%);
     }
     .title_option_worktime{
@@ -135,7 +134,7 @@
     .option_ever_worktime button {
         font-size: 14px;
         margin-top: 10px;
-        padding: 12px 60px;
+        padding: 12px 85px;
     }
 
     .option_menos_worktime button{
@@ -147,7 +146,7 @@
     .option_mais_worktime button{
       font-size: 14px;
       margin-top: 25px;
-      padding: 12px 60px;
+      padding: 12px 85px;
     }
 
     .buttonBack_option_worktime button{
@@ -163,24 +162,24 @@
   @media (max-width: 376px){
     .progressOne_option_worktime{
         position: relative;
-        height: 26px;
+        height: 20px;
         left: 2%;
         width: 40%;
-        top: 3px;
+        top: 10px;
     }
     .progressLabel_option_worktime{
       left: 26%;
-      top: 15px;
+      margin-top: 1.5%;
     }
   }
 
   @media (max-width: 428px){
     .progressOne_option_worktime{
-      width: 40%;
+      width: 60%;
       left: 2%;
     }
     .progressLabel_option_worktime{
-      left: 26%;
+      left: 47%;
     }
   }
  

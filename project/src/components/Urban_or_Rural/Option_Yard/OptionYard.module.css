@@ -10,8 +10,8 @@
 
 .progressOne_option_residence{
   position: absolute;
-  top: -1%;
-  left: -17.6%;
+  top: 1%;
+  left: -7%;
   margin-top: -6.2%;
   height: 33px;
   width: 450px;
@@ -33,9 +33,8 @@
   gap: 5px;
 }
 
-.option_residence_patio_fundos button,
-.option_residence_patio_frente_fundos button,
-.option_residence_nao_possui_patio button{
+
+.option_residence_patio_frente_fundos button{
   background-color: #200082;
   border: none;
   border-radius: 30px;
@@ -51,6 +50,41 @@
   overflow: hidden;
   cursor: pointer;
 }
+.option_residence_patio_fundos button{
+  background-color: #200082;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 12px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 50px 1px;
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+}
+
+.option_residence_nao_possui_patio button{
+  background-color: #200082;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 12px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 50px 1px;
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
 .buttonBack_option_residence button{
   position: relative;
   background-color: #da1717;
