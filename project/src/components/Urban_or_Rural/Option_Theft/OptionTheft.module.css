@@ -148,8 +148,13 @@
     }
   }
   @media (max-width: 376px){
+    .progressOne_option_theft{
+      height: 20px;
+      top: 10px;
+    }
     .progressLabel_option_theft{
       left: 73%;
+      margin-top: 0.7%;
     }
   }
 

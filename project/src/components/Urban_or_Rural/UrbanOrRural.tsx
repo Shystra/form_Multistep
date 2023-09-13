@@ -59,7 +59,7 @@ export const UrbanOrRural = ({ onNext, onBack }: Props) => {
             
             <div className={styles.buttonsWrapper}>
                 <div className={styles.casaUrbana}>
-                    <button className={styles.casaUrbanaButton}  onClick={handleOptionClick('casa_urbana')}>
+                    <button onClick={handleOptionClick('casa_urbana')}>
                         Casa em área Urbana
                     </button>
           
@@ -67,7 +67,7 @@ export const UrbanOrRural = ({ onNext, onBack }: Props) => {
       
 
              <div className={styles.casaRural}>
-                <button className={styles.casaRuralButton} onClick={handleOptionClick('casa_rural')}>
+                <button onClick={handleOptionClick('casa_rural')}>
                     Casa em área Rural
                 </button>
             </div>

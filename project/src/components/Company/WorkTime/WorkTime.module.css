@@ -1,9 +1,7 @@
 .container_option_worktime {
     position: relative; 
     justify-content: center;
-    align-items: center;
-    
-   
+    align-items: center; 
   }
   .title_option_worktime{
     margin-top: 50px;
@@ -17,8 +15,8 @@
   
   .progressOne_option_worktime {
     position: absolute;
-    top: -1%;
-    left: 2.5%;
+    top: -1.5%;
+    left: 2.0%;
     margin-top: -28px;
     margin-left: 0px;
     height: 33px;
@@ -32,18 +30,48 @@
     left: -95px;
     transform: translateX(-50%);
     margin: 0;
-    top: -25px;
+    top: -27px;
     
   }
   
-  .option_menos_worktime button, 
-  .option_mais_worktime button, 
+  .option_menos_worktime button{
+    background-color: #200082;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 12px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px 1px;
+    cursor: pointer;
+    transition-duration: 0.4s; 
+    position: relative;
+    overflow: hidden;
+  }
   .option_ever_worktime button{
     background-color: #200082;
     border: none;
     border-radius: 30px;
     color: white;
-    padding: 12px 12px;
+    padding: 12px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px 1px;
+    cursor: pointer;
+    transition-duration: 0.4s; 
+    position: relative;
+    overflow: hidden;
+  }
+  .option_mais_worktime button{
+    background-color: #200082;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 12px 70px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -135,7 +163,7 @@
     .option_ever_worktime button {
         font-size: 14px;
         margin-top: 10px;
-        padding: 12px 60px;
+        padding: 12px 85px;
     }
 
     .option_menos_worktime button{
@@ -147,7 +175,7 @@
     .option_mais_worktime button{
       font-size: 14px;
       margin-top: 25px;
-      padding: 12px 60px;
+      padding: 12px 85px;
     }
 
     .buttonBack_option_worktime button{
@@ -163,24 +191,24 @@
   @media (max-width: 376px){
     .progressOne_option_worktime{
         position: relative;
-        height: 26px;
+        height: 20px;
         left: 2%;
         width: 40%;
-        top: 3px;
+        top: 8px;
     }
     .progressLabel_option_worktime{
       left: 26%;
-      top: 15px;
+      margin-top: 0.7%;
     }
   }
 
   @media (max-width: 428px){
     .progressOne_option_worktime{
-      width: 40%;
+      width: 45%;
       left: 2%;
     }
     .progressLabel_option_worktime{
-      left: 26%;
+      left: 33%;
     }
   }
  

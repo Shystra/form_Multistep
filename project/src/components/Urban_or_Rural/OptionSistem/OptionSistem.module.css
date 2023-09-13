@@ -145,6 +145,16 @@
         padding: 12px 80px;
     }
 
+    @media (max-width: 376px){
+        .progressOne_option_sistem{
+            height: 20px;
+            top: 10px;
+        }
+        .progressLabel_option_sistem{
+            top: 3.5%;
+        }
+    }
+
 }
 
 

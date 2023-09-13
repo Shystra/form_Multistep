@@ -217,6 +217,20 @@
   }
 
 }
+
+@media (max-width: 376px){
+  .progressOne_option_residence{
+    height: 20px;
+    top: 8px;
+  }
+  .progressLabel_option_residence{
+    top: 18px;
+    left: 55%;
+  }
+  .title_option_residence{
+    margin-top: 40px;
+  }
+}
 @media (max-width: 360px){
   .progressOne_option_residence{
     left: -14%;

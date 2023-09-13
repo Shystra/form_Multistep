@@ -54,33 +54,31 @@ export const Company = ({onNext, onBack}: Props) => {
 
 
     return (
-        <div className={styles.container_option_company}>
-            {currentStep === 0 && (
-            <>
-            <div className={styles.progressOne_option_company}></div>
-                <label className={styles.progressLabel_option_company}>20%</label>
-                    <h1 className={styles.title_option_company}>
-                        Selecione uma das opções:</h1>
-
-            <div className={styles.buttonsWrapper_option_company}>
-               
-
-                <div className={styles.option_company_shopping_center}>
-                    <button
-                    onClick={handleOptionClick('empresa_centro_comercial')}
-                    >Empresa em centro comercial</button>
+        <div className={styles.containerForm_company}>
+        {currentStep === 0 && (
+                <>
+                <div className={styles.progressOne_company}></div>
+                    <label className={styles.progressLabel_company}>14,28%</label>
+            <h1 className={styles.title_tipo_residencia}>Selecione uma das opções:</h1>
+            
+            <div className={styles.buttonsWrapper}>
+                <div className={styles.company_center}>
+                    <button onClick={handleOptionClick('empresa_centro_comercial')}>
+                    Empresa em centro comercial
+                    </button>
+          
                 </div>
+      
 
-                <div className={styles.option_company_industrial_area}>
-                    <button
-                    onClick={handleOptionClick('empresa_area_industrial')}
-                    >Empresa em área industrial</button>
-                </div>
-
-               
+             <div className={styles.company_industrial}>
+                <button onClick={handleOptionClick('empresa_area_industrial')}>
+                Empresa em área industrial
+                </button>
             </div>
-
+            </div>
+            
             <div className={styles.buttons_wrapper_two}>
+                
                 <div className={styles.option_business_building}>
                     <button
                     onClick={handleOptionClick('predio_comercial')}
@@ -94,11 +92,8 @@ export const Company = ({onNext, onBack}: Props) => {
 
             </div>
 
-
-            <div className={styles.button_back}>
-                <button
-                onClick={handleBackClick}
-                >Voltar</button>
+            <div className={styles.buttonBack}>
+                <button onClick={handleBackClick}>Voltar</button>
             </div>
             
             </>

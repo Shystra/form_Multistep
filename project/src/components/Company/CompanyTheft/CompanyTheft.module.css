@@ -99,15 +99,15 @@
   @media (max-width: 768px){
     .progressOne_option_theft{
         position: relative;
-        height: 25px;
-        left: 9px;
+        height: 26px;
+        left: 8px;
         width: 290px;
-        top: 5px;
+        top: 4px;
     }
     .progressLabel_option_theft{
         position: absolute;
         left: 270px;
-        top: 3.0%;
+        top: 3.7%;
     }
     .title_option_theft{
         height: 15vh;
@@ -121,9 +121,7 @@
     .options_theft_yes,
     .options_theft_no, 
     .buttonBack_option_theft{
-        /* margin-top: -80px; */
         margin-bottom: 10px;
-
     }
 
     .options_theft_yes button,
@@ -146,10 +144,15 @@
   @media (max-width: 428px){
     .progressLabel_option_theft{
       left: 67%;
-      top: 2.7%;
+      top: 2.4%;
     }
   }
   @media (max-width: 376px){
+    .progressOne_option_theft{
+      height: 20px;
+      top: 	10px;
+      left: 2%;
+    }
     .progressLabel_option_theft{
       left: 73%;
       /* top: 2.7%; */
@@ -159,7 +162,8 @@
   @media (max-width: 393px){
     .progressLabel_option_theft
     {
-      left: 73%;
+      left: 75%;
+      top: 13px;
     }
   }
   @media (max-width: 360px){

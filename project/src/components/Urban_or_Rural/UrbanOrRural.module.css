@@ -214,7 +214,6 @@ background-color: #ff000dcc;
   margin-top: -2.4%;
   margin-left: 6%;
   /*verificar esse ponto para celulares*/
-
 }
 
 .progressLabel_residence {
@@ -286,13 +285,13 @@ background-color: #ff000dcc;
     margin-top: 16px;
   }
   .progressOne_residence{
-    margin-top: -3.2%;
+    margin-top: -1.5%;
     left: -46px;
-    height: 25px;
+    height: 20px;
   }
   .progressLabel_residence{
     left: 1%;
-    top: -4%;
+    top: -3.5%;
   }
 
   .buttonsWrapper {

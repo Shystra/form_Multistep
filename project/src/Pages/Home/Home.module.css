@@ -197,7 +197,7 @@
 
 }
 @media (max-width: 376px){
-
+ 
   .img_banner img{
     width: 360px;
     height: 80px;
@@ -208,11 +208,12 @@
   }
 
   .progressOne{
-    top: 6.8%;
+    top: 6.5%;
     left: 2.5%;
-    height: 26px;
+    height: 20px;
     width: 18%;
   }	
+ 
 
 }
 @media (max-width: 360px){
