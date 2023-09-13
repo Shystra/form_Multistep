@@ -35,6 +35,7 @@ export const EndForm = ({onBack}: Props) => {
     }
 
     const handleSendClick = async (event: React.MouseEvent) => {
+      
     console.log("🚀 ~ file: EndForm.tsx:42 ~ handleSendClick ~ event:", event)
         try {
             
@@ -50,12 +51,18 @@ export const EndForm = ({onBack}: Props) => {
                     email,
                     phone,
                 }),
+                
+                
             });
+
     
             const data = await response.json();
     
             if (response.status === 200) {
-                console.log("Email enviado com sucesso!");
+                 
+                alert('Formulário Enviado');
+                window.location.href = 'https://www.intersept.com.br/';
+
             } else {
                 console.error("Erro ao enviar e-mail:", data);
             }

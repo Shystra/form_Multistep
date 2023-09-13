@@ -29,6 +29,10 @@
   margin: 0.9%;
   color: white;
   cursor: pointer;
+  transition: transform 0.3s
+}
+.icons svg:hover {
+  transform: scale(1.1);
 }
 
 .progressBar {
