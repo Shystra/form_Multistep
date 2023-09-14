@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { useFormDataContext } from '../../../Hooks/FormContext';
 import styles from './EndForm.module.css';
-// import { useNavigate } from 'react-router-dom';
-
 
 
 type Props = {
@@ -14,39 +12,89 @@ const Alert: React.FC<{ message: string }> = ({ message }) => {
 };
 
 export const EndForm = ({ onBack }: Props) => {
-    // const navigate = useNavigate();
     const { formData } = useFormDataContext();
-
     const { updateFields } = useFormDataContext();
+    // @ts-ignore
     const [userChoice, setUserChoice] = useState<string | null>(null);
-    console.log("🚀 ~ file: EndForm.tsx:13 ~ EndForm ~ userChoice:", userChoice)
+    // @ts-ignore
     const [currentStep, setCurrentStep] = useState(0);
-    console.log("🚀 ~ file: EndForm.tsx:14 ~ EndForm ~ currentStep:", currentStep)
+
 
     const [name, setName] = useState('');
-    const [cep, setCep] = useState('')
     const [email, setEmail] = useState('');
-    const [phone, setPhone] = useState<number | null>(null);
+
+    //FORMATAÇÃO DO TELEFONE & CEP
+    const [phone, setPhone] = useState<string>('');
+    const [cep, setCep] = useState<string>('');
 
     const [showAlert, setShowAlert] = useState(false);
     const [countdown, setCountdown] = useState(5);
 
-
+    // @ts-ignore
     const handleChoice = (choice: string) => {
         setUserChoice(choice);
         setCurrentStep(1);
-    }
-    console.log("🚀 ~ file: EndForm.tsx:27 ~ handleChoice ~ handleChoice:", handleChoice)
+    };
+
 
     const handleBackClick = (event: React.MouseEvent) => {
         event.preventDefault();
         setCurrentStep(0);
         onBack();
-    }
+    };
+
+
+    const formatPhone: (num: string) => string = (num) => {
+        let cleaned = num.replace(/\D/g, '');
+        
+        if(cleaned.length <= 2) {
+            return `(${cleaned}`;
+        }
+    
+        let match = cleaned.match(/^(\d{2})(\d{0,5})(\d{0,4})$/);
+        if (match) {
+            if(match[3]) {
+                return `(${match[1]}) ${match[2]}-${match[3]}`;
+            }
+            return `(${match[1]}) ${match[2]}`;
+        }
+        
+        return num;
+    };
+
+    const formatCEP: (cep: string) => string = (cep) => {
+        let cleaned = cep.replace(/\D/g, '');
+    
+        if(cleaned.length <= 5) {
+            return cleaned;
+        }
+    
+        let match = cleaned.match(/^(\d{5})(\d{0,3})$/);
+        if (match) {
+            return `${match[1]}-${match[2]}`;
+        }
+        
+        return cep;
+    };
+
+
+
+    const handleTelChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const rawValue = event.target.value.replace(/\D/g, '');
+        setPhone(formatPhone(rawValue));
+    };
+    const handleCEPChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const rawValue = event.target.value.replace(/\D/g, '');
+        setCep(formatCEP(rawValue));
+    };
+    
+    
+
+    
+    
 
     const handleSendClick = async (event: React.MouseEvent) => {
         event.preventDefault();
-        console.log("🚀 ~ file: EndForm.tsx:42 ~ handleSendClick ~ event:", event);
         try {
             const response = await fetch('http://localhost:3001/send-email', {
                 method: 'POST',
@@ -63,8 +111,8 @@ export const EndForm = ({ onBack }: Props) => {
             });
     
             if (response.status === 200) {
+                // @ts-ignore
                 const message = await response.text();
-                console.log(message); // "Email sent successfully"
         
                 setShowAlert(true);
                 const interval = setInterval(() => {
@@ -81,24 +129,29 @@ export const EndForm = ({ onBack }: Props) => {
             }
             else {
                 if (response.headers.get('content-type')?.includes('application/json')) {
+                    // @ts-ignore
                     const data = await response.json();
-                    console.error("Erro ao enviar e-mail:", data);
+                    // console.error("Erro ao enviar e-mail:", data);
                 } else {
+                    // @ts-ignore
                     const text = await response.text();
-                    console.error("Não recebemos um JSON:", text);
+                    // console.error("Não recebemos um JSON:", text);
                 }
             }
         } catch (error) {
-            console.error("Erro de rede ou servidor ao enviar e-mail:", error);
+            // console.error("Erro de rede ou servidor ao enviar e-mail:", error);
         }
     
         updateFields({
             name,
-            cep,
+            cep: cep?.toString() ?? '',
             email,
-            phone: phone?.toString() ?? ''
+            phone
         });
-    }
+        
+    };
+
+    
     
     
 
@@ -109,17 +162,19 @@ export const EndForm = ({ onBack }: Props) => {
                 <Alert message={`Formulário Enviado! Redirecionando em ${countdown}...`} />
             }
             <>
+                <div className={styles.progressOneEndForm}></div>
+                <label className={styles.progressLabelEndForm}>100%</label>
                 <label className={styles.name}>Nome</label>
                 <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
 
                 <label className={styles.cep}>CEP do Imóvel</label>
-                <input type="text" value={cep} onChange={(e) => setCep(e.target.value)} />
+                <input type="text" value={cep} onChange={handleCEPChange} maxLength={9} />
 
                 <label className={styles.email}>E-mail</label>
                 <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
 
                 <label className={styles.phone}>Telefone</label>
-                <input type="text" value={phone ?? ''} onChange={(e) => setPhone(e.target.value ? Number(e.target.value) : null)} />
+                <input type="text" value={phone}  onChange={handleTelChange}  />
 
                 <div className={styles.wrapperbuttons}>
                     <div className={styles.back}>

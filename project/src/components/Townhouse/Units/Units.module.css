@@ -24,6 +24,7 @@
   background-color: #e4e01c;
   border-radius: 25px;
   flex-grow: 1;
+  
 }
 .progressLabel_option_units{
   position: relative;
@@ -31,7 +32,7 @@
   transform: translateX(-50%);
   margin: 0;
   top: -27px;
-  
+  font-weight: bold;
 }
 
 .option_menos_units button, 

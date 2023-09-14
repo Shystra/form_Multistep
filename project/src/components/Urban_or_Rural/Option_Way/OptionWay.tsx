@@ -13,7 +13,7 @@ export const OptionWay = ({ onNext, onBack }: Props) => {
     const {updateFields, removeFields} = useFormDataContext();
     const [currentStep, setCurrentStep] = useState(0);
     const [userChoice, setUserChoice] = useState<string | null>(null);
-    console.log("🚀 ~ file: OptionWay.tsx:16 ~ OptionWay ~ userChoice:", userChoice)
+  
 
 
 

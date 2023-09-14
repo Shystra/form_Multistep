@@ -14,15 +14,14 @@ type Props = {
 export const OptionUrbanHome = ({ onNext, onBack }: Props) => {
     const {updateFields, removeFields} = useFormDataContext();
     const [currentStep, setCurrentStep] = useState(0);
-    console.log("🚀 ~ file: OptionUrbanHome.tsx:17 ~ OptionUrbanHome ~ currentStep:", currentStep)
+  
     const [userChoice, setUserChoice] = useState<string | null>(null);
-    console.log("🚀 ~ file: OptionUrbanHome.tsx:18 ~ OptionUrbanHome ~ userChoice:", userChoice)
+
     
     
 
     const handleChoice = (choice: string) => {
       setUserChoice(choice);
-      console.log("🚀 ~ file: OptionUrbanHome.tsx:27 ~ handleChoice ~ choice:", choice)
       setCurrentStep(1);
 
       if (choice === 'menos_5_horas_por_dia'){

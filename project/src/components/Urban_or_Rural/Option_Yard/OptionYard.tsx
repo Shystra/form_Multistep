@@ -13,9 +13,9 @@ type Props = {
 export const OptionYard = ({ onNext, onBack }: Props) => {
     const {updateFields, removeFields} = useFormDataContext();
     const [currentStep, setCurrentStep] = useState(0);
-    console.log("🚀 ~ file: OptionResidence.tsx:14 ~ OptionResidence ~ currentStep:", currentStep)
+
     const [userChoice, setUserChoice] = useState<string | null>(null);
-    console.log("🚀 ~ file: OptionWay.tsx:16 ~ OptionWay ~ userChoice:", userChoice)
+
 
 
     const handleChoice = (choice: string) => {

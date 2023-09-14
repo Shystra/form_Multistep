@@ -29,6 +29,7 @@
   position: absolute;
   left: 60px;
   top: -4.5%;
+  font-weight: bold;
 }
 
 .casaUrbana button, 
@@ -140,12 +141,14 @@ height: 34px;
 width: 200px;
 background-color: #e4e01c;
 border-radius: 25px;
+
 }
 
 .progressLabel_residence {
 position: absolute;
 left: 70px;
 top: -6%;
+font-weight: bold;
 }
 
 .casaUrbana button, 

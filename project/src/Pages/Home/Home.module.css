@@ -57,6 +57,7 @@
   background-color: #e4e01c;
   border-radius: 25px;
   flex-grow: 1;
+  font-weight: bold;
 }
 
 .progressLabel{

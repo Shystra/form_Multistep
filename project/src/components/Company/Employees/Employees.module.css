@@ -19,6 +19,7 @@
   background-color: #e4e01c;
   border-radius: 25px;
   flex-grow: 1;
+  
 }
 
 .progressLabel_employees{
@@ -27,6 +28,7 @@
   transform: translateX(-50%);
   margin: 0;
   top: -27px;
+  font-weight: bold;
 }
 
 .buttonsWrapper_employees{

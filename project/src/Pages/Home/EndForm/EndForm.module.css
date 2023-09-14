@@ -25,28 +25,55 @@
   
 
 
+.progressOneEndForm{
+    position: absolute;
+    top: -1.4%;
+    left: -21.5%;
+    margin-top: -29px;
+    margin-left: 0px;
+    height: 35px;
+    width: 672px;
+    background-color: #e4e01c;
+    border-radius: 25px;
+    flex-grow: 1;
+}
+.progressLabelEndForm{
+    position: relative;
+    left: 115%;
+    transform: translateX(-50%);
+    margin: 0;
+    top: -47px;
+    font-weight: bold;
+}
+
+
+
 
 .name {
     animation: appear 2s forwards;
     animation-delay: 0.2s;
+    font-weight: bold;
 }
 
 .cep {
     animation: appear 2s forwards;
     animation-delay: 0.3s;
+    font-weight: bold;
 }
 
 .email {
     animation: appear 2s forwards;
     animation-delay: 0.4s;
+    font-weight: bold;
 }
 
 .phone {
     animation: appear 2s forwards;
     animation-delay: 0.5s;
+    font-weight: bold;
 }
 
-/* Ajuste nos estilos iniciais dos labels e inputs */
+
 .name, .cep, .email, .phone, input[type="text"], .send button, .back button {
     opacity: 0;
     transform: translateY(-30px);
@@ -55,13 +82,13 @@
 
 input[type="text"] {
     width: 100%;
-    padding: 10px 10px 10px 0; /* Retirado o padding-left para que o texto comece exatamente acima da linha */
+    padding: 10px 10px 10px 0; 
     margin-bottom: 20px;
-    border: none; /* Remove as bordas padrão */
-    border-bottom: 2px solid #ccc; /* Adiciona a borda inferior */
+    border: none; 
+    border-bottom: 2px solid #ccc; 
     outline: none;
-    background-color: transparent; /* Para garantir que o fundo é transparente */
-    transition: border-bottom 0.3s; /* Transição suavizada para a borda inferior */
+    background-color: transparent; 
+    transition: border-bottom 0.3s; 
     animation: appear 2s forwards;
     animation-delay: 1s;
 }
@@ -135,20 +162,54 @@ input[type="text"]:focus {
 /* Estilos gerais para dispositivos móveis */
 @media only screen and (max-width: 768px) {
   
-    /* Ajuste no contêiner do formulário */
+   
     .container_end {
         padding: 10px;
     }
 
-    /* Ajuste para os botões em dispositivos móveis */
+
     .send button, .back button {
-        padding: 10px 30px; /* Reduz o padding para se adequar a dispositivos móveis */
-        font-size: 14px;    /* Reduz a fonte para se adequar a dispositivos móveis */
+        padding: 10px 60px; 
+        font-size: 14px;
+        top: 10px;    
     }
     
     .wrapperbuttons {
-         /* Muda a direção para vertical */
-        gap: 30px;              /* Reduz o espaço entre os botões */
+        gap: 30px;             
+    }
+
+    .progressOneEndForm{
+        position: relative;
+        height: 26px;
+        width: 107.5%;
+        left: -4%;
+        top: -7px;
+    }
+    .progressLabelEndForm{
+        position: absolute;
+        top: -20px;
+        left: 92%;
+        
+    }
+
+
+    .name {
+       font-size: 14px;
+
+       padding: 50px 0px 0px 0px;
+
+    }
+    
+    .cep {
+        font-size: 14px;
+    }
+    
+    .email {
+        font-size: 14px;
+    }
+    
+    .phone {
+        font-size: 14px;
     }
 }
 

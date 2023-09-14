@@ -59,7 +59,7 @@ type FormData = {
 
 
   name?: string;
-  cep?: string;
+  cep?: number | string;
   email?: string;
   phone?: number | string;
   
@@ -87,6 +87,7 @@ interface FormDataProviderProps {
   export const FormDataProvider: React.FC<FormDataProviderProps> = ({ children }) => {
   const [formData, setFormData] = useState<FormData>({});
 
+  
   useEffect(() => {
     // Quando o componente monta, verifique se há um estado armazenado
     const storedData = localStorage.getItem('formData');
@@ -98,7 +99,7 @@ interface FormDataProviderProps {
   useEffect(() => {
     // Quando formData muda, atualize o localStorage
     localStorage.setItem('formData', JSON.stringify(formData));
-    console.log("🚀 ~ file: FormContext.tsx:47 ~ useEffect ~ formData:", formData)
+   
   
   }, [formData]);
   
