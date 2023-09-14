@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useFormDataContext } from '../../../Hooks/FormContext';
 import styles from './EndForm.module.css';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 
 
@@ -14,7 +14,7 @@ const Alert: React.FC<{ message: string }> = ({ message }) => {
 };
 
 export const EndForm = ({ onBack }: Props) => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const { formData } = useFormDataContext();
 
     const { updateFields } = useFormDataContext();
