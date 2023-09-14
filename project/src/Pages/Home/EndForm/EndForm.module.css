@@ -6,6 +6,26 @@
     border-radius: 12px;
 }
 
+.alert {
+    padding: 15px;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    opacity: 0.9;
+    transition: opacity 0.6s; /* Transição de 0.6s para o desaparecimento do alerta */
+    position: fixed; /* Fixar o alerta no topo */
+    top: 0;
+    left: 50%; /* Centralizar o alerta na tela */
+    transform: translateX(-50%); /* Ajuste final para centralizar */
+    z-index: 1000; /* Garante que o alerta estará acima de outros elementos */
+    border-radius: 4px; /* Borda arredondada */
+    text-align: center; /* Centralizar o texto */
+    width: 80%; /* Definir uma largura para o alerta */
+    max-width: 600px; /* Largura máxima */
+  }
+  
+
+
+
 .name {
     animation: appear 2s forwards;
     animation-delay: 0.2s;

@@ -1,19 +1,19 @@
-// import { useState } from 'react'
-import './Global.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import './Global.css';
 import { FormDataProvider } from './Hooks/FormContext';
 import { Home } from './Pages/Home/Home';
 
-
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
-      <>
+    <Router>
       <FormDataProvider>
-        <Home />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* Outras rotas podem ser adicionadas aqui */}
+        </Routes>
       </FormDataProvider>
-      </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;

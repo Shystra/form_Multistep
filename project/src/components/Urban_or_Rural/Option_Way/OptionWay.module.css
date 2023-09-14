@@ -105,11 +105,11 @@
         height: 26px;
         left: 90px;
         width: 70px;
-        top: 2px;
+        top: 3px;
     }
     .progressLabel_option_way{
         position: absolute;
-        left: 125px;
+        left: 150px;
         top: 3.5%;
         transform: translateY(-50%);
     }

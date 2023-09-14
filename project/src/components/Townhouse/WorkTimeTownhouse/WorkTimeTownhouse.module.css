@@ -100,17 +100,17 @@
         position: relative;
         height: 26px;
         width: 70px;
-        top: 4px;
+        top: 3px;
     }
     .progressLabel_option_worktime{
         position: absolute;
         left: 92px;
-        top: 4.1%;
+        top: 3.5%;
         transform: translateY(-50%);
     }
     .title_option_worktime{
         height: 4vh;
-        margin-top: 20px;
+        margin-top: 60px;
     }
 
     .buttonsWrapper_option_menos_worktime{

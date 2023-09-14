@@ -101,12 +101,12 @@
         height: 26px;
         left: 73px;
         width: 70px;
-        top: 2px;
+        top: 3px;
     }
     .progressLabel_option_urban{
         position: absolute;
         left: 92px;
-        top: 3.5%;
+        top: 4%;
         transform: translateY(-50%);
     }
     .title_option_urban{

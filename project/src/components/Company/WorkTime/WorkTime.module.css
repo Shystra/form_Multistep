@@ -134,12 +134,12 @@
     .progressLabel_option_worktime{
         position: absolute;
         left: 92px;
-        top: 3.5%;
+        top: 3.2%;
         transform: translateY(-50%);
     }
     .title_option_worktime{
         height: 4vh;
-        margin-top: 20px;
+        margin-top: 70px;
     }
 
     .buttonsWrapper_option_menos_worktime{
