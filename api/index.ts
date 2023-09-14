@@ -3,6 +3,8 @@ import {Request, Response} from 'express';
 import nodemailer from 'nodemailer';
 import cors from 'cors';
 import * as dotenv from 'dotenv';
+import { formatFormDataToHtml } from './formatFormData';
+import { FormData as ContactFormData } from './formatFormData';
 
 dotenv.config();
 
@@ -18,7 +20,7 @@ app.use(cors());
 app.use(express.json());
 
 app.post('/send-email', async (req:Request, res:Response) => {
-    const formData: FormData = req.body;
+    const formData: ContactFormData = req.body;
 
     let transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -29,12 +31,11 @@ app.post('/send-email', async (req:Request, res:Response) => {
         }
     });
 
-
     let mailOptions = {
         from: process.env.GMAIL_USER,
         to: process.env.MAIL_RECIPIENT,
-        subject: 'New message from contact form',
-        text: JSON.stringify(formData)
+        subject: 'Formulário de Contato',
+        html: formatFormDataToHtml(formData)
     };
     console.log('User:', process.env.GMAIL_USER);
     console.log('Password:', process.env.GMAIL_PASS ? 'Password is set' : 'Password is NOT set');
