@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useFormDataContext } from '../../../Hooks/FormContext';
 import styles from './EndForm.module.css';
+// import { useFormValidation } from '../../../Hooks/FormValidator';
 
 
 type Props = {
@@ -17,19 +18,18 @@ export const EndForm = ({ onBack }: Props) => {
     // @ts-ignore
     const [userChoice, setUserChoice] = useState<string | null>(null);
     // @ts-ignore
-    const [currentStep, setCurrentStep] = useState(0);
+    const [currentStep, setCurrentStep] = useState(5);
 
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-
     //FORMATAÇÃO DO TELEFONE & CEP
     const [phone, setPhone] = useState<string>('');
     const [cep, setCep] = useState<string>('');
-
     const [showAlert, setShowAlert] = useState(false);
-    const [countdown, setCountdown] = useState(5);
-
+    const [countdown, setCountdown] = useState(1);
+    // const { errors, validateFields } = useFormValidation();
+    
     // @ts-ignore
     const handleChoice = (choice: string) => {
         setUserChoice(choice);
@@ -39,6 +39,9 @@ export const EndForm = ({ onBack }: Props) => {
 
     const handleBackClick = (event: React.MouseEvent) => {
         event.preventDefault();
+        // if (!validateFields({ name, cep, email, phone })) {
+        //     return;
+        // }
         setCurrentStep(0);
         onBack();
     };

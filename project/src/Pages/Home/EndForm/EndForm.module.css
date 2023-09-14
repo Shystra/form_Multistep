@@ -23,6 +23,12 @@
     max-width: 600px; /* Largura máxima */
   }
   
+  .error {
+    color: red;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
 
 
 .progressOneEndForm{
