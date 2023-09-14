@@ -62,15 +62,15 @@ export const Units = ({onNext, onBack}: Props) => {
               <div className={styles.buttonsWrapper_option_menos_units}>
                 <div className={styles.option_menos_units}>
                   <button className={styles.button_menos_units} 
-                  onClick={handleOptionClick('ate_10_unidades')}>Até 10 Unidades</button>
+                  onClick={handleOptionClick('ate_10_unidades')}>Até 10 unidades</button>
                 </div>
               <div className={styles.option_mais_units}>
                 <button className={styles.button_mais_units} 
-                  onClick={handleOptionClick('ate_50_unidades')}>Até 50 Unidades</button>
+                  onClick={handleOptionClick('ate_50_unidades')}>Até 50 unidades</button>
               </div>
               <div className={styles.option_ever_units}>
                 <button className={styles.button_ever_units} 
-                  onClick={handleOptionClick('acima_50_unidades')}>Acima de 50 Unidades</button>
+                  onClick={handleOptionClick('acima_50_unidades')}>Acima de 50 unidades</button>
               </div>
               </div>
 

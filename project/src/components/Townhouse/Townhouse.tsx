@@ -58,13 +58,13 @@ export const Townhouse = ({onNext, onBack}: Props) => {
                 <div className={styles.option_townhouse_shopping_center}>
                     <button
                     onClick={handleOptionClick('condominio_residencial')}
-                    >Condomínio Residencial</button>
+                    >Condomínio residencial</button>
                 </div>
 
                 <div className={styles.option_townhouse_industrial_area}>
                     <button
                     onClick={handleOptionClick('condominio_comercial')}
-                    >Condomínio Comercial</button>
+                    >Condomínio comercial</button>
                 </div>
 
                

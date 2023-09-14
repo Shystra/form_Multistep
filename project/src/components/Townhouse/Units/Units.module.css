@@ -15,11 +15,11 @@
 
 .progressOne_option_units {
   position: absolute;
-  top: -1.4%;
-  left: 0.4%;
+  top: -1.5%;
+  left: 0.0%;
   margin-top: -30px;
   margin-left: 0px;
-  height: 34px;
+  height: 35px;
   width: 300px;
   background-color: #e4e01c;
   border-radius: 25px;
@@ -30,7 +30,7 @@
   left: -75px;
   transform: translateX(-50%);
   margin: 0;
-  top: -26px;
+  top: -27px;
   
 }
 

@@ -54,7 +54,7 @@ export const OptionTheft = ({ onBack, onNext }: Props) => {
                     <div className={styles.progressOne_option_theft}></div>
                         <label className={styles.progressLabel_option_theft}>75%</label>
                             <h1 className={styles.title_option_theft}>
-                                Alguém já tentou roubar sua casa ou a casa dos vizinhos?</h1>
+                                Houve tentativa de roubo na sua residência ou na do vizinho?</h1>
                 
                 
                     <div className={styles.buttonsWrapper_option_theft}>

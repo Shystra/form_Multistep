@@ -87,7 +87,7 @@ export const Company = ({onNext, onBack}: Props) => {
                 <div className={styles.option_street_commerce}>
                     <button
                     onClick={handleOptionClick('comercio_rua')}
-                    >Comércio de Rua</button>
+                    >Comércio de rua</button>
                 </div>
 
             </div>

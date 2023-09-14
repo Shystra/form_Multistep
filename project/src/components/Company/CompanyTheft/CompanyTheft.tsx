@@ -52,7 +52,7 @@ export const CompanyTheft = ({ onNext, onBack }:Props) => {
                     <div className={styles.progressOne_option_theft}></div>
                         <label className={styles.progressLabel_option_theft}>75%</label>
                             <h1 className={styles.title_option_theft}>
-                                Alguém já tentou roubar a sua empresa ou a empresa de algum dos vizinhos?</h1>
+                                Houve tentativa de roubo na sua empresa ou vizinha?</h1>
                 
                 
                     <div className={styles.buttonsWrapper_option_theft}>

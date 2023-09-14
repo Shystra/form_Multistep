@@ -64,7 +64,7 @@ export const WorkTime = ({onBack, onNext}: Props) => {
               <div className={styles.buttonsWrapper_option_menos_worktime}>
                 <div className={styles.option_menos_worktime}>
                   <button className={styles.button_menos_worktime} 
-                  onClick={handleOptionClick('horario_comercial')}>Horário Comercial</button>
+                  onClick={handleOptionClick('horario_comercial')}>Horário comercial</button>
                 </div>
               <div className={styles.option_mais_worktime}>
                 <button className={styles.button_mais_worktime} 
@@ -72,7 +72,7 @@ export const WorkTime = ({onBack, onNext}: Props) => {
               </div>
               <div className={styles.option_ever_worktime}>
                 <button className={styles.button_ever_worktime} 
-                  onClick={handleOptionClick('horario_24h')}>24 Horas</button>
+                  onClick={handleOptionClick('horario_24h')}>24 horas</button>
               </div>
               </div>
 

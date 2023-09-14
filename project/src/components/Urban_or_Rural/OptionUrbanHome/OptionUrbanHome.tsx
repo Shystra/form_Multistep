@@ -74,11 +74,11 @@ export const OptionUrbanHome = ({ onNext, onBack }: Props) => {
               <div className={styles.buttonsWrapper_option_menos_urban}>
                 <div className={styles.option_menos_urban}>
                   <button className={styles.button_menos_urban} 
-                  onClick={handleOptionClick('menos_5_horas_por_dia')}>Menos de 5 Horas por dia</button>
+                  onClick={handleOptionClick('menos_5_horas_por_dia')}>Menos de 5 horas por dia</button>
                 </div>
               <div className={styles.option_mais_urban}>
                 <button className={styles.button_mais_urban} 
-                  onClick={handleOptionClick('mais_5_horas_por_dia')}>Mais de 5 Horas por dia</button>
+                  onClick={handleOptionClick('mais_5_horas_por_dia')}>Mais de 5 horas por dia</button>
               </div>
               <div className={styles.option_ever_urban}>
                 <button className={styles.button_ever_urban} 
