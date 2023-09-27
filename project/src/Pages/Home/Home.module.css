@@ -125,21 +125,42 @@
   }
 }
 
-@media (min-width: 1200px ){
+@media (max-width: 1500px ){
+  .logo_intersept img{
+    margin-top: 0px;
+  }
+  .progressBar{
+    height: 35vh;
+  }
+  .progressOne{
+    height: 31px;
+    top: 30px;
+  }
+  .container{
+    width: 88vh;
+    height: 51vh;
+  }
+  
   .img_banner img{
     width: 700px;
-    height: 175px;
+    height: 85px;
   }
+
+  .title_Container{
+    margin-top: -30px;
+  }
+
+  
 }
 
-@media (min-width: 540px){
+
+
+/* @media (min-width: 540px) and (max-width: 760px){
   .img_banner img{
     width: 700px;
     height: 100px;
   }
-  
- 
-}
+} */
 
 @media (max-width: 428px) {
   .img_banner img {
@@ -311,8 +332,9 @@
     height: 30vh;
   }
   .progressOne{
-    margin-top: -7.5%;
+    margin-top: -7.7%;
     left: 2%;
+    height: 26px;
   }
   .progressLabel{
     top: 20%;

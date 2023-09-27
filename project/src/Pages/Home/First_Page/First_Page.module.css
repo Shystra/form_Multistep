@@ -54,6 +54,19 @@
 
 
 
+@media (max-width: 1500px ){
+  .residencia button{
+    top: 30px;
+  }  
+  .condominio button{
+    top: 30px;
+  }
+  .empresa_comercio button{
+    top: 30px;
+  }
+  
+}
+
 @media (max-width: 768px){
   .wrapper_first_page, 
   .container_first_page{
@@ -67,6 +80,10 @@
     margin-left: 0px;
     margin-block-end: 35px;
 
+  }
+
+  .condominio button{
+    top: 0px
   }
   .container_first_page{
     height: 40vh;

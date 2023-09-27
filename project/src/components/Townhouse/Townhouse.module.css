@@ -140,6 +140,17 @@
 }
 
 
+@media (max-width: 1500px){
+    .container_option_townhouse{
+        height: 445vh;
+    }
+    .progressOne_option_townhouse{
+        height: 31px;
+        top: -4.5px;
+        left: -15.8%;
+    }
+}
+
 @media (max-width: 768px) {
     .container_option_townhouse{
         height: 720vh;
@@ -154,7 +165,7 @@
         height: 26px;
         left: -10.9%;
         width: 30%;
-        top: 0.1%;
+        top: 0.2%;
     }
     
     .progressLabel_option_townhouse{
