@@ -120,7 +120,7 @@
 
 @media (max-width: 2000px ){
   .img_banner img{
-    width: 800%;
+    width: 700px;
     height: auto;
   }
 }
