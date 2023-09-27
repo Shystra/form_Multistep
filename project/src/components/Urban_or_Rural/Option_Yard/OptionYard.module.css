@@ -132,6 +132,17 @@
   animation: appear 2s forwards;
 }
 
+@media (max-width: 1500px){
+  .progressOne_option_residence{
+    height: 29px;
+    top: 7px;
+    left: -26.9px;
+  }
+  .title_option_residence{
+    margin-top: 20px;
+  }
+}
+
 @media (max-width: 768px){
   .progressOne_option_residence{
     position: relative;

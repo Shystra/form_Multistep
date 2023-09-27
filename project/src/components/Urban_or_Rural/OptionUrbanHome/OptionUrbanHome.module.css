@@ -95,6 +95,26 @@
     opacity: 0;  
     animation: appear 2s forwards;
   }
+
+
+  @media (max-width: 1500px){
+    .container_option_urban{
+      height: 30vh;
+    }
+    .progressOne_option_urban{
+      height: 30px;
+      top: -1px;
+    }
+    .title_option_urban{
+      margin-top: 10px;
+    }
+
+  
+    .buttonBack_option_urban button{
+      padding: 10px 70px;
+      left: 10px;
+    }
+  }
   
   @media (max-width: 768px){
     .progressOne_option_urban{
@@ -182,7 +202,8 @@
       left: 2%;
     }
     .progressLabel_option_urban{
-      left: 26%;
+      left: 30%;
+      top: 15px;
     }
   }
  

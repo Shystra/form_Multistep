@@ -98,7 +98,33 @@
     opacity: 0;  
     animation: appear 2s forwards;
   }
- 
+  
+  @media (max-width: 1500px){
+    .progressOne_option_way{
+      height: 30px;
+      top: -1px;
+      left: -11px;
+    }
+
+    .title_option_way{
+      margin-top: 20px;
+    }
+
+    .option_way_ape button{
+      top: -20px;
+    } 
+    .option_way_car button{
+      top: -20px;
+    } 
+    .option_way_motorbike button{
+      top: -20px;
+    }
+
+    .buttonBack_option_way button{
+      top: -30px;
+    }
+    
+  }
   
   @media (max-width: 768px){
     .progressOne_option_way{

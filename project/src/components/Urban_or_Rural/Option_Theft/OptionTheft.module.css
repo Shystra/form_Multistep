@@ -94,7 +94,19 @@
     animation: appear 2s forwards;
   }
   
-
+  @media (max-width: 1500px){
+    .progressOne_option_theft{
+      height: 29px;
+      top: 0.4px;
+      left: 14.9px;
+    }
+    .title_option_theft{
+      margin-top: 10px;
+    }
+    .buttonBack_option_theft button{
+      top: -20px;
+    }
+  }
   
   @media (max-width: 768px){
     .progressOne_option_theft{
