@@ -2,7 +2,7 @@
     position: relative;
     justify-content: center;
     align-items: center;
-    height: 430vh;
+    height: 445vh;
 }
 .title_option_townhouse{
     margin-top: 50px;
@@ -140,14 +140,28 @@
 }
 
 
+@media (min-width: 1550px) and (max-width: 2000px){
+    .progressOne_option_townhouse{
+        left: -80px;
+        height: 35px;
+        top: -6.7px;
+    }
+    .progressLabel_option_townhouse{
+        top: -28px;
+    }
+}
+
 @media (max-width: 1500px){
     .container_option_townhouse{
-        height: 445vh;
+        height: 420vh;
     }
     .progressOne_option_townhouse{
-        height: 31px;
-        top: -4.5px;
+        height: 29px;
+        top: -2px;
         left: -15.8%;
+    }
+    .progressLabel_option_townhouse{
+        top: -24px;
     }
 }
 
@@ -220,7 +234,8 @@
         left: -8%;
     }
     .progressLabel_option_townhouse{
-        top: -3.3%;
+        top: -3.8%;
+        left: 40px;
     }
 }
 
@@ -230,12 +245,12 @@
         height: 20px;
         left: -5.1%;
         width: 30%;
-        top: 2%;
+        top: 1.9%;
     }
     .progressLabel_option_townhouse{
         position: absolute;
         left: 16%;
-        top: -3.8%;
+        top: -3.9%;
     }
 
     .option_townhouse_shopping_center button {
