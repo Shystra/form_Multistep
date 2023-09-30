@@ -173,6 +173,12 @@
 
 }
 
+@media (max-width: 376px){
+    .progressOne_option_sistem{
+        top: 11px;
+    }
+}
+
 
 
 

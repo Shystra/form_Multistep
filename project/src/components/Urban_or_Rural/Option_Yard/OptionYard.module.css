@@ -221,6 +221,27 @@
   }
 }
 
+@media (max-width: 428px){
+  .title_option_residence{
+    margin-top: 70px;
+  }
+  .progressOne_option_residence{
+    width: 100%;
+    left: -23.5%;
+    top: 3px;
+  }
+  .progressLabel_option_residence{
+    left: 60%;
+    top: 3.6%;
+  }
+  
+}
+
+@media (max-width: 415px){
+  .progressOne_option_residence{
+    left: -57.7px;
+  }
+}
 
 @media (max-width: 376px) {
 
@@ -238,21 +259,7 @@
   }
 }
 
-@media (max-width: 428px){
-  .title_option_residence{
-    margin-top: 70px;
-  }
-  .progressOne_option_residence{
-    width: 100%;
-    left: -23.5%;
-    top: 3px;
-  }
-  .progressLabel_option_residence{
-    left: 60%;
-    top: 3.6%;
-  }
-  
-}
+
 
 @media (max-width: 393px){
   .progressLabel_option_residence{

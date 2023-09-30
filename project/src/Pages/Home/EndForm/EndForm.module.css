@@ -269,3 +269,29 @@ input[type="text"]:focus {
     }
 }
 
+@media (max-width: 415px){
+    .progressOneEndForm{
+      width: 108%;
+      left: -14.8px;
+    }
+  }
+
+@media (max-width: 393px){
+    .progressOneEndForm{
+        width: 101%;
+        left: -1.4px;
+    }
+}
+
+@media (max-width: 376px){
+    .progressOneEndForm{
+        top: -1px;
+        height: 20px;
+        width: 97%;
+        left: 1.2%;
+    }
+    .progressLabelEndForm{
+        top: -17px;
+        left: 87%;
+    }
+}
