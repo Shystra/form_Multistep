@@ -177,9 +177,9 @@ input[type="text"]:focus {
 
 @media (max-width: 1500px){
     .progressOneEndForm{
-        height: 30px;
-        top: -1px;
-        left: -87px;
+        height: 31px;
+        top: -2px;
+        left: -88px;
         width: 138%;
     }
 

@@ -157,13 +157,13 @@
       height: 420vh;
   }
   .progressOne_company{
-      height: 29px;
-      top: -2px;
-      left: -12.6%;
+      height: 31px;
+      top: -4px;
+      left: -10.1%;
   }
   .progressLabel_company{
-      top: -24px;
-      left: -210px;
+      top: -25px;
+      left: -190px;
   }
 
   .title_tipo_residencia{
@@ -269,9 +269,13 @@
 }
 
 @media (max-width: 428px) {
-
+  .containerForm_company{
+    height: 760vh;
+  }
   .progressOne_company{
-    left: -36px;
+    left: -42px;
+    height: 25px;
+    top: 2.0px;
   }
   .company_center button {
     font-size: 14px;

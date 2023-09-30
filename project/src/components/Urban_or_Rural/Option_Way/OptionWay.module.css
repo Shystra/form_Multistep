@@ -178,19 +178,7 @@
     }
   }
 
-  @media (max-width: 376px){
-    .progressOne_option_way{
-        width: 50%;
-        left: 2%;
-        height: 20px;
-        top: 8px
-    }
-    .progressLabel_option_way{
-        left: 42%;
-        /* top: 3.9%; */
-        margin-top: 1.2%;
-    }
-  }
+ 
 
   @media (max-width: 428px){
     .progressOne_option_way{
@@ -201,5 +189,18 @@
     .progressLabel_option_way{
       left: 40%;
       top: 4.3%;
+    }
+  }
+  @media (max-width: 376px){
+    .progressOne_option_way{
+        width: 50%;
+        left: 2%;
+        height: 20px;
+        top: 9px
+    }
+    .progressLabel_option_way{
+        left: 42%;
+        /* top: 3.9%; */
+        margin-top: 1.2%;
     }
   }

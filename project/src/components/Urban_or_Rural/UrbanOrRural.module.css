@@ -230,6 +230,9 @@
 }
 
 @media (max-width: 428px) {
+  .containerForm_tipos_residencia{
+    height: 760vh;
+  }
   .progressOne_residence{
     left: -18%;
     top: 2px;
@@ -238,6 +241,13 @@
   .progressLabel_residence{
     left: 1px;
   }
+}
+
+@media (max-width: 415px){
+  .progressOne_residence{
+    left: -48px
+  };
+
 }
 
 @media (max-width: 391px) {
@@ -252,12 +262,15 @@
 }
 
 @media (max-width: 376px) {
+  .containerForm_tipos_residencia{
+    height: 700vh;
+  }
   .progressOne_residence{
       position: relative;
       height: 20px;
       left: -10.1%;
       width: 30%;
-      top: 1.9%;
+      top: 1.7%;
   }
   .progressLabel_residence{
       position: absolute;

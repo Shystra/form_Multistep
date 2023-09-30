@@ -187,12 +187,12 @@
         height: 20px;
         left: 2%;
         width: 40%;
-        top: 8px;
+        top: 9px;
     }
     .progressLabel_option_urban{
       position: absolute;
       left: 26%;
-      margin-top: 0.7%;
+      margin-top: 1.0%;
     }
   }
 

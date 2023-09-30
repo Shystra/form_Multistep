@@ -96,7 +96,15 @@
     animation: appear 2s forwards;
   }
   
-
+  @media (max-width: 1500px){
+    .progressOne_option_theft{
+      height: 31px;
+      top: -1px;
+    }
+    .title_option_theft{
+      margin-top: 10px;
+    }
+  }
   
   @media (max-width: 768px){
     .progressOne_option_theft{
@@ -149,6 +157,16 @@
       top: 2.4%;
     }
   }
+
+
+  @media (max-width: 393px){
+    .progressLabel_option_theft
+    {
+      left: 73%;
+      top: 11px;
+    }
+  }
+
   @media (max-width: 376px){
     .progressOne_option_theft{
       height: 20px;
@@ -157,15 +175,7 @@
     }
     .progressLabel_option_theft{
       left: 73%;
-      /* top: 2.7%; */
-    }
-  }
-
-  @media (max-width: 393px){
-    .progressLabel_option_theft
-    {
-      left: 75%;
-      top: 13px;
+      top: 3.5%;
     }
   }
   @media (max-width: 360px){

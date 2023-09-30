@@ -250,9 +250,9 @@
   }
 
   .progressOne{
-    top: 5.8%;
+    top: 5.5%;
     left: 2.3%;
-    height: 23px;
+    height: 25px;
     width: 18%;
   }
   .progressLabel{
@@ -264,7 +264,7 @@
 
 
 
-@media (max-width: 414px){
+@media (max-width: 415px){
   .img_banner img{
     width: 398px;
     height: 85px;
@@ -277,9 +277,9 @@
     height: 120px;
   }
   .progressOne{
-    top: 5.4%;
+    top: 5.1%;
     left: 2.1%;
-    height: 26px;
+    height: 27px;
     /* height: 27px; */
     /* width: 90%; */
   }
@@ -347,7 +347,7 @@
   }
 
   .progressOne{
-    top: 6.8%;
+    top: 6.5%;
     left: 2.1%;
     height: 20px;
     width: 18%;

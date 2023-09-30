@@ -94,6 +94,21 @@
   animation: appear 2s forwards;
 }
 
+@media (max-width: 1500px){
+  .progressOne_option_units{
+    left: -13px;
+    height: 31px;
+    top: -1px;
+  }
+  .progressLabel_option_units{
+    top: -25px;
+    left: -60px;
+  }
+  .option_ever_units button{
+    padding: 12px 10px;
+  }
+}
+
 @media (max-width: 768px){
   .progressOne_option_units{
       position: relative;
@@ -160,17 +175,42 @@
 
 }
 
+@media (max-width: 428px){
+  .progressOne_option_units{
+    width: 40%;
+    left: 0.2%;
+  }
+  .progressLabel_option_units{
+    left: 26%;
+  }
+}
+
+
+
+
+
+@media (max-width: 393px){
+  .progressLabel_option_units{
+    top: 18px;
+    left: 110px;
+  }
+  .progressOne_option_units{
+    left: 11px;
+  }
+}
+
 @media (max-width: 376px){
   .progressOne_option_units{
       position: relative;
       height: 20px;
       margin-left: 0%;
       width: 40%;
-      top: 10px;
+      top: 11px;
+      left: 5.6px;
   }
   .progressLabel_option_units{
-    left: 26%;
-    margin-top: 1.7%;
+    left: 30%;
+    margin-top: 0.7%;
   }
 
 
@@ -201,23 +241,6 @@
   }
 
 
-}
-
-@media (max-width: 428px){
-  .progressOne_option_units{
-    width: 40%;
-    left: 2%;
-  }
-  .progressLabel_option_units{
-    left: 26%;
-  }
-}
-
-
-@media (max-width: 393px){
-  .progressLabel_option_units{
-    top: 15px;
-  }
 }
 
 @media (max-width: 360px){
