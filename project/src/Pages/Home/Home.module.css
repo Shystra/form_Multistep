@@ -241,7 +241,7 @@
 
 @media (max-width: 428px) {
   .img_banner img {
-    width: 800%;
+    width: 820%;
     height: auto;
   }
   .logo_intersept img {
@@ -250,9 +250,9 @@
   }
 
   .progressOne{
-    top: 7.0%;
+    top: 6.0%;
     left: 2.3%;
-    height: 19px;
+    height: 23px;
     width: 18%;
   }
   .progressLabel{
