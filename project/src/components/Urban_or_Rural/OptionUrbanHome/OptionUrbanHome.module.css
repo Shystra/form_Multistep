@@ -197,13 +197,17 @@
   }
 
   @media (max-width: 428px){
+    .title_option_urban{
+      margin-top: 10%;
+    }
+
     .progressOne_option_urban{
       width: 40%;
       left: 2%;
     }
     .progressLabel_option_urban{
       left: 30%;
-      top: 15px;
+      top: 18px;
     }
   }
  

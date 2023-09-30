@@ -229,6 +229,17 @@
  }
 }
 
+@media (max-width: 428px) {
+  .progressOne_residence{
+    left: -18%;
+    top: 3px;
+    height: 25px;
+  }
+  .progressLabel_residence{
+    left: 1px;
+  }
+}
+
 @media (max-width: 391px) {
   .progressOne_residence{
       left: -12.8%;

@@ -262,4 +262,10 @@ input[type="text"]:focus {
     }
 }
 
+@media (max-width: 428px){
+    .progressOneEndForm{
+        left: -5%;
+        width: 110%;
+    }
+}
 
