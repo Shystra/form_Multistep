@@ -100,6 +100,12 @@
     animation: appear 2s forwards;
 }
 
+@media (max-width: 2000px){
+    .progressOne_option_sistem{
+        top: -3px;
+    }
+}
+
 @media (max-width: 1500px){
     .progressOne_option_sistem{
         height: 31px;

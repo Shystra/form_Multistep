@@ -97,6 +97,12 @@
   }
 
 
+  @media (max-width: 2000px){
+    .progressOne_option_urban{
+      top: -5px;
+    }
+  }
+
   @media (max-width: 1500px){
     .container_option_urban{
       height: 30vh;

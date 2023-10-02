@@ -173,7 +173,11 @@ input[type="text"]:focus {
     animation-delay: 1s;
 }
 
-
+@media (max-width: 2000px){
+    .progressOneEndForm{
+        top: -5px
+    };
+}
 
 @media (max-width: 1500px){
     .progressOneEndForm{

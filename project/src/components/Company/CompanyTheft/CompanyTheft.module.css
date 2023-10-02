@@ -95,7 +95,12 @@
     opacity: 0;  
     animation: appear 2s forwards;
   }
-  
+  @media(max-width: 2000px){
+    .progressOne_option_theft{
+      top: -4px;
+    }
+  }
+
   @media (max-width: 1500px){
     .progressOne_option_theft{
       height: 31px;
