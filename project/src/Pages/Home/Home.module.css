@@ -131,7 +131,7 @@
     top: 27.9px;
   } */
   .logo_intersept img {
-    margin-top: -20px;
+    margin-top: -30px;
     /* height: auto; */
   }
 }
@@ -280,6 +280,7 @@
     margin-top: -95px;
   }
   .logo_intersept img{
+    margin-top: 160px;
     width: 120px;
     height: 120px;
   }

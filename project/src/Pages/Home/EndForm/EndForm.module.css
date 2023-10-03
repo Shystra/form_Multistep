@@ -5,6 +5,13 @@
     padding: 20px;
     border-radius: 12px;
 }
+.instructionMessage {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #4CAF50; /* ou qualquer cor que se adeque ao seu design */
+}
 
 .alert {
     padding: 15px;
@@ -48,7 +55,7 @@
     margin-top: -29px;
     margin-left: 0px;
     height: 35px;
-    width: 672px;
+    width: 675px;
     background-color: #e4e01c;
     border-radius: 25px;
     flex-grow: 1;
@@ -58,7 +65,7 @@
     left: 115%;
     transform: translateX(-50%);
     margin: 0;
-    top: -47px;
+    top: -68px;
     font-weight: bold;
 }
 
@@ -268,15 +275,17 @@ input[type="text"]:focus {
 
 @media (max-width: 428px){
     .progressOneEndForm{
-        left: -5.9%;
-        width: 111%;
+        left: -0.9%;
+        width: 101%;
+        top: -49px;
     }
 }
 
 @media (max-width: 415px){
     .progressOneEndForm{
-      width: 108%;
-      left: -14.8px;
+      width: 101%;
+      left: -2.9px;
+      top: -49px;
     }
   }
 
@@ -289,10 +298,10 @@ input[type="text"]:focus {
 
 @media (max-width: 376px){
     .progressOneEndForm{
-        top: -1px;
+        top: -43px;
         height: 20px;
         width: 97%;
-        left: 1.2%;
+        left: 1.5%;
     }
     .progressLabelEndForm{
         top: -17px;

@@ -201,7 +201,7 @@ export const EndForm = ({ onBack }: Props) => {
 
     return (
         <div className={styles.container_end}>
-
+            <p className={styles.instructionMessage}>Para receber sua análise gratuita preencha os dados!</p>
             {showAlert && <Alert message={`Formulário Enviado! Redirecionando em ${countdown}...`} type="success" />}
             {validationErrors.length > 0 &&
                 validationErrors.map((error, index) => (
