@@ -18,7 +18,7 @@
   .progressOne_option_worktime {
     position: absolute;
     top: -1.9%;
-    left: -0.2%;
+    left: -06%;
     margin-top: -29px;
     margin-left: 0px;
     height: 35px;
@@ -37,7 +37,7 @@
     font-weight: bold;
   }
   
-  .option_menos_worktime button, 
+   
   .option_mais_worktime button, 
   .option_ever_worktime button{
     background-color: #200082;
@@ -45,6 +45,23 @@
     border-radius: 30px;
     color: white;
     padding: 12px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px 1px;
+    cursor: pointer;
+    transition-duration: 0.4s; 
+    position: relative;
+    overflow: hidden;
+  }
+
+  .option_menos_worktime button{
+    background-color: #200082;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 12px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;

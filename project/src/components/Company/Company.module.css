@@ -46,7 +46,24 @@
 }
 
 
-.company_center button,
+.company_center button{
+  background-color: #200082;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 15px 29px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 2px;
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;  
+  top: 70%;
+  /* left: -1%; */
+}
 .company_industrial button{
   background-color: #200082;
   border: none;
@@ -63,15 +80,13 @@
   overflow: hidden;
   cursor: pointer;  
   top: 70%;
-  left: -1%;
 }
 
-.option_street_commerce button,
-.option_business_building button{
-  background-color: white;
-  border: #200082 solid 1.5px;
+.option_street_commerce button{
+  background-color: #200082;
+  border: none;
   border-radius: 30px;
-  color: #200082;
+  color: white;
   padding: 13px 75px;
   text-align: center;
   text-decoration: none;
@@ -83,7 +98,25 @@
   overflow: hidden;
   cursor: pointer;  
   top: 70%;
-  left: 1%;   
+  /* left: 1%;    */
+}
+.option_business_building button{
+  background-color: #200082;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 13px 77px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 6px 2px;
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;  
+  top: 70%;
+  /* left: 1%;   */
 }
 
 .buttonBack button{
@@ -104,13 +137,11 @@
   top: 90px;
 }
 
+
+.company_industrial button:hover,
+.company_center button:hover,
 .option_street_commerce button:hover,
 .option_business_building button:hover{
-  background-color: #200082;
-  color: white;
-}
-.company_industrial button:hover,
-.company_center button:hover{
   background-color: #3B00E9;
 }
 
@@ -139,6 +170,15 @@
   animation: appear 2s forwards;
 }
 
+
+@media (max-width: 4000px){
+  .progressOne_company{
+    left: -40px;
+  }
+  .progressLabel_company{
+    left: -190px;
+  }
+}
 
 @media (min-width: 1550px) and (max-width: 2000px){
   .progressOne_company{

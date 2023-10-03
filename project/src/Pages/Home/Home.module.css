@@ -118,7 +118,7 @@
 
 
 
-@media (max-width: 2000px ){
+@media (max-width: 4000px ){
   .img_banner img{
     width: 700px;
     height: auto;
@@ -126,10 +126,17 @@
   .img_banner img{
     height: auto;
     width: 700px;
+  }
+  /* .progressOne{
+    top: 27.9px;
+  } */
+  .logo_intersept img {
+    margin-top: -20px;
+    /* height: auto; */
   }
 }
 
-@media (min-width: 1200px ) and (max-width: 1900px){
+@media (min-width: 1200px ) and (max-width: 1600px){
   .logo_intersept img{
     margin-top: -10px;
   }
@@ -159,7 +166,7 @@
 
 
 
- @media (min-width: 769px) and (max-width: 1190px){
+ @media (min-width: 769px) and (max-width: 1199px){
   .img_banner img{
     width: 700px;
     height: 90px;

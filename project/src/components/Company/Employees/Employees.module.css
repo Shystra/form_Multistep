@@ -75,10 +75,10 @@
 }
 
 .option_employees_two button{
-    background-color: white;
-    border: #200082 solid 1.5px;
+    background-color: #200082;
+    border: none;
     border-radius: 30px;
-    color: #200082;
+    color: white;
     padding: 12px 75px;
     text-align: center;
     text-decoration: none;

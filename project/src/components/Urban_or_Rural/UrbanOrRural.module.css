@@ -137,6 +137,16 @@
   animation: appear 2s forwards;
 }
 
+@media(max-width: 4000px){
+  .progressOne_residence{
+    left: -115px;
+    
+    
+  }
+  .progressLabel_residence{
+    left: -240px;
+  }
+}
 
 @media (min-width: 1550px) and (max-width: 2000px){
   .progressOne_residence{

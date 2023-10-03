@@ -94,6 +94,13 @@
   animation: appear 2s forwards;
 }
 
+@media (max-width: 4000px){
+  .progressOne_option_units{
+    left: -1px;
+
+  }
+}
+
 @media (max-width: 1500px){
   .progressOne_option_units{
     left: -13px;
