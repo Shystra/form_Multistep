@@ -249,32 +249,33 @@ input[type="text"]:focus {
 }
 
 @media (max-width: 1500px){
+    .container_end{
+        height: 0vh;
+    }
     .instructionMessage{
-     margin-bottom: 4%;
-     margin-top: -2%;
-    
+     position: absolute;    
     }
    
     .progressOneEndForm{
         height: 30px;
         top: -1px;
-        left: -102px;
-        width: 143%;
+        left: -105px;
+        width: 146%;
     }
     .progressLabelEndForm{
-        top: -76px;
+        /* top: -76px; */
         left: 120%;
     }
 
     input[type="text"] {
         
-        padding: 5px 10px 10px 0;
+        padding: 0px 10px 10px 0;
     }
     
     .name {
         font-size: 14px;
         /* padding: 0px 0px 0px 0px; */
-        margin-top: -30px;
+        margin-top: -0px;
      }
      
      .cep {
