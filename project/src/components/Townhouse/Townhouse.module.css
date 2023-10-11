@@ -151,6 +151,15 @@
     }
 }
 
+@media(max-width: 1800px){
+    .title_option_townhouse{
+        margin-top: 10px;
+    }
+    .progressOne_option_townhouse{
+        left: -85px;
+    }
+}
+
 @media (max-width: 1500px){
     .container_option_townhouse{
         height: 440vh;

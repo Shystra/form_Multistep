@@ -101,6 +101,12 @@
     }
   }
 
+  @media(max-width: 1800px){
+    .title_option_theft{
+      margin-top: 0;
+    }
+  }
+
   @media (max-width: 1500px){
     .progressOne_option_theft{
       height: 31px;

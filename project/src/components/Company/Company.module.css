@@ -192,6 +192,18 @@
   }
 }
 
+@media(max-width: 1800px){
+  .title_tipo_residencia{
+    margin-top: 0;
+
+  }
+  .progressOne_company{
+    height: 34px;
+    /* top: -3px; */
+    left: -48px;
+  }
+}
+
 @media (max-width: 1500px){
   .containerForm_company{
       height: 420vh;

@@ -160,6 +160,17 @@
   }
 }
 
+@media(max-width: 1800px){
+  .progressLabel_residence{
+    top: -28px;
+    left: -240px;
+  }
+  .progressOne_residence{
+    left: -120px;
+  }
+
+}
+
 @media (max-width: 1500px){
   .containerForm_tipos_residencia{
       height: 440vh;

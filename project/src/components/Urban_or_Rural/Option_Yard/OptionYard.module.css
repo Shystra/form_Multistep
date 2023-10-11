@@ -132,6 +132,13 @@
   animation: appear 2s forwards;
 }
 
+
+@media(max-width: 1800px){
+  .progressOne_option_residence{
+    left: -48px;
+  }
+}
+
 @media (max-width: 1500px){
   .progressOne_option_residence{
     height: 31px;

@@ -103,6 +103,22 @@
     }
   }
 
+  @media(max-width: 1800px){
+
+    .title_option_urban{
+      margin-top: -0px;
+    }
+    .buttonBack_option_urban button{
+      top: -12px;
+      padding: 10px 70px
+    };
+
+
+
+
+
+  }
+
   @media (max-width: 1500px){
     .container_option_urban{
       height: 30vh;

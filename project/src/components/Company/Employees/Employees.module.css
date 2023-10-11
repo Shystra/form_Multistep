@@ -151,6 +151,12 @@
 @media (min-width: 1550px) and (max-width: 2000px){
   }
   
+@media(max-width: 1800px){
+    .title_employees{
+        margin-top: 0;
+    }
+}
+
 @media (max-width: 1500px){
     .progressOne_employees{
         height: 31px;

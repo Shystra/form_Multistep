@@ -96,6 +96,12 @@
     animation: appear 2s forwards;
   }
 
+  @media(max-width: 1800px){
+    .title_option_merchandise{
+      margin-top: 0;
+    }
+  }
+
 
   @media (max-width: 1500px){
     .progressOne_option_merchandise{

@@ -136,7 +136,34 @@
   }
 }
 
-@media (min-width: 1200px ) and (max-width: 1600px){
+@media(max-width: 1800px){
+  .logo_intersept img{
+    margin-top: -10px;
+  }
+  .progressBar{
+    height: 35vh;
+  }
+  .progressOne{
+    height: 37px;
+    /* top: 30px; */
+  }
+  
+  .container{
+    width: 96vh;
+    height: 51vh;
+  }
+  
+  .img_banner img{
+    width: 710px;
+    height: 70px;
+  }
+
+  .title_Container{
+    margin-top: -30px;
+  }
+}
+
+@media (min-width: 1200px ) and (max-width: 1500px){
   .logo_intersept img{
     margin-top: -10px;
   }

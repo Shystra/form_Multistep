@@ -186,6 +186,68 @@ input[type="text"]:focus {
     };
 }
 
+@media(max-width: 1800px){
+    
+
+    .container_end{
+        height: 0vh;
+    }
+    .instructionMessage{
+        /* margin-bottom: 4%; */
+        margin-top: -2%;
+        position: absolute;
+       
+       }
+      
+       .progressOneEndForm{
+           height: 31px;
+           top: -1px;
+           left: -115px;
+           width: 150%;
+       }
+       .progressLabelEndForm{
+           top: -47px;
+           left: 120%;
+       }
+   
+       input[type="text"] {
+           
+           padding: 5px 10px 10px 0;
+       }
+       
+       .name {
+           font-size: 14px;
+           /* padding: 0px 0px 0px 0px; */
+           margin-top: 0px;
+           
+        }
+        
+        .cep {
+            font-size: 14px;
+            
+        }
+        
+        .email {
+            font-size: 14px;
+        }
+        
+        .phone {
+            font-size: 14px;
+        }
+   
+        .send button{
+           top: -15px;
+           padding: 10px 70px;
+           font-size: 14px;
+        }
+        .back button{
+           font-size: 14px;
+           padding: 10px 70px;
+           top: -15px;
+           left: 10px;
+        }
+}
+
 @media (max-width: 1500px){
     .instructionMessage{
      margin-bottom: 4%;

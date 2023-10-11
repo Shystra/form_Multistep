@@ -106,6 +106,15 @@
     }
 }
 
+@media(max-width: 1800px){
+    .progressOne_option_sistem{
+        left: -15px;
+    }
+    .title_option_sistem{
+        margin-top: 0;
+    }
+}
+
 @media (max-width: 1500px){
     .progressOne_option_sistem{
         height: 30px;

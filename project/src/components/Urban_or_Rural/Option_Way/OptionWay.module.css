@@ -98,6 +98,19 @@
     opacity: 0;  
     animation: appear 2s forwards;
   }
+
+
+  @media(max-width: 1800px){
+    .progressOne_option_way{
+      left: -31px;
+    }
+    .buttonBack_option_way button {
+      top: -30px;
+    }
+    .title_option_way{
+      margin-top: 0;
+    }
+  }
   
   @media (max-width: 1500px){
     .progressOne_option_way{
