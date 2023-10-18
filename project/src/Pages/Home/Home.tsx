@@ -85,7 +85,9 @@ export function Home() {
         {renderCurrentStep()}
       </div>
       <div className={styles.img_banner}>
+        <a href="https://servicos.intersept.com.br/kit-monitoramento-form-site" target="_blank" rel="noopener noreferrer">
         <img src={banner_comercial} alt="Banner Comercial"/>
+        </a>
       </div>
 
 
